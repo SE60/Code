@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package se_restaurant;
+package se_restaurant_real;
 
 import java.net.URL;
 import java.util.ResourceBundle;
