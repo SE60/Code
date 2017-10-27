@@ -13,14 +13,35 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <VBox prefHeight="63.0" prefWidth="1280.0">
                <children>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e7cf86;" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FF6666;">
+                     <children>
+                        <ImageView fitHeight="72.0" fitWidth="1283.0" layoutX="-1.0" layoutY="-5.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@b-g-hotel-6.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#433a7f" layoutX="1106.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะที่" wrappingWidth="62.26000213623047">
+                           <font>
+                              <Font name="TH Sarabun New" size="44.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="1178.0" layoutY="3.0" prefHeight="62.0" prefWidth="62.0" textFill="#433a7f">
+                           <font>
+                              <Font name="TH Sarabun New" size="44.0" />
+                           </font>
+                        </Label>
+                        <Text fill="#34255c" layoutX="364.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CE Restaurant System">
+                           <font>
+                              <Font name="Harlow Solid Italic" size="50.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
                </children>
             </VBox>
             <AnchorPane layoutX="-1.0" layoutY="62.0" prefHeight="659.0" prefWidth="920.0">
