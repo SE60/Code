@@ -58,16 +58,16 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <ImageView fx:id="cid_1_3" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
-                                    <ImageView fx:id="cid_1_2" fitHeight="150.0" fitWidth="200.0" layoutX="569.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" />
-                                    <ImageView fx:id="cid_1_4" fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="cid_1_4" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="cid_1_3" fitHeight="150.0" fitWidth="200.0" layoutX="569.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="cid_1_2" fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
                                     <ImageView fx:id="cid_1_1" fitHeight="150.0" fitWidth="200.0" layoutX="587.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
                                     <fx:define>
                                 <ArrayList fx:id="imageViewList" >
+                                    <fx:reference source="cid_1_4"/>
                                     <fx:reference source="cid_1_3"/>
                                     <fx:reference source="cid_1_2"/>
-                                    <fx:reference source="cid_1_4"/>
-                                    <fx:reference source="cid_1_1"/>            
+                                    <fx:reference source="cid_1_1"/>
                                 </ArrayList>
                             </fx:define>
                                  </children>
