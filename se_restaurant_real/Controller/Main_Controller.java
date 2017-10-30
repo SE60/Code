@@ -30,8 +30,10 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 import se_restaurant_real.DBConnection;
+import se_restaurant_real.LoadCost;
 import se_restaurant_real.Main;
-import se_restaurant_real.loadPicture;
+import se_restaurant_real.LoadMenuName;
+import se_restaurant_real.LoadPicture;
 
 /**
  *
@@ -45,6 +47,8 @@ public class Main_Controller {
     @FXML private ImageView pid_3_3;
     @FXML private ImageView pid_4_4;
     @FXML private List<ImageView> imageViewList_2 ;    
+    @FXML private List<Label> nameViewList_2 ;
+    @FXML private List<Label> costViewList_2 ;
     @FXML private AnchorPane A_2_AfterOrdered,A_1_BeforeOrdered;;
     @FXML private Label ordered_1,ordered_2;
     
@@ -68,13 +72,19 @@ public class Main_Controller {
 //            ex.printStackTrace();
 //        }
         
-        
-        loadPicture a=new loadPicture();
-       for(int i=0;i<imageViewList_2.size();i++)
+       LoadPicture picture=new LoadPicture();
+       LoadMenuName name=new LoadMenuName();
+       LoadCost cost=new LoadCost();
+       for(int i=0;i<nameViewList_2.size();i++)
        {
-           Image image=a.LoadPicture_Catalogue_8().get(i);
+           Image image=picture.loadPicture_Catalogue_2().get(i);
+           String mName=name.loadName_2().get(i);
+           Double ccost=cost.loadCost_2().get(i);
            imageViewList_2.get(i).setImage(image);
-       }        
+           nameViewList_2.get(i).setText(mName);
+           costViewList_2.get(i).setText(ccost.toString());
+       }  
+       
     }
     
      @FXML

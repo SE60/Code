@@ -26,8 +26,8 @@ import javax.persistence.TypedQuery;
  *
  * @author l3oat
  */
-public class saveDataFromFile {
-    public saveDataFromFile() throws FileNotFoundException, FileNotFoundException, UnsupportedEncodingException{
+public class SaveDataFromFile {
+    public SaveDataFromFile() throws FileNotFoundException, FileNotFoundException, UnsupportedEncodingException{
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
         EntityManager em=emf.createEntityManager();
         EntityManager em2=emf.createEntityManager();
@@ -67,10 +67,10 @@ public class saveDataFromFile {
                 em.getTransaction().commit();
                 em2.close();
             } catch (IOException ex) {
-                Logger.getLogger(saveDataFromFile.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(SaveDataFromFile.class.getName()).log(Level.SEVERE, null, ex);
             }
         } catch (FileNotFoundException ex) {
-            Logger.getLogger(saveDataFromFile.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SaveDataFromFile.class.getName()).log(Level.SEVERE, null, ex);
         }
             
         

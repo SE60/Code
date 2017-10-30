@@ -43,7 +43,6 @@ public class Main extends Application {
 //        customer.test();;
     }
 
-
     public static void main(String[] args) throws SQLException {
 //----------------Save Data from File------------------//
 //        try {
@@ -53,6 +52,7 @@ public class Main extends Application {
 //        } catch (UnsupportedEncodingException ex) {
 //            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
 //        }
+
 //---------------------------------------------------//
         
         
