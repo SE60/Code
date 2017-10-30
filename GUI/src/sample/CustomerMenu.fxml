@@ -72,10 +72,11 @@
                                        </image>
                                     </ImageView>
                                     <ImageView fx:id="pid_2_1" fitHeight="150.0" fitWidth="200.0" layoutX="131.0" layoutY="93.0" onMouseClicked="#pid_2_1_Clicked" pickOnBounds="true" preserveRatio="true" />
-                                    <ImageView fx:id="pid_2_2" fitHeight="150.0" fitWidth="200.0" layoutX="548.0" layoutY="93.0" onMouseClicked="#pid_2_2_Clicked" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="pid_2_2" fitHeight="150.0" fitWidth="200.0" layoutX="525.0" layoutY="93.0" onMouseClicked="#pid_2_2_Clicked" pickOnBounds="true" preserveRatio="true" />
                                     <ImageView fx:id="pid_2_3" fitHeight="150.0" fitWidth="200.0" layoutX="131.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
-                                    <ImageView fx:id="pid_2_4" fitHeight="150.0" fitWidth="200.0" layoutX="548.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="pid_2_4" fitHeight="150.0" fitWidth="200.0" layoutX="506.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" />
                                     <fx:define>
+                                 <!--List for pid-->
                                 <ArrayList fx:id="imageViewList_2">
                                     <fx:reference source="pid_2_1" />
                                     <fx:reference source="pid_2_2" />
@@ -83,6 +84,35 @@
                                     <fx:reference source="pid_2_4" />            
                                 </ArrayList>
                             </fx:define>
+                                <!--End list pid-->
+                                    <Label fx:id="mid_2_1" layoutX="144.0" layoutY="266.0" prefHeight="24.0" prefWidth="88.0" text="Label" />
+                                    <Label fx:id="cid_2_1" layoutX="269.0" layoutY="270.0" text="Label" />
+                                    <Label fx:id="mid_2_2" layoutX="548.0" layoutY="262.0" prefHeight="30.0" prefWidth="115.0" text="Label" />
+                                    <Label fx:id="cid_2_2" layoutX="663.0" layoutY="265.0" prefHeight="25.0" prefWidth="43.0" text="Label" />
+                                    <Label fx:id="mid_2_3" layoutX="144.0" layoutY="516.0" prefHeight="17.0" prefWidth="72.0" text="Label" />
+                                    <Label fx:id="cid_2_3" layoutX="252.0" layoutY="514.0" prefHeight="21.0" prefWidth="62.0" text="Label" />
+                                    <Label fx:id="mid_2_4" layoutX="513.0" layoutY="511.0" prefHeight="27.0" prefWidth="112.0" text="Label" />
+                                    <Label fx:id="cid_2_4" layoutX="637.0" layoutY="512.0" prefHeight="25.0" prefWidth="69.0" text="Label" />
+                                                                        <!--List for mid-->
+                                    <fx:define>
+                                <ArrayList fx:id="nameViewList_2">
+                                    <fx:reference source="mid_2_1" />
+                                    <fx:reference source="mid_2_2" />
+                                    <fx:reference source="mid_2_3" />   
+                                    <fx:reference source="mid_2_4" />             
+                                </ArrayList>
+                            </fx:define>       
+                            <!--End list mid-->
+                            <!---List for cid-->               
+                            <fx:define>
+                                <ArrayList fx:id="costViewList_2">
+                                    <fx:reference source="cid_2_1" />
+                                    <fx:reference source="cid_2_2" />  
+                                    <fx:reference source="cid_2_3" />   
+                                    <fx:reference source="cid_2_4" />           
+                                </ArrayList>
+                            </fx:define>
+                            <!--End list cid-->
                                  </children>
                               </AnchorPane>
                            </content>

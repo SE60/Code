@@ -22,8 +22,8 @@ import javax.persistence.TypedQuery;
  *
  * @author l3oat
  */
-public class loadPicture {
-    public ArrayList<Image> LoadPicture_Catalogue_1()
+public class LoadPicture {
+    public ArrayList<Image> loadPicture_Catalogue_1()
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
@@ -46,7 +46,7 @@ public class loadPicture {
         }
         return obj;
     }
-    public ArrayList<Image> LoadPicture_Catalogue_2()
+    public ArrayList<Image> loadPicture_Catalogue_2()
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
@@ -69,7 +69,7 @@ public class loadPicture {
         }
         return obj;
     }
-    public ArrayList<Image> LoadPicture_Catalogue_3()
+    public ArrayList<Image> loadPicture_Catalogue_3()
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
@@ -92,7 +92,7 @@ public class loadPicture {
         }
         return obj;
     }
-    public ArrayList<Image> LoadPicture_Catalogue_4()
+    public ArrayList<Image> loadPicture_Catalogue_4()
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
@@ -115,7 +115,7 @@ public class loadPicture {
         }
         return obj;
     }
-    public ArrayList<Image> LoadPicture_Catalogue_5()
+    public ArrayList<Image> loadPicture_Catalogue_5()
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
@@ -138,7 +138,7 @@ public class loadPicture {
         }
         return obj;
     }
-    public ArrayList<Image> LoadPicture_Catalogue_6()
+    public ArrayList<Image> loadPicture_Catalogue_6()
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
@@ -161,7 +161,7 @@ public class loadPicture {
         }
         return obj;
     }
-    public ArrayList<Image> LoadPicture_Catalogue_7()
+    public ArrayList<Image> loadPicture_Catalogue_7()
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
@@ -184,7 +184,7 @@ public class loadPicture {
         }
         return obj;
     }
-    public ArrayList<Image> LoadPicture_Catalogue_8()
+    public ArrayList<Image> loadPicture_Catalogue_8()
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
@@ -207,7 +207,7 @@ public class loadPicture {
         }
         return obj;
     }
-    public ArrayList<Image> LoadPicture_Catalogue_9()
+    public ArrayList<Image> loadPicture_Catalogue_9()
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
