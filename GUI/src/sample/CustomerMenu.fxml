@@ -58,8 +58,8 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <ImageView fx:id="pid_1_1" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
-                                    <ImageView fx:id="pid_1_2" fitHeight="150.0" fitWidth="200.0" layoutX="569.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="pid_1_1" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="100.0" onMouseClicked="#pid_1_1_Clicked" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="pid_1_2" fitHeight="150.0" fitWidth="200.0" layoutX="569.0" layoutY="109.0" onMouseClicked="#pid_1_2_Clicked" pickOnBounds="true" preserveRatio="true" />
                                     <ImageView fx:id="pid_1_3" fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
                                     <ImageView fx:id="pid_1_4" fitHeight="150.0" fitWidth="200.0" layoutX="587.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
                                     <fx:define>
@@ -227,8 +227,8 @@
                               <AnchorPane layoutX="2.0" layoutY="198.0" prefHeight="415.0" prefWidth="350.0" style="-fx-background-color: #172a46;">
                                  <children>
                                     <JFXTextArea prefHeight="307.0" prefWidth="344.0" unFocusColor="TRANSPARENT" />
-                                    <Label layoutX="51.0" layoutY="14.0" prefHeight="47.0" prefWidth="244.0" textFill="#ffc369" />
-                                    <Label layoutX="51.0" layoutY="61.0" prefHeight="47.0" prefWidth="244.0" textFill="#ffc369" />
+                                    <Label fx:id="lb_1" layoutX="51.0" layoutY="14.0" prefHeight="47.0" prefWidth="244.0" textFill="#ffc369" />
+                                    <Label fx:id="lb_2" layoutX="51.0" layoutY="71.0" prefHeight="47.0" prefWidth="244.0" textFill="#ffc369" />
                                     <Label layoutX="51.0" layoutY="108.0" prefHeight="47.0" prefWidth="244.0" textFill="#ffc369" />
                                     <Label layoutX="53.0" layoutY="155.0" prefHeight="47.0" prefWidth="244.0" textFill="#ffc369" />
                                     <Label layoutX="53.0" layoutY="202.0" prefHeight="47.0" prefWidth="244.0" textFill="#ffc369" />

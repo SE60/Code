@@ -54,6 +54,9 @@ public class Main_Controller {
     private ImageView pid_1_4;
     
     @FXML
+    private Label lb_1,lb_2;
+    
+    @FXML
     private List<ImageView> imageViewList ;    
     
     @FXML
@@ -86,12 +89,18 @@ public class Main_Controller {
        {
            Image image=a.LoadPicture_Catalogue_8().get(i);
            imageViewList.get(i).setImage(image);
-       }
-
-          
+       }        
     }
     
-    public void test() {
-        System.out.println("skadpaodkwpofkp");
+     @FXML
+    void pid_1_1_Clicked(MouseEvent event) {
+         lb_1.setText("KKKKKKKKKKKKKKKKKKKKKKKKKKKKK");
+         
     }
+     @FXML
+    void pid_1_2_Clicked(MouseEvent event) {
+         lb_2.setText("YYYYYYYYYYYYYYYYYYYYYYYY");
+         
+    }
+
 }

@@ -4,3 +4,5 @@ SE_Restaurant/nbproject/project.properties
 SE_Restaurant/nbproject/project.properties
 se_restaurant_real/FXMLDocument.fxml
 GUI/menu/.idea/workspace.xml
+GUI/src/sample/CustomerMenu.fxml
+se_restaurant_real/Controller/Main_Controller.java
