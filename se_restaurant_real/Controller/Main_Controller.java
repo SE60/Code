@@ -24,6 +24,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import static javafx.scene.input.KeyCode.R;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -38,31 +39,15 @@ import se_restaurant_real.loadPicture;
  */
 public class Main_Controller {
     
-    @FXML
-    private Label text_1;
+    @FXML private Label text_1;
+    @FXML private ImageView pid_2_1;
+    @FXML private ImageView pid_2_2;
+    @FXML private ImageView pid_3_3;
+    @FXML private ImageView pid_4_4;
+    @FXML private List<ImageView> imageViewList_2 ;    
+    @FXML private AnchorPane A_2_AfterOrdered,A_1_BeforeOrdered;;
+    @FXML private Label ordered_1,ordered_2;
     
-    @FXML
-    private ImageView pid_1_1;
-    
-    @FXML
-    private ImageView pid_1_2;
-
-    @FXML
-    private ImageView pid_1_3;
-
-    @FXML
-    private ImageView pid_1_4;
-    
-    @FXML
-    private Label lb_1,lb_2;
-    
-    @FXML
-    private List<ImageView> imageViewList ;    
-    
-    @FXML
-    void choose_1(MouseEvent event) {
-        pid_1_1.setVisible(false);
-    }
     @FXML
     protected void initialize()
     {
@@ -85,22 +70,24 @@ public class Main_Controller {
         
         
         loadPicture a=new loadPicture();
-       for(int i=0;i<imageViewList.size();i++)
+       for(int i=0;i<imageViewList_2.size();i++)
        {
            Image image=a.LoadPicture_Catalogue_8().get(i);
-           imageViewList.get(i).setImage(image);
+           imageViewList_2.get(i).setImage(image);
        }        
     }
     
      @FXML
-    void pid_1_1_Clicked(MouseEvent event) {
-         lb_1.setText("KKKKKKKKKKKKKKKKKKKKKKKKKKKKK");
-         
+    void pid_2_1_Clicked(MouseEvent event) {
+           A_1_BeforeOrdered.setVisible(false);
+           A_2_AfterOrdered.setVisible(true);
+           ordered_1.setText("1111111111111111111111");
+           
+     
     }
      @FXML
-    void pid_1_2_Clicked(MouseEvent event) {
-         lb_2.setText("YYYYYYYYYYYYYYYYYYYYYYYY");
-         
+    void pid_2_2_Clicked(MouseEvent event) {
+         ordered_2.setText("222222222222222222222");
     }
 
 }
