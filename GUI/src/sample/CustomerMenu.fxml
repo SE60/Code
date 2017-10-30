@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Text?>
 <?import java.util.ArrayList?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.Main_Controller">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -53,23 +53,25 @@
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="475.0" prefWidth="446.0">
                                  <children>
-                                    <ImageView fitHeight="695.0" fitWidth="1266.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="695.0" fitWidth="1266.0" layoutX="-7.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <ImageView fx:id="cid_1_4" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
-                                    <ImageView fx:id="cid_1_3" fitHeight="150.0" fitWidth="200.0" layoutX="569.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" />
-                                    <ImageView fx:id="cid_1_2" fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
-                                    <ImageView fx:id="cid_1_1" fitHeight="150.0" fitWidth="200.0" layoutX="587.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="pid_1_1" fitHeight="150.0" fitWidth="200.0" layoutX="123.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="pid_1_2" fitHeight="150.0" fitWidth="200.0" layoutX="569.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="pid_1_3" fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="pid_1_4" fitHeight="150.0" fitWidth="200.0" layoutX="587.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
                                     <fx:define>
-                                <ArrayList fx:id="imageViewList" >
-                                    <fx:reference source="cid_1_4"/>
-                                    <fx:reference source="cid_1_3"/>
-                                    <fx:reference source="cid_1_2"/>
-                                    <fx:reference source="cid_1_1"/>
+                                <ArrayList fx:id="imageViewList">
+                                    <fx:reference source="pid_1_1" />
+                                    <fx:reference source="pid_1_2" />
+                                    <fx:reference source="pid_1_3" />
+                                    <fx:reference source="pid_1_4" />
                                 </ArrayList>
                             </fx:define>
+                                    <Label fx:id="mid_1_1" layoutX="109.0" layoutY="269.0" prefHeight="38.0" prefWidth="125.0" text="Label" />
+                                    <Label fx:id="cid_1_1" layoutX="250.0" layoutY="269.0" prefHeight="35.0" prefWidth="80.0" text="Label" />
                                  </children>
                               </AnchorPane>
                            </content>

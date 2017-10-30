@@ -42,23 +42,23 @@ public class Main_Controller {
     private Label text_1;
     
     @FXML
-    private ImageView cid_1_1;
+    private ImageView pid_1_1;
     
     @FXML
-    private ImageView cid_1_2;
+    private ImageView pid_1_2;
 
     @FXML
-    private ImageView cid_1_3;
+    private ImageView pid_1_3;
 
     @FXML
-    private ImageView cid_1_4;
+    private ImageView pid_1_4;
     
     @FXML
     private List<ImageView> imageViewList ;    
     
     @FXML
     void choose_1(MouseEvent event) {
-        cid_1_1.setVisible(false);
+        pid_1_1.setVisible(false);
     }
     @FXML
     protected void initialize()
