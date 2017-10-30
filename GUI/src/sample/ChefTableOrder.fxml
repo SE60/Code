@@ -24,7 +24,7 @@
                                   </ImageView>
                   <AnchorPane layoutX="2.0" layoutY="3.0" prefHeight="658.0" prefWidth="1171.0">
                      <children>
-                        <ScrollPane layoutX="25.0" layoutY="16.0" prefHeight="617.0" prefWidth="1007.0" stylesheets="@table.css">
+                        <ScrollPane layoutX="25.0" layoutY="77.0" prefHeight="557.0" prefWidth="1007.0" stylesheets="@table.css">
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="951.0" prefWidth="987.0">
                                  <children>
@@ -101,6 +101,16 @@
                               </AnchorPane>
                           </content>
                         </ScrollPane>
+                        <Label layoutX="102.0" layoutY="4.0" text="ลำดับโต๊ะที่สั่งอาหาร" textFill="#172a46">
+                           <font>
+                              <Font name="TH Sarabun New" size="51.0" />
+                           </font>
+                        </Label>
+                        <Text fill="#34255c" layoutX="26.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="•♪                          ♂•">
+                           <font>
+                              <Font name="{ White Festive }" size="56.0" />
+                           </font>
+                        </Text>
                      </children>
                   </AnchorPane>
                         </children>
