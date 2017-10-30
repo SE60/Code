@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
@@ -14,22 +15,92 @@
         <children>
             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                 <children>
-                    <AnchorPane layoutX="-1.0" layoutY="62.0" prefHeight="659.0" prefWidth="920.0">
+                    <AnchorPane layoutX="-1.0" layoutY="62.0" prefHeight="662.0" prefWidth="1214.0">
                         <children>
-                                  <ImageView fitHeight="715.0" fitWidth="1279.0" layoutX="1.0" layoutY="-54.0" opacity="0.65" pickOnBounds="true">
+                                  <ImageView fitHeight="715.0" fitWidth="1301.0" layoutX="-23.0" layoutY="-54.0" opacity="0.65" pickOnBounds="true">
                                       <image>
                                           <Image url="@264.jpg" />
                                       </image>
                                   </ImageView>
-                  <AnchorPane layoutX="2.0" layoutY="3.0" prefHeight="658.0" prefWidth="1150.0">
+                  <AnchorPane layoutX="2.0" layoutY="3.0" prefHeight="658.0" prefWidth="1171.0">
                      <children>
-                        <TableView layoutX="17.0" layoutY="19.0" prefHeight="614.0" prefWidth="1202.0">
-                          <columns>
-                            <TableColumn prefWidth="432.00004959106445" text="ลำดับ" />
-                            <TableColumn prefWidth="769.60009765625" text="โต๊ะ" />
-                          </columns>
-                        </TableView>
-                        <ScrollBar layoutX="1250.0" layoutY="5.0" orientation="VERTICAL" prefHeight="650.0" prefWidth="27.0" />
+                        <ScrollPane layoutX="25.0" layoutY="16.0" prefHeight="617.0" prefWidth="1007.0" stylesheets="@table.css">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="951.0" prefWidth="987.0">
+                                 <children>
+                                    <TableView prefHeight="965.0" prefWidth="986.0" stylesheets="@table.css">
+                                      <columns>
+                                        <TableColumn prefWidth="432.00004959106445" text="ลำดับ" />
+                                        <TableColumn prefWidth="769.60009765625" text="โต๊ะ" />
+                                      </columns>
+                                    </TableView>
+                                    <AnchorPane layoutX="6.0" layoutY="58.0" prefHeight="891.0" prefWidth="437.0" style="-fx-background-color: #172a46;">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="51.0" prefWidth="417.0" text="1" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutY="50.0" prefHeight="51.0" prefWidth="417.0" text="2" textFill="WHITE">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutY="100.0" prefHeight="51.0" prefWidth="417.0" text="3" textFill="WHITE">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutY="150.0" prefHeight="51.0" prefWidth="417.0" text="4" textFill="WHITE">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutY="200.0" prefHeight="51.0" prefWidth="417.0" text="5" textFill="WHITE">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="441.0" layoutY="58.0" prefHeight="898.0" prefWidth="545.0" style="-fx-background-color: #172a46;">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="51.0" prefWidth="417.0" text="1" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutY="50.0" prefHeight="51.0" prefWidth="417.0" text="2" textFill="WHITE">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutY="100.0" prefHeight="51.0" prefWidth="417.0" text="3" textFill="WHITE">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutY="150.0" prefHeight="51.0" prefWidth="417.0" text="4" textFill="WHITE">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutY="200.0" prefHeight="51.0" prefWidth="417.0" text="5" textFill="WHITE">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutY="814.0" prefHeight="51.0" prefWidth="417.0" text="แอบ" textFill="WHITE">
+                                             <font>
+                                                <Font size="26.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
                      </children>
                   </AnchorPane>
                         </children>

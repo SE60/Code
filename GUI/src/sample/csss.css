@@ -20,7 +20,7 @@
 }
 
 #TabMenu .tab-header-area .tab .tab-label {
-	-fx-font: 15px THSarabunNew;
+	-fx-font: 20px THSarabunNew;
 	-fx-font-weight: bold;
 	-fx-text-fill: #eac37d;
 }

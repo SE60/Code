@@ -8,7 +8,7 @@
 }
 .scroll-bar:horizontal .track,
 .scroll-bar:vertical .track {
-	-fx-background-color: white;
+	-fx-background-color: #172a46;
 	-fx-border-color:transparent;
 	-fx-background-radius: 0em;	
 }
