@@ -12,12 +12,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import java.util.ArrayList?>
 
-<<<<<<< HEAD
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
-=======
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.Main_Controller">
->>>>>>> 17595e4612c5159f755f94bf365522c8b40a450c
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -30,25 +27,19 @@
                               <Image url="@b-g-hotel-6.jpg" />
                            </image>
                         </ImageView>
-                        <Text fill="#433a7f" layoutX="1082.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะที่" wrappingWidth="62.26000213623047">
+                        <Text fill="#433a7f" layoutX="1106.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะที่" wrappingWidth="62.26000213623047">
                            <font>
                               <Font name="TH Sarabun New" size="44.0" />
                            </font>
                         </Text>
-                        <Label layoutX="1173.0" layoutY="3.0" prefHeight="62.0" prefWidth="62.0" textFill="#433a7f">
+                        <Label layoutX="1178.0" layoutY="3.0" prefHeight="62.0" prefWidth="62.0" textFill="#433a7f">
                            <font>
                               <Font name="TH Sarabun New" size="44.0" />
                            </font>
                         </Label>
-<<<<<<< HEAD
-                        <Text fill="#34255ccc" layoutX="-1.0" layoutY="56.0" stroke="#e7cf86" strokeType="OUTSIDE" strokeWidth="0.0" text="{CE☺Restaurant}" textAlignment="CENTER" wrappingWidth="1000.0">
-                           <font>
-                              <Font name="{ White Festive }" size="68.0" />
-=======
                         <Text fill="#34255c" layoutX="364.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CE  Restaurant  System">
                            <font>
                               <Font name="Script MT Bold" size="50.0" />
->>>>>>> 17595e4612c5159f755f94bf365522c8b40a450c
                            </font>
                         </Text>
                      </children></AnchorPane>
@@ -67,7 +58,19 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <ImageView fx:id="cid_1_1" fitHeight="197.0" fitWidth="264.0" layoutX="124.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="cid_1_1" fitHeight="197.0" fitWidth="264.0" layoutX="90.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="cid_1_2" fitHeight="197.0" fitWidth="264.0" layoutX="523.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="cid_1_3" fitHeight="197.0" fitWidth="264.0" layoutX="126.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="cid_1_4" fitHeight="197.0" fitWidth="264.0" layoutX="539.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true" />
+                                    
+                                    <fx:define>
+                                <ArrayList fx:id="imageViewList" >
+                                    <fx:reference source="cid_1_1"/>
+                                    <fx:reference source="cid_1_2"/>
+                                    <fx:reference source="cid_1_3"/>
+                                    <fx:reference source="cid_1_4"/>            
+                                </ArrayList>
+                            </fx:define>
                                  </children>
                               </AnchorPane>
                            </content>
