@@ -38,11 +38,16 @@
                         <Font name="Layiji MaHaNiYom BAO" size="42.0" />
                      </font>
                   </Text>
-                  <Text fill="#172a46" layoutX="69.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะ">
+                  <Text fill="#172a46" layoutX="106.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะที่">
                      <font>
                         <Font name="Layiji MaHaNiYom BAO" size="35.0" />
                      </font>
                   </Text>
+                  <Label layoutX="188.0" layoutY="73.0" prefHeight="32.0" prefWidth="85.0" text="1" textFill="#f5210a">
+                     <font>
+                        <Font name="Layiji MaHaNiYom BAO" size="50.0" />
+                     </font>
+                  </Label>
                         <AnchorPane layoutX="64.0" layoutY="142.0" prefHeight="338.0" prefWidth="1133.0">
                             <children>
                                 <ScrollPane layoutX="-3.0" layoutY="-1.0" prefHeight="338.0" prefWidth="1147.0" stylesheets="@table.css">
@@ -82,7 +87,7 @@
                      <children>
                         <AnchorPane prefHeight="200.0" prefWidth="200.0">
                            <children>
-                              <Text fill="#172a46" layoutX="99.0" layoutY="32.0" stroke="#172a46" strokeLineJoin="ROUND" strokeType="OUTSIDE" text="ผู้รับผิดชอบ">
+                              <Text fill="#172a46" layoutX="99.0" layoutY="32.0" stroke="#fbfdff" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="2.0" text="ผู้รับผิดชอบ">
                                  <font>
                                     <Font name="Layiji MaHaNiYom BAO" size="35.0" />
                                  </font>
@@ -102,17 +107,29 @@
                                     <Font name="Layiji MaHaNiYom BAO" size="32.0" />
                                  </font>
                               </RadioButton>
-                              <Button layoutX="436.0" layoutY="59.0" mnemonicParsing="false" style="-fx-background-color: #FF6666;" text="ยืนยัน">
+                              <Button layoutX="445.0" layoutY="59.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="134.0" style="-fx-background-color: #FF6666;" text="ยืนยัน" textFill="WHITE">
                                  <graphic>
                                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                            <image>
-                                               <Image url="@icons8_Restaurant_52px.png" />
+                                               <Image url="@1600.png" />
                                            </image>
                                        </ImageView>
                                  </graphic>
                                  <font>
-                                    <Font name="Layiji MaHaNiYom BAO" size="25.0" />
+                                    <Font name="Layiji MaHaNiYom BAO" size="30.0" />
                                  </font></Button>
+                              <Button layoutX="615.0" layoutY="59.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="141.0" style="-fx-background-color: #172a46;" text="ยกเลิก" textFill="RED">
+                                 <graphic>
+                                    <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@cancel.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="Layiji MaHaNiYom BAO" size="30.0" />
+                                 </font>
+                              </Button>
 
                            </children>
                         </AnchorPane>
