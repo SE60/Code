@@ -58,7 +58,7 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <Pagination layoutX="54.0" prefHeight="635.0" prefWidth="920.0" />                                  
+                                    <Pagination prefHeight="626.0" prefWidth="918.0" />                                  
                                  </children>
                               </AnchorPane>
                            </content>
@@ -93,7 +93,7 @@
                                     <Label fx:id="mid_2_3" layoutX="144.0" layoutY="516.0" prefHeight="17.0" prefWidth="72.0" text="Label" />
                                     <Label fx:id="cid_2_3" layoutX="252.0" layoutY="514.0" prefHeight="21.0" prefWidth="62.0" text="Label" />
                                     <Label fx:id="mid_2_4" layoutX="513.0" layoutY="511.0" prefHeight="27.0" prefWidth="112.0" text="Label" />
-                                    <Pagination prefHeight="635.0" prefWidth="920.0" />
+                                    <Pagination prefHeight="626.0" prefWidth="918.0" />
                                     <Label fx:id="cid_2_4" layoutX="637.0" layoutY="512.0" prefHeight="25.0" prefWidth="69.0" text="Label" />
                                                                         <!--List for mid-->
                                     <fx:define>
@@ -128,7 +128,7 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <Pagination prefHeight="635.0" prefWidth="920.0" />
+                                    <Pagination prefHeight="626.0" prefWidth="918.0" />
                                  </children>
                               </AnchorPane>
                            </content>
@@ -142,7 +142,7 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <Pagination prefHeight="635.0" prefWidth="920.0" />
+                                    <Pagination prefHeight="626.0" prefWidth="918.0" />
                                  </children>
                               </AnchorPane>
                            </content>
@@ -156,7 +156,7 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <Pagination prefHeight="635.0" prefWidth="920.0" />
+                                    <Pagination prefHeight="626.0" prefWidth="918.0" />
                                  </children>
                               </AnchorPane>
                            </content>
@@ -170,7 +170,7 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <Pagination prefHeight="635.0" prefWidth="920.0" />
+                                    <Pagination prefHeight="626.0" prefWidth="918.0" />
                                  </children>
                               </AnchorPane>
                            </content>
@@ -184,7 +184,7 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <Pagination prefHeight="635.0" prefWidth="920.0" />
+                                    <Pagination prefHeight="626.0" prefWidth="918.0" />
                                  </children>
                               </AnchorPane>
                            </content>
@@ -198,7 +198,7 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <Pagination prefHeight="635.0" prefWidth="920.0" />
+                                    <Pagination prefHeight="626.0" prefWidth="918.0" />
                                  </children>
                               </AnchorPane>
                            </content>
@@ -212,7 +212,7 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <Pagination prefHeight="635.0" prefWidth="920.0" />
+                                    <Pagination prefHeight="626.0" prefWidth="918.0" />
                                  </children>
                               </AnchorPane>
                            </content>
