@@ -29,7 +29,7 @@
                         </ImageView>
                         <Text fill="#433a7f" layoutX="1106.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะที่" wrappingWidth="62.26000213623047">
                            <font>
-                              <Font name="TH Sarabun New" size="44.0" />
+                              <Font name="TH Sarabun New" size="43.0" />
                            </font>
                         </Text>
                         <Label layoutX="1178.0" layoutY="3.0" prefHeight="62.0" prefWidth="62.0" textFill="#433a7f">
@@ -58,7 +58,7 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <Pagination prefHeight="635.0" prefWidth="920.0" />                                  
+                                    <Pagination layoutX="54.0" prefHeight="635.0" prefWidth="920.0" />                                  
                                  </children>
                               </AnchorPane>
                            </content>
