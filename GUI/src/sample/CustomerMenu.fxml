@@ -53,12 +53,102 @@
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="475.0" prefWidth="446.0">
                                  <children>
-                                    <ImageView fitHeight="695.0" fitWidth="1266.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fitHeight="695.0" fitWidth="984.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <Pagination prefHeight="626.0" prefWidth="918.0" />                                  
+                                    <Pagination prefHeight="626.0" prefWidth="918.0" />
+                                    <AnchorPane prefHeight="559.0" prefWidth="930.0">
+                                       <children>
+                                          <ImageView fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="TH Sarabun New" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                             <font>
+                                                <Font name="TH Sarabun New" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="559.0" prefWidth="930.0">
+                                       <children>
+                                          <ImageView fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="TH Sarabun New" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                             <font>
+                                                <Font name="TH Sarabun New" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="559.0" prefWidth="930.0">
+                                       <children>
+                                          <ImageView fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="TH Sarabun New" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                             <font>
+                                                <Font name="TH Sarabun New" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="559.0" prefWidth="930.0">
+                                       <children>
+                                          <ImageView fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="TH Sarabun New" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                             <font>
+                                                <Font name="TH Sarabun New" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="559.0" prefWidth="930.0">
+                                       <children>
+                                          <ImageView fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="TH Sarabun New" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                             <font>
+                                                <Font name="TH Sarabun New" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="559.0" prefWidth="930.0">
+                                       <children>
+                                          <ImageView fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
+                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="TH Sarabun New" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                             <font>
+                                                <Font name="TH Sarabun New" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>                                  
                                  </children>
                               </AnchorPane>
                            </content>
