@@ -15,13 +15,13 @@
 	-fx-background-radius: 7 7 0 0;
 	-fx-background-color: transparent;
 	-fx-border-color: transparent;
-	-fx-padding: 4 15 7 15;
+	-fx-padding: 6 15 15 15;
 	-fx-background-insets: 0;
 }
 
 #TabMenu .tab-header-area .tab .tab-label {
-	-fx-font: 20px THSarabunNew;
-	-fx-font-weight: bold;
+	-fx-font: 17px THSarabunNew;
+	-fx-font-weight: regular;
 	-fx-text-fill: #eac37d;
 }
 
