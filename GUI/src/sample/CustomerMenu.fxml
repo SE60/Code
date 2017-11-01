@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Text?>
 <?import java.util.ArrayList?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" styleClass="circle-pagination" stylesheets="@pagination.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.Main_Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.Main_Controller">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -46,7 +46,7 @@
                      </children></AnchorPane>
                </children>
             </VBox>
-            <AnchorPane layoutX="-1.0" layoutY="62.0" prefHeight="659.0" prefWidth="920.0">
+            <AnchorPane layoutX="-1.0" layoutY="62.0" prefHeight="659.0" prefWidth="920.0" styleClass="circle-pagination" stylesheets="@pagination.css">
                <children>
                   <TabPane id="TabMenu" prefHeight="664.0" prefWidth="918.0" stylesheets="@csss.css" tabClosingPolicy="UNAVAILABLE">
                      <tabs>
@@ -156,7 +156,7 @@
                         </Tab>
                         <Tab text="ทอด">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="684.0" prefWidth="934.0">
+                              <AnchorPane fx:id="Fried" minHeight="0.0" minWidth="0.0" prefHeight="684.0" prefWidth="934.0">
                                  <children>
                                     <ImageView fitHeight="695.0" fitWidth="1266.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -184,7 +184,6 @@
                                     <Label fx:id="mid_2_3" layoutX="144.0" layoutY="516.0" prefHeight="17.0" prefWidth="72.0" text="Label" />
                                     <Label fx:id="cid_2_3" layoutX="252.0" layoutY="514.0" prefHeight="21.0" prefWidth="62.0" text="Label" />
                                     <Label fx:id="mid_2_4" layoutX="513.0" layoutY="511.0" prefHeight="27.0" prefWidth="112.0" text="Label" />
-                                    <Pagination prefHeight="626.0" prefWidth="918.0" />
                                     <Label fx:id="cid_2_4" layoutX="637.0" layoutY="512.0" prefHeight="25.0" prefWidth="69.0" text="Label" />
                                                                         <!--List for mid-->
                                     <fx:define>
@@ -330,7 +329,7 @@
                               </Text>
                               <AnchorPane fx:id="A_2_AfterOrdered" layoutX="2.0" layoutY="198.0" prefHeight="415.0" prefWidth="350.0" style="-fx-background-color: #172a46;" visible="false">
                                  <children>
-                                    <JFXTextArea prefHeight="307.0" prefWidth="344.0" unFocusColor="TRANSPARENT" />
+                                    <JFXTextArea prefHeight="307.0" prefWidth="344.0" style="-fx-background-color: #172a46;" unFocusColor="TRANSPARENT" />
                                     <Label fx:id="ordered_1" layoutX="51.0" layoutY="14.0" prefHeight="47.0" prefWidth="244.0" textFill="#ffc369" />
                                     <Label fx:id="ordered_2" layoutX="51.0" layoutY="61.0" prefHeight="47.0" prefWidth="244.0" textFill="#ffc369" />
                                     <Label layoutX="51.0" layoutY="108.0" prefHeight="47.0" prefWidth="244.0" textFill="#ffc369" />
@@ -352,7 +351,7 @@
                                     </JFXButton>
                                  </children>
                               </AnchorPane>
-                              <AnchorPane fx:id="A_1_BeforeOrdered" layoutX="14.0" layoutY="236.0" prefHeight="254.0" prefWidth="338.0">
+                              <AnchorPane fx:id="A_1_BeforeOrdered" layoutX="14.0" layoutY="236.0" prefHeight="254.0" prefWidth="338.0" style="-fx-background-color: #172a46;">
                                  <children>
                                     <Text fill="#f0c56e" layoutX="27.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="กรุณากดรูปอาหารเพื่อ" textAlignment="CENTER">
                                        <font>

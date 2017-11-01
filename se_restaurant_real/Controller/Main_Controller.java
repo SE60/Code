@@ -19,6 +19,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.Pagination;
@@ -27,6 +28,8 @@ import javafx.scene.image.ImageView;
 import static javafx.scene.input.KeyCode.R;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.text.Text;
 import javafx.util.Callback;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -53,7 +56,7 @@ public class Main_Controller {
     @FXML private List<ImageView> imageViewList_2 ;    
     @FXML private List<Label> nameViewList_2 ;
     @FXML private List<Label> costViewList_2 ;
-    @FXML private AnchorPane A_2_AfterOrdered,A_1_BeforeOrdered;;
+    @FXML private AnchorPane A_2_AfterOrdered,A_1_BeforeOrdered,Fried;
     @FXML private Label ordered_1,ordered_2;
     @FXML
     private Pagination reccommendSlide;
@@ -99,7 +102,14 @@ public class Main_Controller {
        reccommendSlide.setPageFactory(new Callback<Integer,Node>() {
            @Override
            public Node call(Integer param){
-               return new ImageView(picture.loadPicture_Catalogue_1().get(param));
+//               ImageView iv=new ImageView(picture.loadPicture_Catalogue_1().get(param));
+//               Text text=new Text("Inffffffffffffffff");        
+//               StackPane pane=new StackPane();
+//               pane.getChildren().add(iv);
+//               pane.getChildren().add(text);
+               
+             return new ImageView(picture.loadPicture_Catalogue_1().get(param));
+             
            }
        });
        
