@@ -101,14 +101,14 @@
                               </AnchorPane>
                           </content>
                         </ScrollPane>
-                        <Label layoutX="102.0" layoutY="4.0" text="ลำดับโต๊ะที่สั่งอาหาร" textFill="#172a46">
-                           <font>
-                              <Font name="TH Sarabun New" size="51.0" />
-                           </font>
-                        </Label>
-                        <Text fill="#34255c" layoutX="26.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="•♪                          ♂•">
+                        <Text fill="#34255c" layoutX="26.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="•♪                        ♂•">
                            <font>
                               <Font name="{ White Festive }" size="56.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="92.0" layoutY="46.0" stroke="#232222" strokeType="OUTSIDE" text="ลำดับของโต๊ะที่สั่งอาหาร">
+                           <font>
+                              <Font name="Layiji MaHaNiYom BAO" size="40.0" />
                            </font>
                         </Text>
                      </children>

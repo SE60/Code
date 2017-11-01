@@ -50,7 +50,7 @@
 
 .table-view .column-header .label {
     -fx-font-size: 25pt;
-    -fx-font-family: "THSarabunNew";
+    -fx-font-family: "LayijiMahaniyomBao";
     -fx-text-fill: #e7cf86;
     -fx-alignment: center-left;
     -fx-opacity: 1;
@@ -104,7 +104,7 @@
     -fx-border-width: 2;
     -fx-background-radius: 0;
     -fx-background-color: #1d1d1d;
-    -fx-font-family: "THSarabunNew", Helvetica, Arial, sans-serif;
+    -fx-font-family: "THSarabunNew";
     -fx-font-size: 11pt;
     -fx-text-fill: #d8d8d8;
     -fx-background-insets: 0 0 0 0, 0, 1, 2;
