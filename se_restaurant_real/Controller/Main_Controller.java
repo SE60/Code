@@ -118,29 +118,421 @@ public class Main_Controller {
        
     }
     
-     @FXML
-    void pid_2_1_Clicked(MouseEvent event) {
-           A_1_BeforeOrdered.setVisible(false);
-           A_2_AfterOrdered.setVisible(true);
-           ordered_1.setText("1111111111111111111111");
-           
-     
-    }
-     @FXML
-    void pid_2_2_Clicked(MouseEvent event) {
-         ordered_2.setText("222222222222222222222");
-    }
     @FXML
     void pid_1_1_Clicked(MouseEvent event) {
-           A_1_BeforeOrdered.setVisible(false);
-           A_2_AfterOrdered.setVisible(true);
-           ordered_1.setText("1111111111111111111111");
+        A_1_BeforeOrdered.setVisible(false);
+        A_2_AfterOrdered.setVisible(true);
+        ordered_1.setText("1111111111111111111111");
     }
+
     @FXML
     void pid_1_2_Clicked(MouseEvent event) {
-           A_1_BeforeOrdered.setVisible(false);
-           A_2_AfterOrdered.setVisible(true);
-           ordered_2.setText("2222222222222222222222");
+        A_1_BeforeOrdered.setVisible(false);
+        A_2_AfterOrdered.setVisible(true);
+        ordered_2.setText("2222222222222222222222");
+    }
+
+
+    @FXML
+    void pid_2_1_Clicked(MouseEvent event) {
+        A_1_BeforeOrdered.setVisible(false);
+        A_2_AfterOrdered.setVisible(true);
+        ordered_1.setText("1111111111111111111111");
+    }
+
+    @FXML
+    void pid_2_2_Clicked(MouseEvent event) {
+        ordered_2.setText("222222222222222222222");
+    }
+
+    @FXML
+    void pid_2_3_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_2_4_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_2_5_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_2_6_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_2_7_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_2_8_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_2_9_Clicked(MouseEvent event) {
+
+    }
+    
+    @FXML
+    void pid_2_10_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_3_1_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_3_2_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_3_3_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_3_4_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_3_5_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_3_6_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_3_7_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_3_8_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_3_9_Clicked(MouseEvent event) {
+
+    }
+    
+    @FXML
+    void pid_3_10_Clicked(MouseEvent event) {
+
+    }   
+
+    @FXML
+    void pid_4_1_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_4_2_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_4_3_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_4_4_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_4_5_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_4_6_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_4_7_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_4_8_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_4_9_Clicked(MouseEvent event) {
+
+    }
+    
+    @FXML
+    void pid_4_10_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_5_1_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_5_2_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_5_3_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_5_4_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_5_5_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_5_6_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_5_7_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_5_8_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_5_9_Clicked(MouseEvent event) {
+
+    }
+    
+    @FXML
+    void pid_5_10_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_6_1_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_6_2_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_6_3_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_6_4_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_6_5_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_6_6_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_6_7_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_6_8_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_6_9_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_6_10_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_7_1_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_7_2_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_7_3_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_7_4_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_7_5_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_7_6_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_7_7_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_7_8_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_7_9_Clicked(MouseEvent event) {
+
+    }
+    
+    @FXML
+    void pid_7_10_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_8_1_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_8_2_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_8_3_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_8_4_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_8_5_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_8_6_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_8_7_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_8_8_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_8_9_Clicked(MouseEvent event) {
+
+    }
+    
+    @FXML
+    void pid_8_10_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_9_1_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_9_2_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_9_3_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_9_4_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_9_5_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_9_6_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_9_7_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_9_8_Clicked(MouseEvent event) {
+
+    }
+
+    @FXML
+    void pid_9_9_Clicked(MouseEvent event) {
+
+    }
+    
+    @FXML
+    void pid_9_10_Clicked(MouseEvent event) {
+
     }
     
 }
