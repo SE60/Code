@@ -13,6 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import java.util.ArrayList?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.Main_Controller">
    <children>
@@ -144,7 +145,15 @@
                                           <Label fx:id="cid_1_6" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
-                                                <fx:define>
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <Pagination fx:id="reccommendSlide" prefHeight="626.0" prefWidth="918.0" />                                  
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                                                                           <fx:define>
                                  <!--List for pid-->
                                 <ArrayList fx:id="pagiViewList_1">
                                     <fx:reference source="pagi_1_1" />
@@ -177,17 +186,8 @@
                                     <fx:reference source="cid_1_4" /> 
                                     <fx:reference source="cid_1_5" /> 
                                     <fx:reference source="cid_1_6" />            
-                                </ArrayList>
-                                
+                                </ArrayList>                              
                             </fx:define>
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </AnchorPane>
-                                    <Pagination fx:id="reccommendSlide" prefHeight="626.0" prefWidth="918.0" />                                  
-                                 </children>
-                              </AnchorPane>
-                           </content>
                         </Tab>
                         <Tab text="ทอด">
                            <content>
