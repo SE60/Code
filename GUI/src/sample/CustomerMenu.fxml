@@ -13,6 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import java.util.ArrayList?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.Main_Controller">
    <children>
@@ -60,126 +61,90 @@
                                     </ImageView>
                                     <AnchorPane fx:id="pagi_1_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_1_1" fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" onMouseClicked="#pid_1_1_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_1_1" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                          <ImageView fx:id="pid_1_1" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_1_1_Clicked" pickOnBounds="true" />
+                                          <Label fx:id="mid_1_1" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
-                                                <Font name="TH Sarabun New" size="24.0" />
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_1_1" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                          <Label fx:id="cid_1_1" contentDisplay="CENTER" layoutX="531.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
                                              <font>
-                                                <Font name="TH Sarabun New" size="24.0" />
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_1_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_1_2" fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" onMouseClicked="#pid_1_2_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_1_2" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                          <ImageView fx:id="pid_1_2" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_1_1_Clicked" pickOnBounds="true" />
+                                          <Label fx:id="mid_1_2" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
-                                                <Font name="TH Sarabun New" size="24.0" />
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_1_2" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                          <Label fx:id="cid_1_2" contentDisplay="CENTER" layoutX="531.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
                                              <font>
-                                                <Font name="TH Sarabun New" size="24.0" />
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_1_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_1_3" fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
-                                          <Label fx:id="mid_1_3" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                          <ImageView fx:id="pid_1_3" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_1_1_Clicked" pickOnBounds="true" />
+                                          <Label fx:id="mid_1_3" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
-                                                <Font name="TH Sarabun New" size="24.0" />
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_1_3" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                          <Label fx:id="cid_1_3" contentDisplay="CENTER" layoutX="531.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
                                              <font>
-                                                <Font name="TH Sarabun New" size="24.0" />
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_1_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_1_4" fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
-                                          <Label fx:id="mid_1_4" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                          <ImageView fx:id="pid_1_4" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_1_1_Clicked" pickOnBounds="true" />
+                                          <Label fx:id="mid_1_4" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
-                                                <Font name="TH Sarabun New" size="24.0" />
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_1_4" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                          <Label fx:id="cid_1_4" contentDisplay="CENTER" layoutX="531.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
                                              <font>
-                                                <Font name="TH Sarabun New" size="24.0" />
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_1_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_1_5" fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
-                                          <Label fx:id="mid_1_5" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                          <ImageView fx:id="pid_1_5" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_1_1_Clicked" pickOnBounds="true" />
+                                          <Label fx:id="mid_1_5" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
-                                                <Font name="TH Sarabun New" size="24.0" />
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_1_5" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                          <Label fx:id="cid_1_5" contentDisplay="CENTER" layoutX="531.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
                                              <font>
-                                                <Font name="TH Sarabun New" size="24.0" />
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_1_6" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_1_6" fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
-                                          <Label fx:id="mid_1_6" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                          <ImageView fx:id="pid_1_6" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_1_1_Clicked" pickOnBounds="true" />
+                                          <Label fx:id="mid_1_6" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
-                                                <Font name="TH Sarabun New" size="24.0" />
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_1_6" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                          <Label fx:id="cid_1_6" contentDisplay="CENTER" layoutX="531.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
                                              <font>
-                                                <Font name="TH Sarabun New" size="24.0" />
-                                                <fx:define>
-                                 <!--List for pid-->
-                                <ArrayList fx:id="pagiViewList_1">
-                                    <fx:reference source="pagi_1_1" />
-                                    <fx:reference source="pagi_1_2" />
-                                    <fx:reference source="pagi_1_3" />
-                                    <fx:reference source="pagi_1_4" /> 
-                                    <fx:reference source="pagi_1_5" /> 
-                                    <fx:reference source="pagi_1_6" />            
-                                </ArrayList>
-                                <ArrayList fx:id="imageViewList_1">
-                                    <fx:reference source="pid_1_1" />
-                                    <fx:reference source="pid_1_2" />
-                                    <fx:reference source="pid_1_3" />
-                                    <fx:reference source="pid_1_4" /> 
-                                    <fx:reference source="pid_1_5" /> 
-                                    <fx:reference source="pid_1_6" />            
-                                </ArrayList>
-                                <ArrayList fx:id="nameViewList_1">
-                                    <fx:reference source="mid_1_1" />
-                                    <fx:reference source="mid_1_2" />
-                                    <fx:reference source="mid_1_3" />
-                                    <fx:reference source="mid_1_4" /> 
-                                    <fx:reference source="mid_1_5" /> 
-                                    <fx:reference source="mid_1_6" />            
-                                </ArrayList>
-                                <ArrayList fx:id="costViewList_1">
-                                    <fx:reference source="cid_1_1" />
-                                    <fx:reference source="cid_1_2" />
-                                    <fx:reference source="cid_1_3" />
-                                    <fx:reference source="cid_1_4" /> 
-                                    <fx:reference source="cid_1_5" /> 
-                                    <fx:reference source="cid_1_6" />            
-                                </ArrayList>
-                                
-                            </fx:define>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                        </children>
