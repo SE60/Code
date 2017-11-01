@@ -4,6 +4,7 @@
 <?import com.jfoenix.controls.JFXTextArea?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
@@ -14,6 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import java.util.ArrayList?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.Main_Controller">
    <children>
@@ -1361,24 +1363,116 @@
                                     <Font name="TH Sarabun New" size="38.0" />
                                  </font>
                               </Text>
-                              <AnchorPane fx:id="A_2_AfterOrdered" layoutX="2.0" layoutY="198.0" prefHeight="415.0" prefWidth="350.0" style="-fx-background-color: #172a46;">
+                              <AnchorPane layoutX="2.0" layoutY="197.0" prefHeight="470.0" prefWidth="366.0">
                                  <children>
-                                    <JFXTextArea prefHeight="307.0" prefWidth="344.0" style="-fx-background-color: #172a46;" unFocusColor="TRANSPARENT" />
-                                    <Label fx:id="ordered_1" layoutX="18.0" layoutY="14.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                    <Label fx:id="ordered_2" layoutX="18.0" layoutY="61.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                    <Label layoutX="18.0" layoutY="108.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                    <Label layoutX="18.0" layoutY="155.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                    <Label layoutX="18.0" layoutY="202.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                    <Label layoutX="18.0" layoutY="249.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                    <Label layoutX="18.0" layoutY="296.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                    <Spinner layoutX="233.0" layoutY="24.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
-                                    <Spinner layoutX="233.0" layoutY="71.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
-                                    <Spinner layoutX="233.0" layoutY="118.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
-                                    <Spinner layoutX="233.0" layoutY="165.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
-                                    <Spinner layoutX="233.0" layoutY="212.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
-                                    <Spinner layoutX="233.0" layoutY="259.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
-                                    <Spinner layoutX="233.0" layoutY="306.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
-                                    <JFXButton fx:id="Boat" alignment="CENTER_RIGHT" layoutX="96.0" layoutY="346.0" prefHeight="54.0" prefWidth="167.0" ripplerFill="BLACK" style="-fx-background-color: #FF6666;" text="สั่งอาหารทันที" textFill="WHITE">
+                                    <ScrollPane hbarPolicy="NEVER" layoutY="1.0" prefHeight="377.0" prefWidth="366.0" stylesheets="@scrollbar.css">
+                                       <content>
+                                          <AnchorPane fx:id="A_2_AfterOrdered" prefHeight="917.0" prefWidth="354.0" style="-fx-background-color: #172a46;">
+                                             <children>
+                                                <JFXTextArea prefHeight="307.0" prefWidth="344.0" style="-fx-background-color: #172a46;" unFocusColor="TRANSPARENT" />
+                                                <Label fx:id="ordered_1" layoutX="28.0" layoutY="24.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label fx:id="ordered_2" layoutX="28.0" layoutY="71.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label layoutX="28.0" layoutY="117.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label layoutX="28.0" layoutY="164.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label layoutX="28.0" layoutY="211.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label layoutX="28.0" layoutY="248.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label layoutX="28.0" layoutY="290.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Spinner layoutX="243.0" layoutY="34.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <Spinner layoutX="243.0" layoutY="81.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <Spinner layoutX="243.0" layoutY="128.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <Spinner layoutX="243.0" layoutY="174.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <Spinner layoutX="243.0" layoutY="221.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <Spinner layoutX="243.0" layoutY="268.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <Spinner layoutX="243.0" layoutY="315.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label layoutX="28.0" layoutY="336.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label layoutX="28.0" layoutY="383.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label layoutX="28.0" layoutY="429.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label layoutX="28.0" layoutY="476.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label layoutX="28.0" layoutY="523.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label layoutX="28.0" layoutY="569.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label layoutX="28.0" layoutY="601.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Spinner layoutX="243.0" layoutY="346.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <Spinner layoutX="243.0" layoutY="393.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <Spinner layoutX="243.0" layoutY="439.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <Spinner layoutX="243.0" layoutY="486.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <Spinner layoutX="243.0" layoutY="533.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <Spinner layoutX="243.0" layoutY="579.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <Spinner layoutX="243.0" layoutY="626.0" prefHeight="26.0" prefWidth="62.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="443.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="583.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="316.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                   <image>
+                                                      <Image url="@Cancel_50px.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </ScrollPane>
+                                    <JFXButton fx:id="Boat" alignment="CENTER_RIGHT" layoutX="106.0" layoutY="397.0" prefHeight="54.0" prefWidth="167.0" ripplerFill="BLACK" style="-fx-background-color: #FF6666;" text="สั่งอาหารทันที" textFill="WHITE">
                                        <font>
                                           <Font name="TH Sarabun New Bold" size="24.0" />
                                        </font>
@@ -1390,41 +1484,6 @@
                                           </ImageView>
                                        </graphic>
                                     </JFXButton>
-                                    <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="306.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                                       <image>
-                                          <Image url="@Cancel_50px.png" />
-                                       </image>
-                                    </ImageView>
-                                    <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="306.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                                       <image>
-                                          <Image url="@Cancel_50px.png" />
-                                       </image>
-                                    </ImageView>
-                                    <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="306.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                                       <image>
-                                          <Image url="@Cancel_50px.png" />
-                                       </image>
-                                    </ImageView>
-                                    <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="306.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                                       <image>
-                                          <Image url="@Cancel_50px.png" />
-                                       </image>
-                                    </ImageView>
-                                    <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="306.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                                       <image>
-                                          <Image url="@Cancel_50px.png" />
-                                       </image>
-                                    </ImageView>
-                                    <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="306.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                                       <image>
-                                          <Image url="@Cancel_50px.png" />
-                                       </image>
-                                    </ImageView>
-                                    <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="306.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true" visible="false">
-                                       <image>
-                                          <Image url="@Cancel_50px.png" />
-                                       </image>
-                                    </ImageView>
                                  </children>
                               </AnchorPane>
                               <AnchorPane fx:id="A_1_BeforeOrdered" layoutX="14.0" layoutY="236.0" prefHeight="254.0" prefWidth="338.0" style="-fx-background-color: #172a46;" visible="false">
