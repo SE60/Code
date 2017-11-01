@@ -46,7 +46,7 @@
                      </children></AnchorPane>
                </children>
             </VBox>
-            <AnchorPane layoutX="-1.0" layoutY="62.0" prefHeight="659.0" prefWidth="920.0" styleClass="circle-pagination" stylesheets="@pagination.css">
+            <AnchorPane layoutX="-1.0" layoutY="62.0" prefHeight="667.0" prefWidth="920.0" styleClass="circle-pagination" stylesheets="@pagination.css">
                <children>
                   <TabPane id="TabMenu" prefHeight="664.0" prefWidth="918.0" stylesheets="@csss.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <tabs>
@@ -59,97 +59,133 @@
                                           <Image url="@264.jpg" />
                                        </image>
                                     </ImageView>
-                                    <Pagination fx:id="reccommendSlide" prefHeight="626.0" prefWidth="918.0" />
-                                    <AnchorPane prefHeight="559.0" prefWidth="930.0">
+                                    <AnchorPane fx:id="pagi_1_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
-                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                          <ImageView fx:id="pid_1_1" fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" onMouseClicked="#pid_1_1_Clicked" pickOnBounds="true" />
+                                          <Label fx:id="mid_1_1" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                          <Label fx:id="cid_1_1" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </AnchorPane>
-                                    <AnchorPane prefHeight="559.0" prefWidth="930.0">
+                                    <AnchorPane fx:id="pagi_1_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
-                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                          <ImageView fx:id="pid_1_2" fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" onMouseClicked="#pid_1_2_Clicked" pickOnBounds="true" />
+                                          <Label fx:id="mid_1_2" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                          <Label fx:id="cid_1_2" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </AnchorPane>
-                                    <AnchorPane prefHeight="559.0" prefWidth="930.0">
+                                    <AnchorPane fx:id="pagi_1_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
-                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                          <ImageView fx:id="pid_1_3" fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
+                                          <Label fx:id="mid_1_3" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                          <Label fx:id="cid_1_3" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </AnchorPane>
-                                    <AnchorPane prefHeight="559.0" prefWidth="930.0">
+                                    <AnchorPane fx:id="pagi_1_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
-                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                          <ImageView fx:id="pid_1_4" fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
+                                          <Label fx:id="mid_1_4" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                          <Label fx:id="cid_1_4" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </AnchorPane>
-                                    <AnchorPane prefHeight="559.0" prefWidth="930.0">
+                                    <AnchorPane fx:id="pagi_1_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
-                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                          <ImageView fx:id="pid_1_5" fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
+                                          <Label fx:id="mid_1_5" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                          <Label fx:id="cid_1_5" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
                                              </font>
                                           </Label>
                                        </children>
                                     </AnchorPane>
-                                    <AnchorPane prefHeight="559.0" prefWidth="930.0">
+                                    <AnchorPane fx:id="pagi_1_6" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
-                                          <Label alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
+                                          <ImageView fx:id="pid_1_6" fitHeight="479.0" fitWidth="773.0" layoutX="69.0" layoutY="28.0" pickOnBounds="true" />
+                                          <Label fx:id="mid_1_6" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
+                                          <Label fx:id="cid_1_6" contentDisplay="CENTER" layoutX="465.0" layoutY="507.0" prefHeight="30.0" prefWidth="328.0">
                                              <font>
                                                 <Font name="TH Sarabun New" size="24.0" />
+                                                <fx:define>
+                                 <!--List for pid-->
+                                <ArrayList fx:id="pagiViewList_1">
+                                    <fx:reference source="pagi_1_1" />
+                                    <fx:reference source="pagi_1_2" />
+                                    <fx:reference source="pagi_1_3" />
+                                    <fx:reference source="pagi_1_4" /> 
+                                    <fx:reference source="pagi_1_5" /> 
+                                    <fx:reference source="pagi_1_6" />            
+                                </ArrayList>
+                                <ArrayList fx:id="imageViewList_1">
+                                    <fx:reference source="pid_1_1" />
+                                    <fx:reference source="pid_1_2" />
+                                    <fx:reference source="pid_1_3" />
+                                    <fx:reference source="pid_1_4" /> 
+                                    <fx:reference source="pid_1_5" /> 
+                                    <fx:reference source="pid_1_6" />            
+                                </ArrayList>
+                                <ArrayList fx:id="nameViewList_1">
+                                    <fx:reference source="mid_1_1" />
+                                    <fx:reference source="mid_1_2" />
+                                    <fx:reference source="mid_1_3" />
+                                    <fx:reference source="mid_1_4" /> 
+                                    <fx:reference source="mid_1_5" /> 
+                                    <fx:reference source="mid_1_6" />            
+                                </ArrayList>
+                                <ArrayList fx:id="costViewList_1">
+                                    <fx:reference source="cid_1_1" />
+                                    <fx:reference source="cid_1_2" />
+                                    <fx:reference source="cid_1_3" />
+                                    <fx:reference source="cid_1_4" /> 
+                                    <fx:reference source="cid_1_5" /> 
+                                    <fx:reference source="cid_1_6" />            
+                                </ArrayList>
+                                
+                            </fx:define>
                                              </font>
                                           </Label>
                                        </children>
-                                    </AnchorPane>                                  
+                                    </AnchorPane>
+                                    <Pagination fx:id="reccommendSlide" prefHeight="626.0" prefWidth="918.0" />                                  
                                  </children>
                               </AnchorPane>
                            </content>

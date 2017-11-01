@@ -33,7 +33,8 @@ public class LoadPicture {
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=1",food_menu.class);
         for(food_menu q:q1.getResultList())
         {
-           File imgfile = new File(q.getImage());
+           File starting = new File(System.getProperty("user.dir"));
+           File imgfile = new File(starting,q.getImage());
            try {
                FileInputStream fin = new FileInputStream(imgfile);
                Image image=new Image(fin); 
@@ -56,7 +57,8 @@ public class LoadPicture {
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList())
         {
-           File imgfile = new File(q.getImage());
+           File starting = new File(System.getProperty("user.dir"));
+           File imgfile = new File(starting,q.getImage());
            try {
                FileInputStream fin = new FileInputStream(imgfile);
                Image image=new Image(fin); 
