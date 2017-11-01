@@ -82,15 +82,15 @@ public class Main_Controller {
        LoadMenuName name=new LoadMenuName();
        LoadCost cost=new LoadCost();
        LoadQuality quality=new LoadQuality();
-       for(int i=0;i<nameViewList_2.size();i++)
-       {
-           Image image=picture.loadPicture_Catalogue_2().get(i);
-           String mName=name.loadName_2().get(i);
-           Double ccost=cost.loadCost_2().get(i);
-           imageViewList_2.get(i).setImage(image);
-           nameViewList_2.get(i).setText(mName);
-           costViewList_2.get(i).setText(ccost.toString());
-       }  
+//       for(int i=0;i<nameViewList_2.size();i++)
+//       {
+//           Image image=picture.loadPicture_Catalogue_2().get(i);
+//           String mName=name.loadName_2().get(i);
+//           Double ccost=cost.loadCost_2().get(i);
+//           imageViewList_2.get(i).setImage(image);
+//           nameViewList_2.get(i).setText(mName);
+//           costViewList_2.get(i).setText(ccost.toString());
+//       }  
        for(int i=0;i<pagiViewList_1.size();i++)
        {
            Image image=picture.loadPicture_Catalogue_1().get(i);
