@@ -49,13 +49,10 @@ import se_restaurant_real.LoadQuality;
 public class Main_Controller {
     
     @FXML private Label text_1;
-    @FXML private ImageView pid_2_1;
-    @FXML private ImageView pid_2_2;
-    @FXML private ImageView pid_3_3;
-    @FXML private ImageView pid_4_4;
-    @FXML private List<ImageView> imageViewList_2 ;    
-    @FXML private List<Label> nameViewList_2 ;
-    @FXML private List<Label> costViewList_2 ;
+    @FXML private List<AnchorPane> pagiViewList_1 ;
+    @FXML private List<ImageView> imageViewList_1,imageViewList_2 ;    
+    @FXML private List<Label> nameViewList_1,nameViewList_2 ;
+    @FXML private List<Label> costViewList_1,costViewList_2 ;
     @FXML private AnchorPane A_2_AfterOrdered,A_1_BeforeOrdered,Fried;
     @FXML private Label ordered_1,ordered_2;
     @FXML
@@ -94,6 +91,15 @@ public class Main_Controller {
            nameViewList_2.get(i).setText(mName);
            costViewList_2.get(i).setText(ccost.toString());
        }  
+       for(int i=0;i<pagiViewList_1.size();i++)
+       {
+           Image image=picture.loadPicture_Catalogue_1().get(i);
+           String mName=name.loadName_1().get(i);
+           Double ccost=cost.loadCost_1().get(i);
+           imageViewList_1.get(i).setImage(image);
+           nameViewList_1.get(i).setText(mName);
+           costViewList_1.get(i).setText(ccost.toString());
+       }
        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
        EntityManager em=emf.createEntityManager();
        em.getTransaction().begin();
@@ -102,14 +108,8 @@ public class Main_Controller {
        reccommendSlide.setPageFactory(new Callback<Integer,Node>() {
            @Override
            public Node call(Integer param){
-//               ImageView iv=new ImageView(picture.loadPicture_Catalogue_1().get(param));
-//               Text text=new Text("Inffffffffffffffff");        
-//               StackPane pane=new StackPane();
-//               pane.getChildren().add(iv);
-//               pane.getChildren().add(text);
-               
-             return new ImageView(picture.loadPicture_Catalogue_1().get(param));
-             
+
+            return pagiViewList_1.get(param);
            }
        });
        
@@ -127,6 +127,17 @@ public class Main_Controller {
     void pid_2_2_Clicked(MouseEvent event) {
          ordered_2.setText("222222222222222222222");
     }
-    
+    @FXML
+    void pid_1_1_Clicked(MouseEvent event) {
+           A_1_BeforeOrdered.setVisible(false);
+           A_2_AfterOrdered.setVisible(true);
+           ordered_1.setText("1111111111111111111111");
+    }
+    @FXML
+    void pid_1_2_Clicked(MouseEvent event) {
+           A_1_BeforeOrdered.setVisible(false);
+           A_2_AfterOrdered.setVisible(true);
+           ordered_2.setText("2222222222222222222222");
+    }
     
 }
