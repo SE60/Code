@@ -98,7 +98,9 @@ public class Main_Controller {
            Double ccost=cost.loadCost_1().get(i);
            imageViewList_1.get(i).setImage(image);
            nameViewList_1.get(i).setText(mName);
+           nameViewList_1.get(i).setVisible(false);            
            costViewList_1.get(i).setText(ccost.toString());
+           costViewList_1.get(i).setVisible(false);
        }
        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
        EntityManager em=emf.createEntityManager();
@@ -108,7 +110,8 @@ public class Main_Controller {
        reccommendSlide.setPageFactory(new Callback<Integer,Node>() {
            @Override
            public Node call(Integer param){
-
+            nameViewList_1.get(param).setVisible(true);
+            costViewList_1.get(param).setVisible(true);
             return pagiViewList_1.get(param);
            }
        });
