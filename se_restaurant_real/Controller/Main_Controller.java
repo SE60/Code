@@ -19,12 +19,18 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
+import javafx.scene.control.Pagination;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import static javafx.scene.input.KeyCode.R;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.text.Text;
+import javafx.util.Callback;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -34,6 +40,7 @@ import se_restaurant_real.LoadCost;
 import se_restaurant_real.Main;
 import se_restaurant_real.LoadMenuName;
 import se_restaurant_real.LoadPicture;
+import se_restaurant_real.LoadQuality;
 
 /**
  *
@@ -49,8 +56,10 @@ public class Main_Controller {
     @FXML private List<ImageView> imageViewList_2 ;    
     @FXML private List<Label> nameViewList_2 ;
     @FXML private List<Label> costViewList_2 ;
-    @FXML private AnchorPane A_2_AfterOrdered,A_1_BeforeOrdered;;
+    @FXML private AnchorPane A_2_AfterOrdered,A_1_BeforeOrdered,Fried;
     @FXML private Label ordered_1,ordered_2;
+    @FXML
+    private Pagination reccommendSlide;
     
     @FXML
     protected void initialize()
@@ -75,6 +84,7 @@ public class Main_Controller {
        LoadPicture picture=new LoadPicture();
        LoadMenuName name=new LoadMenuName();
        LoadCost cost=new LoadCost();
+       LoadQuality quality=new LoadQuality();
        for(int i=0;i<nameViewList_2.size();i++)
        {
            Image image=picture.loadPicture_Catalogue_2().get(i);
@@ -84,6 +94,24 @@ public class Main_Controller {
            nameViewList_2.get(i).setText(mName);
            costViewList_2.get(i).setText(ccost.toString());
        }  
+       EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+       EntityManager em=emf.createEntityManager();
+       em.getTransaction().begin();
+       TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=1",food_menu.class);
+       reccommendSlide.setPageCount(quality.loadQuality_1());
+       reccommendSlide.setPageFactory(new Callback<Integer,Node>() {
+           @Override
+           public Node call(Integer param){
+//               ImageView iv=new ImageView(picture.loadPicture_Catalogue_1().get(param));
+//               Text text=new Text("Inffffffffffffffff");        
+//               StackPane pane=new StackPane();
+//               pane.getChildren().add(iv);
+//               pane.getChildren().add(text);
+               
+             return new ImageView(picture.loadPicture_Catalogue_1().get(param));
+             
+           }
+       });
        
     }
     
@@ -99,5 +127,6 @@ public class Main_Controller {
     void pid_2_2_Clicked(MouseEvent event) {
          ordered_2.setText("222222222222222222222");
     }
-
+    
+    
 }
