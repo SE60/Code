@@ -24,7 +24,22 @@
                                   </ImageView>
                   <AnchorPane layoutX="2.0" layoutY="3.0" prefHeight="658.0" prefWidth="1171.0">
                      <children>
-                        <ScrollPane layoutX="25.0" layoutY="77.0" prefHeight="557.0" prefWidth="1007.0" stylesheets="@table.css">
+                        <ImageView fitHeight="191.0" fitWidth="338.0" layoutX="479.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@frame0.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="561.0" fitWidth="215.0" layoutX="87.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@frameeee.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="561.0" fitWidth="215.0" layoutX="1140.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                           <image>
+                              <Image url="@frameeee.png" />
+                           </image>
+                        </ImageView>
+                        <ScrollPane layoutX="138.0" layoutY="150.0" prefHeight="464.0" prefWidth="1007.0" stylesheets="@table.css">
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="951.0" prefWidth="987.0">
                                  <children>
@@ -34,7 +49,7 @@
                                         <TableColumn prefWidth="769.60009765625" text="โต๊ะ" />
                                       </columns>
                                     </TableView>
-                                    <AnchorPane layoutX="6.0" layoutY="58.0" prefHeight="891.0" prefWidth="437.0" style="-fx-background-color: #172a46;">
+                                    <AnchorPane layoutX="6.0" layoutY="58.0" prefHeight="891.0" prefWidth="437.0" style="-fx-background-color: #172a46;" visible="false">
                                        <children>
                                           <Label alignment="CENTER" prefHeight="51.0" prefWidth="417.0" text="1" textAlignment="CENTER" textFill="WHITE">
                                              <font>
@@ -63,7 +78,7 @@
                                           </Label>
                                        </children>
                                     </AnchorPane>
-                                    <AnchorPane layoutX="441.0" layoutY="58.0" prefHeight="898.0" prefWidth="545.0" style="-fx-background-color: #172a46;">
+                                    <AnchorPane layoutX="441.0" layoutY="58.0" prefHeight="898.0" prefWidth="545.0" style="-fx-background-color: #172a46;" visible="false">
                                        <children>
                                           <Label alignment="CENTER" prefHeight="51.0" prefWidth="417.0" text="1" textAlignment="CENTER" textFill="WHITE">
                                              <font>
@@ -101,12 +116,7 @@
                               </AnchorPane>
                           </content>
                         </ScrollPane>
-                        <Text fill="#34255c" layoutX="26.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="•♪                        ♂•">
-                           <font>
-                              <Font name="{ White Festive }" size="56.0" />
-                           </font>
-                        </Text>
-                        <Text fill="WHITE" layoutX="92.0" layoutY="46.0" stroke="#232222" strokeType="OUTSIDE" text="ลำดับของโต๊ะที่สั่งอาหาร">
+                        <Text fill="#e7cf86" layoutX="497.0" layoutY="119.0" stroke="#172a46" strokeType="OUTSIDE" strokeWidth="2.0" text="ลำดับของโต๊ะที่สั่งอาหาร">
                            <font>
                               <Font name="Layiji MaHaNiYom BAO" size="40.0" />
                            </font>

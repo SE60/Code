@@ -37,7 +37,7 @@
 }
 
 .table-view .column-header, .table-view .filler {
-    -fx-size: 35;
+    -fx-size: 50;
     -fx-border-width: 0 0 1 0;
     -fx-background-color: transparent;
     -fx-border-color: 
@@ -49,8 +49,8 @@
 }
 
 .table-view .column-header .label {
-    -fx-font-size: 25pt;
-    -fx-font-family: "LayijiMahaniyomBao";
+    -fx-font-size: 22pt;
+    -fx-font-family: "THSarabunNew";
     -fx-text-fill: #e7cf86;
     -fx-alignment: center-left;
     -fx-opacity: 1;
