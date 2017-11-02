@@ -15,7 +15,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import java.util.ArrayList?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.Main_Controller">
    <children>
@@ -1363,11 +1362,11 @@
                                     <Font name="TH Sarabun New" size="38.0" />
                                  </font>
                               </Text>
-                              <AnchorPane layoutX="2.0" layoutY="197.0" prefHeight="470.0" prefWidth="366.0">
+                              <AnchorPane fx:id="A_2_AfterOrdered" layoutX="2.0" layoutY="197.0" prefHeight="470.0" prefWidth="366.0" visible="false">
                                  <children>
                                     <ScrollPane hbarPolicy="NEVER" layoutY="1.0" prefHeight="377.0" prefWidth="366.0" stylesheets="@scrollbar.css">
                                        <content>
-                                          <AnchorPane fx:id="A_2_AfterOrdered" prefHeight="917.0" prefWidth="354.0" style="-fx-background-color: #172a46;">
+                                          <AnchorPane prefHeight="917.0" prefWidth="354.0" style="-fx-background-color: #172a46;">
                                              <children>
                                                 <JFXTextArea prefHeight="307.0" prefWidth="344.0" style="-fx-background-color: #172a46;" unFocusColor="TRANSPARENT" />
                                                 <Label fx:id="ordered_1" layoutX="28.0" layoutY="24.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
@@ -1486,7 +1485,7 @@
                                     </JFXButton>
                                  </children>
                               </AnchorPane>
-                              <AnchorPane fx:id="A_1_BeforeOrdered" layoutX="14.0" layoutY="236.0" prefHeight="254.0" prefWidth="338.0" style="-fx-background-color: #172a46;" visible="false">
+                              <AnchorPane fx:id="A_1_BeforeOrdered" layoutX="14.0" layoutY="236.0" prefHeight="254.0" prefWidth="334.0" style="-fx-background-color: #172a46;">
                                  <children>
                                     <Text fill="#f0c56e" layoutX="27.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="กรุณากดรูปอาหารเพื่อ" textAlignment="CENTER">
                                        <font>
