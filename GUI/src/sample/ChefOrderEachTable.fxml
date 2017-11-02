@@ -24,7 +24,7 @@
                                 <Image url="@264.jpg" />
                             </image>
                         </ImageView>
-                  <ImageView fitHeight="143.0" fitWidth="248.0" layoutX="502.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="143.0" fitWidth="248.0" layoutX="506.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@frame1.png" />
                      </image>
@@ -184,11 +184,11 @@
                                         <Image url="@b-g-hotel-6.jpg" />
                                     </image>
                                 </ImageView>
-                                <Text fill="#34255c" layoutX="351.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="{ CE☺Restaurant }">
-                                    <font>
-                                        <Font name="{ White Festive }" size="56.0" />
-                                    </font>
-                                </Text>
+                        <ImageView fitHeight="77.0" fitWidth="717.0" layoutX="280.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@logo.png" />
+                           </image>
+                        </ImageView>
                             </children></AnchorPane>
                     </children>
                 </VBox>
