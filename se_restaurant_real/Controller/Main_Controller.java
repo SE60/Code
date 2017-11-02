@@ -56,12 +56,26 @@ public class Main_Controller {
     @FXML private List<Label> nameViewList_1,nameViewList_2 ;
     @FXML private List<Label> costViewList_1,costViewList_2 ;
     @FXML private AnchorPane A_2_AfterOrdered,A_1_BeforeOrdered,Fried;
-    @FXML private Label ordered_1,ordered_2;
+    @FXML private Label ordered_1,ordered_2,ordered_3,ordered_4,ordered_5,ordered_6,ordered_7,ordered_8,ordered_9,ordered_10,ordered_11,ordered_12,ordered_13,ordered_14;
     @FXML private Pagination reccommendSlide;
-    @FXML private Spinner<Integer> inc_1;
-    @FXML private ImageView del_1;
+    @FXML private Spinner<Integer> inc_1,inc_2,inc_3,inc_4,inc_5,inc_6,inc_7,inc_8,inc_9,inc_10,inc_11,inc_12,inc_13,inc_14;
+    @FXML private ImageView del_1,del_2,del_3,del_4,del_5,del_6,del_7,del_8,del_9,del_10,del_11,del_12,del_13,del_14;
     
-    SpinnerValueFactory<Integer> spinValue = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, 1);
+    SpinnerValueFactory<Integer> spinValue1 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue3 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue4 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue5 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue6 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue7 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue8 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue9 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue10 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue11 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue12 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue13 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    SpinnerValueFactory<Integer> spinValue14 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
+    
     
     
     @FXML
@@ -129,7 +143,7 @@ public class Main_Controller {
         A_2_AfterOrdered.setVisible(true);
         ordered_1.setText("1111111111111111111111");
         inc_1.setVisible(true);
-        inc_1.setValueFactory(spinValue);
+        inc_1.setValueFactory(spinValue1);
         del_1.setVisible(true);
         
     }
@@ -139,6 +153,49 @@ public class Main_Controller {
         A_1_BeforeOrdered.setVisible(false);
         A_2_AfterOrdered.setVisible(true);
         ordered_2.setText("2222222222222222222222");
+        inc_2.setVisible(true);
+        inc_2.setValueFactory(spinValue2);
+        del_2.setVisible(true);
+    }
+    
+    @FXML
+    void pid_1_3_Clicked(MouseEvent event) {
+        A_1_BeforeOrdered.setVisible(false);
+        A_2_AfterOrdered.setVisible(true);
+        ordered_3.setText("3333333333333333333333");
+        inc_3.setVisible(true);
+        inc_3.setValueFactory(spinValue3);
+        del_3.setVisible(true);
+    }
+    
+    @FXML
+    void pid_1_4_Clicked(MouseEvent event) {
+        A_1_BeforeOrdered.setVisible(false);
+        A_2_AfterOrdered.setVisible(true);
+        ordered_4.setText("44444444444444444444444");
+        inc_4.setVisible(true);
+        inc_4.setValueFactory(spinValue4);
+        del_4.setVisible(true);
+    }
+    
+    @FXML
+    void pid_1_5_Clicked(MouseEvent event) {
+        A_1_BeforeOrdered.setVisible(false);
+        A_2_AfterOrdered.setVisible(true);
+        ordered_5.setText("55555555555555555555555");
+        inc_5.setVisible(true);
+        inc_5.setValueFactory(spinValue5);
+        del_5.setVisible(true);
+    }
+    
+    @FXML
+    void pid_1_6_Clicked(MouseEvent event) {
+        A_1_BeforeOrdered.setVisible(false);
+        A_2_AfterOrdered.setVisible(true);
+        ordered_6.setText("6666666666666666666666");
+        inc_6.setVisible(true);
+        inc_6.setValueFactory(spinValue6);
+        del_6.setVisible(true);
     }
 
 
