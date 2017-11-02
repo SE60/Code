@@ -41,6 +41,8 @@ import se_restaurant_real.Main;
 import se_restaurant_real.LoadMenuName;
 import se_restaurant_real.LoadPicture;
 import se_restaurant_real.LoadQuality;
+import javafx.scene.control.Spinner;
+import javafx.scene.control.SpinnerValueFactory;
 
 /**
  *
@@ -55,13 +57,16 @@ public class Main_Controller {
     @FXML private List<Label> costViewList_1,costViewList_2 ;
     @FXML private AnchorPane A_2_AfterOrdered,A_1_BeforeOrdered,Fried;
     @FXML private Label ordered_1,ordered_2;
-    @FXML
-    private Pagination reccommendSlide;
+    @FXML private Pagination reccommendSlide;
+    @FXML private Spinner<Integer> inc_1;
+    @FXML private ImageView del_1;
+    
+    SpinnerValueFactory<Integer> spinValue = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, 1);
+    
     
     @FXML
     protected void initialize()
     {
-        
 //        try{
 //        Statement st = DBConnection.conn.createStatement();
 //        String sql = ("SELECT picture FROM food_menu");
@@ -123,6 +128,10 @@ public class Main_Controller {
         A_1_BeforeOrdered.setVisible(false);
         A_2_AfterOrdered.setVisible(true);
         ordered_1.setText("1111111111111111111111");
+        inc_1.setVisible(true);
+        inc_1.setValueFactory(spinValue);
+        del_1.setVisible(true);
+        
     }
 
     @FXML
