@@ -81,7 +81,8 @@ public class LoadPicture {
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=3",food_menu.class);
         for(food_menu q:q1.getResultList())
         {
-           File imgfile = new File(q.getImage());
+           File starting = new File(System.getProperty("user.dir"));
+           File imgfile = new File(starting,q.getImage());
            try {
                FileInputStream fin = new FileInputStream(imgfile);
                Image image=new Image(fin); 
@@ -104,7 +105,8 @@ public class LoadPicture {
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=4",food_menu.class);
         for(food_menu q:q1.getResultList())
         {
-           File imgfile = new File(q.getImage());
+           File starting = new File(System.getProperty("user.dir"));
+           File imgfile = new File(starting,q.getImage());
            try {
                FileInputStream fin = new FileInputStream(imgfile);
                Image image=new Image(fin); 
@@ -127,7 +129,8 @@ public class LoadPicture {
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=5",food_menu.class);
         for(food_menu q:q1.getResultList())
         {
-           File imgfile = new File(q.getImage());
+           File starting = new File(System.getProperty("user.dir"));
+           File imgfile = new File(starting,q.getImage());
            try {
                FileInputStream fin = new FileInputStream(imgfile);
                Image image=new Image(fin); 
@@ -150,7 +153,8 @@ public class LoadPicture {
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=6",food_menu.class);
         for(food_menu q:q1.getResultList())
         {
-           File imgfile = new File(q.getImage());
+           File starting = new File(System.getProperty("user.dir"));
+           File imgfile = new File(starting,q.getImage());
            try {
                FileInputStream fin = new FileInputStream(imgfile);
                Image image=new Image(fin); 
@@ -173,7 +177,8 @@ public class LoadPicture {
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=7",food_menu.class);
         for(food_menu q:q1.getResultList())
         {
-           File imgfile = new File(q.getImage());
+           File starting = new File(System.getProperty("user.dir"));
+           File imgfile = new File(starting,q.getImage());
            try {
                FileInputStream fin = new FileInputStream(imgfile);
                Image image=new Image(fin); 
@@ -196,7 +201,8 @@ public class LoadPicture {
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=8",food_menu.class);
         for(food_menu q:q1.getResultList())
         {
-           File imgfile = new File(q.getImage());
+           File starting = new File(System.getProperty("user.dir"));
+           File imgfile = new File(starting,q.getImage());
            try {
                FileInputStream fin = new FileInputStream(imgfile);
                Image image=new Image(fin); 
@@ -219,7 +225,8 @@ public class LoadPicture {
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=9",food_menu.class);
         for(food_menu q:q1.getResultList())
         {
-           File imgfile = new File(q.getImage());
+           File starting = new File(System.getProperty("user.dir"));
+           File imgfile = new File(starting,q.getImage());
            try {
                FileInputStream fin = new FileInputStream(imgfile);
                Image image=new Image(fin); 
