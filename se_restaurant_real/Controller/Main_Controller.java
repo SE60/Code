@@ -92,7 +92,21 @@ public class Main_Controller {
        LoadMenuName name=new LoadMenuName();
        LoadCost cost=new LoadCost();
        LoadQuality quality=new LoadQuality();    
-
+       //--------------------Set  spinner value factory-----------------------//
+           increaseViewList.get(0).setValueFactory(spinValue1);
+           increaseViewList.get(1).setValueFactory(spinValue2);
+           increaseViewList.get(2).setValueFactory(spinValue3);
+           increaseViewList.get(3).setValueFactory(spinValue4);
+           increaseViewList.get(4).setValueFactory(spinValue5);
+           increaseViewList.get(5).setValueFactory(spinValue6);
+           increaseViewList.get(6).setValueFactory(spinValue7);
+           increaseViewList.get(7).setValueFactory(spinValue8);
+           increaseViewList.get(8).setValueFactory(spinValue9);
+           increaseViewList.get(9).setValueFactory(spinValue10);
+           increaseViewList.get(10).setValueFactory(spinValue11);
+           increaseViewList.get(11).setValueFactory(spinValue12);
+           increaseViewList.get(12).setValueFactory(spinValue13);
+           increaseViewList.get(13).setValueFactory(spinValue14);
        //----------------load picture name cost form database-----------------//
        for(int i=0;i<pagiViewList_1.size();i++)
        {
@@ -100,6 +114,7 @@ public class Main_Controller {
            String mName=name.loadName_1().get(i);
            Double ccost=cost.loadCost_1().get(i);
            imageViewList_1.get(i).setImage(image);
+           imageViewList_1.get(i).setVisible(false);
            nameViewList_1.get(i).setText(mName);
            nameViewList_1.get(i).setVisible(false);            
            costViewList_1.get(i).setText(ccost.toString());
@@ -111,6 +126,7 @@ public class Main_Controller {
            String mName=name.loadName_2().get(i);
            Double ccost=cost.loadCost_2().get(i);
            imageViewList_2.get(i).setImage(image);
+           imageViewList_2.get(i).setVisible(false);
            nameViewList_2.get(i).setText(mName);
            nameViewList_2.get(i).setVisible(false);            
            costViewList_2.get(i).setText(ccost.toString());
@@ -122,6 +138,7 @@ public class Main_Controller {
            String mName=name.loadName_3().get(i);
            Double ccost=cost.loadCost_3().get(i);
            imageViewList_3.get(i).setImage(image);
+           imageViewList_3.get(i).setVisible(false);
            nameViewList_3.get(i).setText(mName);
            nameViewList_3.get(i).setVisible(false);            
            costViewList_3.get(i).setText(ccost.toString());
@@ -133,6 +150,7 @@ public class Main_Controller {
            String mName=name.loadName_4().get(i);
            Double ccost=cost.loadCost_4().get(i);
            imageViewList_4.get(i).setImage(image);
+           imageViewList_4.get(i).setVisible(false);
            nameViewList_4.get(i).setText(mName);
            nameViewList_4.get(i).setVisible(false);            
            costViewList_4.get(i).setText(ccost.toString());
@@ -144,6 +162,7 @@ public class Main_Controller {
            String mName=name.loadName_5().get(i);
            Double ccost=cost.loadCost_5().get(i);
            imageViewList_5.get(i).setImage(image);
+           imageViewList_5.get(i).setVisible(false);
            nameViewList_5.get(i).setText(mName);
            nameViewList_5.get(i).setVisible(false);            
            costViewList_5.get(i).setText(ccost.toString());
@@ -155,6 +174,7 @@ public class Main_Controller {
            String mName=name.loadName_6().get(i);
            Double ccost=cost.loadCost_6().get(i);
            imageViewList_6.get(i).setImage(image);
+           imageViewList_6.get(i).setVisible(false);
            nameViewList_6.get(i).setText(mName);
            nameViewList_6.get(i).setVisible(false);            
            costViewList_6.get(i).setText(ccost.toString());
@@ -166,6 +186,7 @@ public class Main_Controller {
            String mName=name.loadName_7().get(i);
            Double ccost=cost.loadCost_7().get(i);
            imageViewList_7.get(i).setImage(image);
+           imageViewList_7.get(i).setVisible(false);
            nameViewList_7.get(i).setText(mName);
            nameViewList_7.get(i).setVisible(false);            
            costViewList_7.get(i).setText(ccost.toString());
@@ -177,6 +198,7 @@ public class Main_Controller {
            String mName=name.loadName_8().get(i);
            Double ccost=cost.loadCost_8().get(i);
            imageViewList_8.get(i).setImage(image);
+           imageViewList_8.get(i).setVisible(false);
            nameViewList_8.get(i).setText(mName);
            nameViewList_8.get(i).setVisible(false);            
            costViewList_8.get(i).setText(ccost.toString());
@@ -188,12 +210,13 @@ public class Main_Controller {
            String mName=name.loadName_9().get(i);
            Double ccost=cost.loadCost_9().get(i);
            imageViewList_9.get(i).setImage(image);
+           imageViewList_9.get(i).setVisible(false);
            nameViewList_9.get(i).setText(mName);
            nameViewList_9.get(i).setVisible(false);            
            costViewList_9.get(i).setText(ccost.toString());
            costViewList_9.get(i).setVisible(false);
        }
-//-------------------------------------set paginationPane------------------------------------------------//     
+//-------------------------------------Set pagination pane------------------------------------------------//     
        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
        EntityManager em=emf.createEntityManager();
        em.getTransaction().begin();
@@ -202,7 +225,8 @@ public class Main_Controller {
        slideViewList.get(0).setPageCount(quality.loadQuality_1());
        slideViewList.get(0).setPageFactory(new Callback<Integer,Node>() {
            @Override
-           public Node call(Integer param){          
+           public Node call(Integer param){     
+            imageViewList_1.get(param).setVisible(true);
             nameViewList_1.get(param).setVisible(true);
             costViewList_1.get(param).setVisible(true);
             return pagiViewList_1.get(param);
@@ -213,7 +237,9 @@ public class Main_Controller {
        slideViewList.get(1).setPageCount(quality.loadQuality_2()/2);
        slideViewList.get(1).setPageFactory(new Callback<Integer,Node>() {
            @Override
-           public Node call(Integer param){   
+           public Node call(Integer param){ 
+             imageViewList_2.get(param*2).setVisible(true);
+             imageViewList_2.get(param*2+1).setVisible(true);
              nameViewList_2.get(param*2).setVisible(true);
              nameViewList_2.get(param*2+1).setVisible(true);
              costViewList_2.get(param*2).setVisible(true);
@@ -227,6 +253,8 @@ public class Main_Controller {
        slideViewList.get(2).setPageFactory(new Callback<Integer,Node>() {
            @Override
            public Node call(Integer param){   
+             imageViewList_3.get(param*2).setVisible(true);
+             imageViewList_3.get(param*2+1).setVisible(true);
              nameViewList_3.get(param*2).setVisible(true);
              nameViewList_3.get(param*2+1).setVisible(true);
              costViewList_3.get(param*2).setVisible(true);
@@ -240,6 +268,8 @@ public class Main_Controller {
        slideViewList.get(3).setPageFactory(new Callback<Integer,Node>() {
            @Override
            public Node call(Integer param){   
+             imageViewList_4.get(param*2).setVisible(true);
+             imageViewList_4.get(param*2+1).setVisible(true);
              nameViewList_4.get(param*2).setVisible(true);
              nameViewList_4.get(param*2+1).setVisible(true);
              costViewList_4.get(param*2).setVisible(true);
@@ -253,6 +283,8 @@ public class Main_Controller {
        slideViewList.get(4).setPageFactory(new Callback<Integer,Node>() {
            @Override
            public Node call(Integer param){   
+             imageViewList_5.get(param*2).setVisible(true);
+             imageViewList_5.get(param*2+1).setVisible(true);
              nameViewList_5.get(param*2).setVisible(true);
              nameViewList_5.get(param*2+1).setVisible(true);
              costViewList_5.get(param*2).setVisible(true);
@@ -266,6 +298,8 @@ public class Main_Controller {
        slideViewList.get(5).setPageFactory(new Callback<Integer,Node>() {
            @Override
            public Node call(Integer param){   
+             imageViewList_6.get(param*2).setVisible(true);
+             imageViewList_6.get(param*2+1).setVisible(true);
              nameViewList_6.get(param*2).setVisible(true);
              nameViewList_6.get(param*2+1).setVisible(true);
              costViewList_6.get(param*2).setVisible(true);
@@ -279,6 +313,8 @@ public class Main_Controller {
        slideViewList.get(6).setPageFactory(new Callback<Integer,Node>() {
            @Override
            public Node call(Integer param){   
+             imageViewList_7.get(param*2).setVisible(true);
+             imageViewList_7.get(param*2+1).setVisible(true);
              nameViewList_7.get(param*2).setVisible(true);
              nameViewList_7.get(param*2+1).setVisible(true);
              costViewList_7.get(param*2).setVisible(true);
@@ -292,6 +328,8 @@ public class Main_Controller {
        slideViewList.get(7).setPageFactory(new Callback<Integer,Node>() {
            @Override
            public Node call(Integer param){   
+             imageViewList_8.get(param*2).setVisible(true);
+             imageViewList_8.get(param*2+1).setVisible(true);
              nameViewList_8.get(param*2).setVisible(true);
              nameViewList_8.get(param*2+1).setVisible(true);
              costViewList_8.get(param*2).setVisible(true);
@@ -305,6 +343,8 @@ public class Main_Controller {
        slideViewList.get(8).setPageFactory(new Callback<Integer,Node>() {
            @Override
            public Node call(Integer param){   
+             imageViewList_9.get(param*2).setVisible(true);
+             imageViewList_9.get(param*2+1).setVisible(true);
              nameViewList_9.get(param*2).setVisible(true);
              nameViewList_9.get(param*2+1).setVisible(true);
              costViewList_9.get(param*2).setVisible(true);
@@ -329,10 +369,13 @@ public class Main_Controller {
     }
 
 //-----------------Ordered Check Method-----------------------//
-    public void checkOrdered(){
+    public void checkOrdered(String name){
         for(int i=0;i<orderedViewList.size();i++){
             if(orderedViewList.get(i).getText()==""){
-                
+                orderedViewList.get(i).setText(name);
+                increaseViewList.get(i).setVisible(true);
+                deleteViewList.get(0).setVisible(true);
+                break;
             }
         }
     }
@@ -343,11 +386,7 @@ public class Main_Controller {
         SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
         A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
         A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();       
-        orderedViewList.get(0).setText("1111111111111111111111");
-        checkOrdered();
-        increaseViewList.get(0).setVisible(true);
-        increaseViewList.get(0).setValueFactory(spinValue1);
-        deleteViewList.get(0).setVisible(true);
+        checkOrdered("11111111");
         
     }
 
