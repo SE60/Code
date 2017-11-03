@@ -15,20 +15,16 @@ import javafx.scene.control.Label;
  * @author l3oat
  */
 public class LoadNameOrdered {
-    @FXML private List<Label> orderedViewList;
-    ArrayList<String> aName=new ArrayList<String>();
-    int i=0;
-    public LoadNameOrdered(List<Label> orderedViewList) {
-        this.orderedViewList = orderedViewList;
+    private List<Label> nameViewList;
+    private int pid=0;
+
+    public LoadNameOrdered(int pid,List<Label> nameViewList){
+        this.nameViewList=nameViewList;
+        this.pid=pid;
+    }
+    public String getName(){
+        return nameViewList.get(pid).getText();
     }
     
-    public ArrayList<String> loadName(){
-        for(int i=0;i<14;i++){           
-            if(orderedViewList.get(i).getText()!=""){          
-                aName.add(orderedViewList.get(i).getText());
-                System.out.println("Add : "+aName.get(i));
-            }      
-        }
-        return aName;     
-    }
+    
 }
