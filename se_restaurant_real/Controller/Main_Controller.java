@@ -46,6 +46,7 @@ import se_restaurant_real.LoadPicture;
 import se_restaurant_real.LoadQuality;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
+import se_restaurant_real.DupicateOrdered;
 import se_restaurant_real.LoadNameOrdered;
 import se_restaurant_real.SetPageOrdered;
 
@@ -357,62 +358,98 @@ public class Main_Controller {
     
     @FXML
     void ordered_Clicked(MouseEvent event) {
-        LoadNameOrdered name=new LoadNameOrdered(orderedViewList);
         ArrayList<String> aName=new ArrayList<String>();
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
         //Ordered ordered=new food_menu(ca,arr[0],price,arr[2]);
-        aName=name.loadName();
         System.out.println(aName);
         
     }
 
 //-----------------Ordered Check Method-----------------------//
     public void checkOrdered(String name){
-        for(int i=0;i<orderedViewList.size();i++){
-            if(orderedViewList.get(i).getText()==""){
-                orderedViewList.get(i).setText(name);
-                increaseViewList.get(i).setVisible(true);
-                deleteViewList.get(0).setVisible(true);
-                break;
+        DupicateOrdered dupicateOrdered=new DupicateOrdered(orderedViewList,name);
+        if(!dupicateOrdered.isDupicate())
+            for(int i=0;i<orderedViewList.size();i++){
+                if(orderedViewList.get(i).getText()== ""){
+                    orderedViewList.get(i).setText(name);
+                    increaseViewList.get(i).setVisible(true);
+                    deleteViewList.get(i).setVisible(true);
+                    break;
+                }
             }
-        }
     }
 //-----------------Picture Clicked Method--------------------//
             
     @FXML
     void pid_1_1_Clicked(MouseEvent event) {
+        
+        //----------Change page if orderedViewList not empty--------------//
         SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
         A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
-        A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();       
-        checkOrdered("11111111");
+        A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
+        //--------------------Find menu name-----------------------------//
+        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(0,nameViewList_1);
+        checkOrdered(loadNameOrdered.getName());
         
     }
 
     @FXML
     void pid_1_2_Clicked(MouseEvent event) {
-
+        //----------Change page if orderedViewList not empty--------------//
+        SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
+        A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
+        A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
+        //--------------------Find menu name-----------------------------//
+        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(1,nameViewList_1);
+        checkOrdered(loadNameOrdered.getName());
     }
     
     @FXML
     void pid_1_3_Clicked(MouseEvent event) {
+        //----------Change page if orderedViewList not empty--------------//
+        SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
+        A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
+        A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
+        //--------------------Find menu name-----------------------------//
+        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(2,nameViewList_1);
+        checkOrdered(loadNameOrdered.getName());
 
     }
     
     @FXML
     void pid_1_4_Clicked(MouseEvent event) {
+        //----------Change page if orderedViewList not empty--------------//
+        SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
+        A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
+        A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
+        //--------------------Find menu name-----------------------------//
+        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(3,nameViewList_1);
+        checkOrdered(loadNameOrdered.getName());
 
     }
     
     @FXML
     void pid_1_5_Clicked(MouseEvent event) {
-
+        //----------Change page if orderedViewList not empty--------------//
+        SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
+        A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
+        A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
+        //--------------------Find menu name-----------------------------//
+        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(4,nameViewList_1);
+        checkOrdered(loadNameOrdered.getName());
     }
     
     @FXML
     void pid_1_6_Clicked(MouseEvent event) {
-
+        //----------Change page if orderedViewList not empty--------------//
+        SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
+        A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
+        A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
+        //--------------------Find menu name-----------------------------//
+        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(5,nameViewList_1);
+        checkOrdered(loadNameOrdered.getName());
     }
 
 
