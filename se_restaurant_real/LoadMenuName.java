@@ -31,7 +31,7 @@ public class LoadMenuName {
         return obj;      
     }
     public ArrayList<String> loadName_2(){
-        ArrayList<String> obj = new ArrayList<String>();
+        ArrayList<String> obj = new ArrayList<String>();   
         
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
         EntityManager em=emf.createEntityManager();
@@ -47,7 +47,7 @@ public class LoadMenuName {
         
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
         EntityManager em=emf.createEntityManager();
-        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
+        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=3",food_menu.class);
         for(food_menu q:q1.getResultList()){
             String mName=q.getmName();
             obj.add(mName);          
@@ -59,7 +59,7 @@ public class LoadMenuName {
         
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
         EntityManager em=emf.createEntityManager();
-        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
+        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=4",food_menu.class);
         for(food_menu q:q1.getResultList()){
             String mName=q.getmName();
             obj.add(mName);          
@@ -71,7 +71,7 @@ public class LoadMenuName {
         
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
         EntityManager em=emf.createEntityManager();
-        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
+        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=5",food_menu.class);
         for(food_menu q:q1.getResultList()){
             String mName=q.getmName();
             obj.add(mName);          
@@ -83,7 +83,7 @@ public class LoadMenuName {
         
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
         EntityManager em=emf.createEntityManager();
-        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
+        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=6",food_menu.class);
         for(food_menu q:q1.getResultList()){
             String mName=q.getmName();
             obj.add(mName);          
@@ -95,7 +95,7 @@ public class LoadMenuName {
         
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
         EntityManager em=emf.createEntityManager();
-        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
+        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=7",food_menu.class);
         for(food_menu q:q1.getResultList()){
             String mName=q.getmName();
             obj.add(mName);          
@@ -107,7 +107,7 @@ public class LoadMenuName {
         
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
         EntityManager em=emf.createEntityManager();
-        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
+        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=8",food_menu.class);
         for(food_menu q:q1.getResultList()){
             String mName=q.getmName();
             obj.add(mName);          
@@ -119,7 +119,7 @@ public class LoadMenuName {
         
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
         EntityManager em=emf.createEntityManager();
-        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
+        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=9",food_menu.class);
         for(food_menu q:q1.getResultList()){
             String mName=q.getmName();
             obj.add(mName);          

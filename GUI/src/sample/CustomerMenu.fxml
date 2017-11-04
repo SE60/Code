@@ -150,7 +150,7 @@
                                           </Label>
                                        </children>
                                     </AnchorPane>
-                                    <Pagination fx:id="reccommendSlide" prefHeight="626.0" prefWidth="918.0" />                                  
+                                    <Pagination fx:id="Slide_1" prefHeight="626.0" prefWidth="918.0" />                                  
                                  </children>
                               </AnchorPane>
                            </content>
@@ -192,7 +192,7 @@
                         </Tab>
                         <Tab text="ทอด">
                            <content>
-                              <AnchorPane fx:id="Fried" minHeight="0.0" minWidth="0.0" prefHeight="684.0" prefWidth="934.0" style="-fx-background-color: #4F4F4F;">
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="684.0" prefWidth="934.0" style="-fx-background-color: #4F4F4F;">
                                  <children>
                                     <ImageView fitHeight="695.0" fitWidth="984.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -333,6 +333,52 @@
                                  </children>
                               </AnchorPane>
                            </content>
+                           <fx:define>
+                                 <!--List for pid-->
+                                <ArrayList fx:id="pagiViewList_2">
+                                    <fx:reference source="pagi_2_1" />
+                                    <fx:reference source="pagi_2_2" />
+                                    <fx:reference source="pagi_2_3" />
+                                    <fx:reference source="pagi_2_4" /> 
+                                    <fx:reference source="pagi_2_5" />           
+                                </ArrayList>
+                                <ArrayList fx:id="imageViewList_2">
+                                    <fx:reference source="pid_2_1" />
+                                    <fx:reference source="pid_2_2" />
+                                    <fx:reference source="pid_2_3" />
+                                    <fx:reference source="pid_2_4" /> 
+                                    <fx:reference source="pid_2_5" /> 
+                                    <fx:reference source="pid_2_6" /> 
+                                    <fx:reference source="pid_2_7" /> 
+                                    <fx:reference source="pid_2_8" /> 
+                                    <fx:reference source="pid_2_9" /> 
+                                    <fx:reference source="pid_2_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="nameViewList_2">
+                                    <fx:reference source="mid_2_1" />
+                                    <fx:reference source="mid_2_2" />
+                                    <fx:reference source="mid_2_3" />
+                                    <fx:reference source="mid_2_4" /> 
+                                    <fx:reference source="mid_2_5" /> 
+                                    <fx:reference source="mid_2_6" />   
+                                    <fx:reference source="mid_2_7" />  
+                                    <fx:reference source="mid_2_8" />
+                                    <fx:reference source="mid_2_9" />
+                                    <fx:reference source="mid_2_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="costViewList_2">
+                                    <fx:reference source="cid_2_1" />
+                                    <fx:reference source="cid_2_2" />
+                                    <fx:reference source="cid_2_3" />
+                                    <fx:reference source="cid_2_4" /> 
+                                    <fx:reference source="cid_2_5" /> 
+                                    <fx:reference source="cid_2_6" /> 
+                                    <fx:reference source="cid_2_7" />
+                                    <fx:reference source="cid_2_8" />
+                                    <fx:reference source="cid_2_9" />
+                                    <fx:reference source="cid_2_10" />           
+                                </ArrayList>                              
+                            </fx:define>
                         </Tab>
                         <Tab text="แกง">
                            <content>
@@ -477,6 +523,52 @@
                                  </children>
                               </AnchorPane>
                            </content>
+                           <fx:define>
+                                 <!--List for pid-->
+                                <ArrayList fx:id="pagiViewList_3">
+                                    <fx:reference source="pagi_3_1" />
+                                    <fx:reference source="pagi_3_2" />
+                                    <fx:reference source="pagi_3_3" />
+                                    <fx:reference source="pagi_3_4" /> 
+                                    <fx:reference source="pagi_3_5" />           
+                                </ArrayList>
+                                <ArrayList fx:id="imageViewList_3">
+                                    <fx:reference source="pid_3_1" />
+                                    <fx:reference source="pid_3_2" />
+                                    <fx:reference source="pid_3_3" />
+                                    <fx:reference source="pid_3_4" /> 
+                                    <fx:reference source="pid_3_5" /> 
+                                    <fx:reference source="pid_3_6" /> 
+                                    <fx:reference source="pid_3_7" /> 
+                                    <fx:reference source="pid_3_8" /> 
+                                    <fx:reference source="pid_3_9" /> 
+                                    <fx:reference source="pid_3_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="nameViewList_3">
+                                    <fx:reference source="mid_3_1" />
+                                    <fx:reference source="mid_3_2" />
+                                    <fx:reference source="mid_3_3" />
+                                    <fx:reference source="mid_3_4" /> 
+                                    <fx:reference source="mid_3_5" /> 
+                                    <fx:reference source="mid_3_6" />   
+                                    <fx:reference source="mid_3_7" />  
+                                    <fx:reference source="mid_3_8" />
+                                    <fx:reference source="mid_3_9" />
+                                    <fx:reference source="mid_3_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="costViewList_3">
+                                    <fx:reference source="cid_3_1" />
+                                    <fx:reference source="cid_3_2" />
+                                    <fx:reference source="cid_3_3" />
+                                    <fx:reference source="cid_3_4" /> 
+                                    <fx:reference source="cid_3_5" /> 
+                                    <fx:reference source="cid_3_6" /> 
+                                    <fx:reference source="cid_3_7" />
+                                    <fx:reference source="cid_3_8" />
+                                    <fx:reference source="cid_3_9" />
+                                    <fx:reference source="cid_3_10" />           
+                                </ArrayList>                              
+                            </fx:define>
                         </Tab>
                         <Tab text="ต้มจืด">
                            <content>
@@ -621,6 +713,52 @@
                                  </children>
                               </AnchorPane>
                            </content>
+                           <fx:define>
+                                 <!--List for pid-->
+                                <ArrayList fx:id="pagiViewList_4">
+                                    <fx:reference source="pagi_4_1" />
+                                    <fx:reference source="pagi_4_2" />
+                                    <fx:reference source="pagi_4_3" />
+                                    <fx:reference source="pagi_4_4" /> 
+                                    <fx:reference source="pagi_4_5" />           
+                                </ArrayList>
+                                <ArrayList fx:id="imageViewList_4">
+                                    <fx:reference source="pid_4_1" />
+                                    <fx:reference source="pid_4_2" />
+                                    <fx:reference source="pid_4_3" />
+                                    <fx:reference source="pid_4_4" /> 
+                                    <fx:reference source="pid_4_5" /> 
+                                    <fx:reference source="pid_4_6" /> 
+                                    <fx:reference source="pid_4_7" /> 
+                                    <fx:reference source="pid_4_8" /> 
+                                    <fx:reference source="pid_4_9" /> 
+                                    <fx:reference source="pid_4_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="nameViewList_4">
+                                    <fx:reference source="mid_4_1" />
+                                    <fx:reference source="mid_4_2" />
+                                    <fx:reference source="mid_4_3" />
+                                    <fx:reference source="mid_4_4" /> 
+                                    <fx:reference source="mid_4_5" /> 
+                                    <fx:reference source="mid_4_6" />   
+                                    <fx:reference source="mid_4_7" />  
+                                    <fx:reference source="mid_4_8" />
+                                    <fx:reference source="mid_4_9" />
+                                    <fx:reference source="mid_4_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="costViewList_4">
+                                    <fx:reference source="cid_4_1" />
+                                    <fx:reference source="cid_4_2" />
+                                    <fx:reference source="cid_4_3" />
+                                    <fx:reference source="cid_4_4" /> 
+                                    <fx:reference source="cid_4_5" /> 
+                                    <fx:reference source="cid_4_6" /> 
+                                    <fx:reference source="cid_4_7" />
+                                    <fx:reference source="cid_4_8" />
+                                    <fx:reference source="cid_4_9" />
+                                    <fx:reference source="cid_4_10" />           
+                                </ArrayList>                              
+                            </fx:define>
                         </Tab>
                         <Tab text="ต้มยำ">
                            <content>
@@ -765,6 +903,52 @@
                                  </children>
                               </AnchorPane>
                            </content>
+                           <fx:define>
+                                 <!--List for pid-->
+                                <ArrayList fx:id="pagiViewList_5">
+                                    <fx:reference source="pagi_5_1" />
+                                    <fx:reference source="pagi_5_2" />
+                                    <fx:reference source="pagi_5_3" />
+                                    <fx:reference source="pagi_5_4" /> 
+                                    <fx:reference source="pagi_5_5" />           
+                                </ArrayList>
+                                <ArrayList fx:id="imageViewList_5">
+                                    <fx:reference source="pid_5_1" />
+                                    <fx:reference source="pid_5_2" />
+                                    <fx:reference source="pid_5_3" />
+                                    <fx:reference source="pid_5_4" /> 
+                                    <fx:reference source="pid_5_5" /> 
+                                    <fx:reference source="pid_5_6" /> 
+                                    <fx:reference source="pid_5_7" /> 
+                                    <fx:reference source="pid_5_8" /> 
+                                    <fx:reference source="pid_5_9" /> 
+                                    <fx:reference source="pid_5_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="nameViewList_5">
+                                    <fx:reference source="mid_5_1" />
+                                    <fx:reference source="mid_5_2" />
+                                    <fx:reference source="mid_5_3" />
+                                    <fx:reference source="mid_5_4" /> 
+                                    <fx:reference source="mid_5_5" /> 
+                                    <fx:reference source="mid_5_6" />   
+                                    <fx:reference source="mid_5_7" />  
+                                    <fx:reference source="mid_5_8" />
+                                    <fx:reference source="mid_5_9" />
+                                    <fx:reference source="mid_5_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="costViewList_5">
+                                    <fx:reference source="cid_5_1" />
+                                    <fx:reference source="cid_5_2" />
+                                    <fx:reference source="cid_5_3" />
+                                    <fx:reference source="cid_5_4" /> 
+                                    <fx:reference source="cid_5_5" /> 
+                                    <fx:reference source="cid_5_6" /> 
+                                    <fx:reference source="cid_5_7" />
+                                    <fx:reference source="cid_5_8" />
+                                    <fx:reference source="cid_5_9" />
+                                    <fx:reference source="cid_5_10" />           
+                                </ArrayList>                              
+                            </fx:define>
                         </Tab>
                         <Tab text="ส้มตำ">
                            <content>
@@ -909,6 +1093,52 @@
                                  </children>
                               </AnchorPane>
                            </content>
+                           <fx:define>
+                                 <!--List for pid-->
+                                <ArrayList fx:id="pagiViewList_6">
+                                    <fx:reference source="pagi_6_1" />
+                                    <fx:reference source="pagi_6_2" />
+                                    <fx:reference source="pagi_6_3" />
+                                    <fx:reference source="pagi_6_4" /> 
+                                    <fx:reference source="pagi_6_5" />           
+                                </ArrayList>
+                                <ArrayList fx:id="imageViewList_6">
+                                    <fx:reference source="pid_6_1" />
+                                    <fx:reference source="pid_6_2" />
+                                    <fx:reference source="pid_6_3" />
+                                    <fx:reference source="pid_6_4" /> 
+                                    <fx:reference source="pid_6_5" /> 
+                                    <fx:reference source="pid_6_6" /> 
+                                    <fx:reference source="pid_6_7" /> 
+                                    <fx:reference source="pid_6_8" /> 
+                                    <fx:reference source="pid_6_9" /> 
+                                    <fx:reference source="pid_6_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="nameViewList_6">
+                                    <fx:reference source="mid_6_1" />
+                                    <fx:reference source="mid_6_2" />
+                                    <fx:reference source="mid_6_3" />
+                                    <fx:reference source="mid_6_4" /> 
+                                    <fx:reference source="mid_6_5" /> 
+                                    <fx:reference source="mid_6_6" />   
+                                    <fx:reference source="mid_6_7" />  
+                                    <fx:reference source="mid_6_8" />
+                                    <fx:reference source="mid_6_9" />
+                                    <fx:reference source="mid_6_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="costViewList_6">
+                                    <fx:reference source="cid_6_1" />
+                                    <fx:reference source="cid_6_2" />
+                                    <fx:reference source="cid_6_3" />
+                                    <fx:reference source="cid_6_4" /> 
+                                    <fx:reference source="cid_6_5" /> 
+                                    <fx:reference source="cid_6_6" /> 
+                                    <fx:reference source="cid_6_7" />
+                                    <fx:reference source="cid_6_8" />
+                                    <fx:reference source="cid_6_9" />
+                                    <fx:reference source="cid_6_10" />           
+                                </ArrayList>                              
+                            </fx:define>
                         </Tab>
                         <Tab text="จานเดียว">
                            <content>
@@ -1053,6 +1283,52 @@
                                  </children>
                               </AnchorPane>
                            </content>
+                           <fx:define>
+                                 <!--List for pid-->
+                                <ArrayList fx:id="pagiViewList_7">
+                                    <fx:reference source="pagi_7_1" />
+                                    <fx:reference source="pagi_7_2" />
+                                    <fx:reference source="pagi_7_3" />
+                                    <fx:reference source="pagi_7_4" /> 
+                                    <fx:reference source="pagi_7_5" />           
+                                </ArrayList>
+                                <ArrayList fx:id="imageViewList_7">
+                                    <fx:reference source="pid_7_1" />
+                                    <fx:reference source="pid_7_2" />
+                                    <fx:reference source="pid_7_3" />
+                                    <fx:reference source="pid_7_4" /> 
+                                    <fx:reference source="pid_7_5" /> 
+                                    <fx:reference source="pid_7_6" /> 
+                                    <fx:reference source="pid_7_7" /> 
+                                    <fx:reference source="pid_7_8" /> 
+                                    <fx:reference source="pid_7_9" /> 
+                                    <fx:reference source="pid_7_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="nameViewList_7">
+                                    <fx:reference source="mid_7_1" />
+                                    <fx:reference source="mid_7_2" />
+                                    <fx:reference source="mid_7_3" />
+                                    <fx:reference source="mid_7_4" /> 
+                                    <fx:reference source="mid_7_5" /> 
+                                    <fx:reference source="mid_7_6" />   
+                                    <fx:reference source="mid_7_7" />  
+                                    <fx:reference source="mid_7_8" />
+                                    <fx:reference source="mid_7_9" />
+                                    <fx:reference source="mid_7_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="costViewList_7">
+                                    <fx:reference source="cid_7_1" />
+                                    <fx:reference source="cid_7_2" />
+                                    <fx:reference source="cid_7_3" />
+                                    <fx:reference source="cid_7_4" /> 
+                                    <fx:reference source="cid_7_5" /> 
+                                    <fx:reference source="cid_7_6" /> 
+                                    <fx:reference source="cid_7_7" />
+                                    <fx:reference source="cid_7_8" />
+                                    <fx:reference source="cid_7_9" />
+                                    <fx:reference source="cid_7_10" />           
+                                </ArrayList>                              
+                            </fx:define>
                         </Tab>
                         <Tab text="เครื่องดื่ม">
                            <content>
@@ -1197,6 +1473,52 @@
                                  </children>
                               </AnchorPane>
                            </content>
+                           <fx:define>
+                                 <!--List for pid-->
+                                <ArrayList fx:id="pagiViewList_8">
+                                    <fx:reference source="pagi_8_1" />
+                                    <fx:reference source="pagi_8_2" />
+                                    <fx:reference source="pagi_8_3" />
+                                    <fx:reference source="pagi_8_4" /> 
+                                    <fx:reference source="pagi_8_5" />           
+                                </ArrayList>
+                                <ArrayList fx:id="imageViewList_8">
+                                    <fx:reference source="pid_8_1" />
+                                    <fx:reference source="pid_8_2" />
+                                    <fx:reference source="pid_8_3" />
+                                    <fx:reference source="pid_8_4" /> 
+                                    <fx:reference source="pid_8_5" /> 
+                                    <fx:reference source="pid_8_6" /> 
+                                    <fx:reference source="pid_8_7" /> 
+                                    <fx:reference source="pid_8_8" /> 
+                                    <fx:reference source="pid_8_9" /> 
+                                    <fx:reference source="pid_8_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="nameViewList_8">
+                                    <fx:reference source="mid_8_1" />
+                                    <fx:reference source="mid_8_2" />
+                                    <fx:reference source="mid_8_3" />
+                                    <fx:reference source="mid_8_4" /> 
+                                    <fx:reference source="mid_8_5" /> 
+                                    <fx:reference source="mid_8_6" />   
+                                    <fx:reference source="mid_8_7" />  
+                                    <fx:reference source="mid_8_8" />
+                                    <fx:reference source="mid_8_9" />
+                                    <fx:reference source="mid_8_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="costViewList_8">
+                                    <fx:reference source="cid_8_1" />
+                                    <fx:reference source="cid_8_2" />
+                                    <fx:reference source="cid_8_3" />
+                                    <fx:reference source="cid_8_4" /> 
+                                    <fx:reference source="cid_8_5" /> 
+                                    <fx:reference source="cid_8_6" /> 
+                                    <fx:reference source="cid_8_7" />
+                                    <fx:reference source="cid_8_8" />
+                                    <fx:reference source="cid_8_9" />
+                                    <fx:reference source="cid_8_10" />           
+                                </ArrayList>                              
+                            </fx:define>
                         </Tab>
                         <Tab text="ของหวาน">
                            <content>
@@ -1341,12 +1663,71 @@
                                  </children>
                               </AnchorPane>
                            </content>
+                           <fx:define>
+                                 <!--List for pid-->
+                                <ArrayList fx:id="pagiViewList_9">
+                                    <fx:reference source="pagi_9_1" />
+                                    <fx:reference source="pagi_9_2" />
+                                    <fx:reference source="pagi_9_3" />
+                                    <fx:reference source="pagi_9_4" /> 
+                                    <fx:reference source="pagi_9_5" />           
+                                </ArrayList>
+                                <ArrayList fx:id="imageViewList_9">
+                                    <fx:reference source="pid_9_1" />
+                                    <fx:reference source="pid_9_2" />
+                                    <fx:reference source="pid_9_3" />
+                                    <fx:reference source="pid_9_4" /> 
+                                    <fx:reference source="pid_9_5" /> 
+                                    <fx:reference source="pid_9_6" /> 
+                                    <fx:reference source="pid_9_7" /> 
+                                    <fx:reference source="pid_9_8" /> 
+                                    <fx:reference source="pid_9_9" /> 
+                                    <fx:reference source="pid_9_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="nameViewList_9">
+                                    <fx:reference source="mid_9_1" />
+                                    <fx:reference source="mid_9_2" />
+                                    <fx:reference source="mid_9_3" />
+                                    <fx:reference source="mid_9_4" /> 
+                                    <fx:reference source="mid_9_5" /> 
+                                    <fx:reference source="mid_9_6" />   
+                                    <fx:reference source="mid_9_7" />  
+                                    <fx:reference source="mid_9_8" />
+                                    <fx:reference source="mid_9_9" />
+                                    <fx:reference source="mid_9_10" />       
+                                </ArrayList>
+                                <ArrayList fx:id="costViewList_9">
+                                    <fx:reference source="cid_9_1" />
+                                    <fx:reference source="cid_9_2" />
+                                    <fx:reference source="cid_9_3" />
+                                    <fx:reference source="cid_9_4" /> 
+                                    <fx:reference source="cid_9_5" /> 
+                                    <fx:reference source="cid_9_6" /> 
+                                    <fx:reference source="cid_9_7" />
+                                    <fx:reference source="cid_9_8" />
+                                    <fx:reference source="cid_9_9" />
+                                    <fx:reference source="cid_9_10" />           
+                                </ArrayList>                              
+                            </fx:define>
                         </Tab>
                      </tabs>
+                   <fx:define>
+                                <ArrayList fx:id="slideViewList">
+                                    <fx:reference source="Slide_1" />
+                                    <fx:reference source="Slide_2" />
+                                    <fx:reference source="Slide_3" />
+                                    <fx:reference source="Slide_4" />
+                                    <fx:reference source="Slide_5" />
+                                    <fx:reference source="Slide_6" />
+                                    <fx:reference source="Slide_7" />
+                                    <fx:reference source="Slide_8" />
+                                    <fx:reference source="Slide_9" />
+                                </ArrayList>                              
+                            </fx:define>
                   </TabPane>
                </children>
             </AnchorPane>
-            <HBox layoutX="914.0" layoutY="62.0" prefHeight="667.0" prefWidth="370.0" style="-fx-background-color: #ffffff; -fx-border-image-width: 2;">
+            <HBox layoutX="914.0" layoutY="62.0" prefHeight="668.0" prefWidth="357.0" style="-fx-background-color: #ffffff; -fx-border-image-width: 2;">
                <children>
                   <AnchorPane prefHeight="701.0" prefWidth="374.0">
                      <children>
@@ -1471,7 +1852,7 @@
                                           </AnchorPane>
                                        </content>
                                     </ScrollPane>
-                                    <JFXButton fx:id="Boat" alignment="CENTER_RIGHT" layoutX="106.0" layoutY="397.0" prefHeight="54.0" prefWidth="167.0" ripplerFill="BLACK" style="-fx-background-color: #FF6666;" text="สั่งอาหารทันที" textFill="WHITE">
+                                    <JFXButton alignment="CENTER_RIGHT" layoutX="106.0" layoutY="397.0" onMouseClicked="#ordered_Clicked" prefHeight="54.0" prefWidth="167.0" ripplerFill="BLACK" style="-fx-background-color: #FF6666;" text="สั่งอาหารทันที" textFill="WHITE">
                                        <font>
                                           <Font name="TH Sarabun New Bold" size="24.0" />
                                        </font>
@@ -1484,6 +1865,60 @@
                                        </graphic>
                                     </JFXButton>
                                  </children>
+                            <fx:define>
+                                 <ArrayList fx:id="orderedViewList">
+                                    <fx:reference source="ordered_1" />
+                                    <fx:reference source="ordered_2" />
+                                    <fx:reference source="ordered_3" />
+                                    <fx:reference source="ordered_4" />
+                                    <fx:reference source="ordered_5" />
+                                    <fx:reference source="ordered_6" />
+                                    <fx:reference source="ordered_7" />
+                                    <fx:reference source="ordered_8" />
+                                    <fx:reference source="ordered_9" />
+                                    <fx:reference source="ordered_10" />
+                                    <fx:reference source="ordered_11" />
+                                    <fx:reference source="ordered_12" />
+                                    <fx:reference source="ordered_13" />
+                                    <fx:reference source="ordered_14" />                                            
+                                </ArrayList>                              
+                            </fx:define>
+                            <fx:define>
+                                 <ArrayList fx:id="increaseViewList">
+                                    <fx:reference source="inc_1" />
+                                    <fx:reference source="inc_2" />
+                                    <fx:reference source="inc_3" />
+                                    <fx:reference source="inc_4" />
+                                    <fx:reference source="inc_5" />
+                                    <fx:reference source="inc_6" />
+                                    <fx:reference source="inc_7" />
+                                    <fx:reference source="inc_8" />
+                                    <fx:reference source="inc_9" />
+                                    <fx:reference source="inc_10" />
+                                    <fx:reference source="inc_11" />
+                                    <fx:reference source="inc_12" />
+                                    <fx:reference source="inc_13" />
+                                    <fx:reference source="inc_14" />                                         
+                                </ArrayList>                              
+                            </fx:define>
+                            <fx:define>
+                                 <ArrayList fx:id="deleteViewList">
+                                    <fx:reference source="del_1" />     
+                                    <fx:reference source="del_2" /> 
+                                    <fx:reference source="del_3" /> 
+                                    <fx:reference source="del_4" /> 
+                                    <fx:reference source="del_5" /> 
+                                    <fx:reference source="del_6" /> 
+                                    <fx:reference source="del_7" /> 
+                                    <fx:reference source="del_8" /> 
+                                    <fx:reference source="del_9" /> 
+                                    <fx:reference source="del_10" /> 
+                                    <fx:reference source="del_11" /> 
+                                    <fx:reference source="del_12" /> 
+                                    <fx:reference source="del_13" /> 
+                                    <fx:reference source="del_14" />                                  
+                                </ArrayList>                              
+                            </fx:define>
                               </AnchorPane>
                               <AnchorPane fx:id="A_1_BeforeOrdered" layoutX="14.0" layoutY="236.0" prefHeight="254.0" prefWidth="334.0" style="-fx-background-color: #172a46;">
                                  <children>
