@@ -52,11 +52,11 @@
                   </Label>
                         <AnchorPane layoutX="64.0" layoutY="142.0" prefHeight="338.0" prefWidth="1133.0">
                             <children>
-                                <ScrollPane layoutX="-3.0" layoutY="-1.0" prefHeight="338.0" prefWidth="1147.0" stylesheets="@table.css">
+                                <ScrollPane layoutX="-3.0" layoutY="-1.0" prefHeight="338.0" prefWidth="1147.0" stylesheets="@scrollbar.css">
                            <content>
-                              <AnchorPane prefHeight="730.0" prefWidth="1123.0" style="-fx-background-color: #172a46;">
+                              <AnchorPane prefHeight="730.0" prefWidth="1128.0" style="-fx-background-color: #172a46;">
                                  <children>
-                                    <CheckBox contentDisplay="GRAPHIC_ONLY" layoutX="920.0" layoutY="32.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" AnchorPane.bottomAnchor="660.8" AnchorPane.rightAnchor="165.60000000000002">
+                                    <CheckBox contentDisplay="GRAPHIC_ONLY" layoutX="919.8" layoutY="32.00000000000002" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" AnchorPane.bottomAnchor="660.8" AnchorPane.rightAnchor="170.60000000000002">
                                        <font>
                                           <Font size="20.0" />
                                        </font>
@@ -76,10 +76,22 @@
                                           <Font size="20.0" />
                                        </font>
                                     </CheckBox>
-                                    <Label layoutX="125.0" layoutY="30.0" prefHeight="39.0" prefWidth="648.0" text="รายการ" textFill="#bf2626" />
-                                    <Label layoutX="125.0" layoutY="90.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#bf2626" />
-                                    <Label layoutX="125.0" layoutY="150.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#bf2626" />
-                                    <Label layoutX="125.0" layoutY="210.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#bf2626" />
+                                    <Label layoutX="125.0" layoutY="30.0" prefHeight="39.0" prefWidth="648.0" text="รายการ" textFill="#e7cf86">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font></Label>
+                                    <Label layoutX="125.0" layoutY="90.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#e7cf86">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font></Label>
+                                    <Label layoutX="125.0" layoutY="150.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#e7cf86">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font></Label>
+                                    <Label layoutX="125.0" layoutY="210.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#e7cf86">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font></Label>
                                     <CheckBox contentDisplay="GRAPHIC_ONLY" layoutX="920.0" layoutY="271.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3">
                                        <font>
                                           <Font size="20.0" />
@@ -100,22 +112,40 @@
                                           <Font size="20.0" />
                                        </font>
                                     </CheckBox>
-                                    <Label layoutX="125.0" layoutY="269.0" prefHeight="39.0" prefWidth="648.0" text="รายการ" textFill="#bf2626" />
-                                    <Label layoutX="125.0" layoutY="329.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#bf2626" />
-                                    <Label layoutX="125.0" layoutY="389.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#bf2626" />
-                                    <Label layoutX="125.0" layoutY="449.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#bf2626" />
+                                    <Label layoutX="125.0" layoutY="269.0" prefHeight="39.0" prefWidth="648.0" text="รายการ" textFill="#e7cf86">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font></Label>
+                                    <Label layoutX="125.0" layoutY="329.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#e7cf86">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font></Label>
+                                    <Label layoutX="125.0" layoutY="389.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#e7cf86">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font></Label>
+                                    <Label layoutX="125.0" layoutY="449.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#e7cf86">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font></Label>
                                     <CheckBox contentDisplay="GRAPHIC_ONLY" layoutX="920.0" layoutY="509.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3">
                                        <font>
                                           <Font size="20.0" />
                                        </font>
                                     </CheckBox>
-                                    <Label layoutX="125.0" layoutY="509.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#bf2626" />
+                                    <Label layoutX="125.0" layoutY="509.0" prefHeight="39.0" prefWidth="648.0" text="l;pfdbf" textFill="#e7cf86">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font></Label>
                                     <CheckBox contentDisplay="GRAPHIC_ONLY" layoutX="920.0" layoutY="569.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3">
                                        <font>
                                           <Font size="20.0" />
                                        </font>
                                     </CheckBox>
-                                    <Label layoutX="125.0" layoutY="569.0" prefHeight="39.0" prefWidth="648.0" text="รายการ" textFill="#bf2626" />
+                                    <Label layoutX="125.0" layoutY="569.0" prefHeight="39.0" prefWidth="648.0" text="รายการ" textFill="#e7cf86">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font></Label>
                                  </children></AnchorPane>
                            </content>
                                 </ScrollPane>

@@ -39,11 +39,11 @@
                               <Image url="@frameeee.png" />
                            </image>
                         </ImageView>
-                        <ScrollPane layoutX="138.0" layoutY="150.0" prefHeight="464.0" prefWidth="1007.0" stylesheets="@table.css">
+                        <ScrollPane layoutX="138.0" layoutY="150.0" prefHeight="464.0" prefWidth="1007.0" stylesheets="@scrollbar.css">
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="951.0" prefWidth="987.0">
                                  <children>
-                                    <TableView prefHeight="965.0" prefWidth="986.0" stylesheets="@table.css">
+                                    <TableView prefHeight="965.0" prefWidth="988.0" stylesheets="@table.css">
                                       <columns>
                                         <TableColumn prefWidth="432.00004959106445" text="ลำดับ" />
                                         <TableColumn prefWidth="769.60009765625" text="โต๊ะ" />
