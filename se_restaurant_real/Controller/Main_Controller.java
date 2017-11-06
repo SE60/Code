@@ -71,6 +71,10 @@ public class Main_Controller {
     @FXML private List<ImageView> deleteViewList;
     @FXML private AnchorPane A_2_AfterOrdered,A_1_BeforeOrdered;
     @FXML private List<Pagination> slideViewList;
+    @FXML private List<AnchorPane> catalogueViewList;
+    
+    private ArrayList<List<ImageView>> imageViewList=new ArrayList<List<ImageView>>();
+    private ArrayList<List<Label>> nameViewList=new ArrayList<List<Label>>();
     //@FXML private Spinner<Integer> inc_1,inc_2,inc_3,inc_4,inc_5,inc_6,inc_7,inc_8,inc_9,inc_10,inc_11,inc_12,inc_13,inc_14;
     //@FXML private ImageView del_1,del_2,del_3,del_4,del_5,del_6,del_7,del_8,del_9,del_10,del_11,del_12,del_13,del_14;
     
@@ -359,6 +363,27 @@ public class Main_Controller {
            }
        });
 ////----------------------------------------end page 9-----------------------------------------------------//
+//------------------------------------------add imageViewList----------------------------------------------//
+        imageViewList.add(imageViewList_1);
+        imageViewList.add(imageViewList_2);
+        imageViewList.add(imageViewList_3);
+        imageViewList.add(imageViewList_4);
+        imageViewList.add(imageViewList_5);
+        imageViewList.add(imageViewList_6);
+        imageViewList.add(imageViewList_7);
+        imageViewList.add(imageViewList_8);
+        imageViewList.add(imageViewList_9);
+//------------------------------------------Add nameViewList----------------------------------------------//
+        nameViewList.add(nameViewList_1);
+        nameViewList.add(nameViewList_2);
+        nameViewList.add(nameViewList_3);
+        nameViewList.add(nameViewList_4);
+        nameViewList.add(nameViewList_5);
+        nameViewList.add(nameViewList_6);
+        nameViewList.add(nameViewList_7);
+        nameViewList.add(nameViewList_8);
+        nameViewList.add(nameViewList_9);
+        
     }
     
     @FXML
@@ -391,476 +416,18 @@ public class Main_Controller {
     }
    
 //-----------------Picture Clicked Method--------------------//
-            
     @FXML
-    void pid_1_1_Clicked(MouseEvent event) {
-        
+    void pid_Clicked(MouseEvent event) {  
         //----------Change page if orderedViewList not empty--------------//
         SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
         A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
         A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
         //--------------------Find menu name-----------------------------//
-        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(0,nameViewList_1);
+        ImageView cbtn = (ImageView)event.getSource();
+        int indexOfCatalogue=slideViewList.indexOf(((ImageView)event.getSource()).getParent().getParent().getParent());
+        int indexOfPicture = imageViewList.get(indexOfCatalogue).indexOf(cbtn);
+        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(indexOfPicture,nameViewList.get(indexOfCatalogue));
         checkOrdered(loadNameOrdered.getName());
-        
-    }
-
-    @FXML
-    void pid_1_2_Clicked(MouseEvent event) {
-        //----------Change page if orderedViewList not empty--------------//
-        SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
-        A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
-        A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
-        //--------------------Find menu name-----------------------------//
-        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(1,nameViewList_1);
-        checkOrdered(loadNameOrdered.getName());
-    }
-    
-    @FXML
-    void pid_1_3_Clicked(MouseEvent event) {
-        //----------Change page if orderedViewList not empty--------------//
-        SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
-        A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
-        A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
-        //--------------------Find menu name-----------------------------//
-        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(2,nameViewList_1);
-        checkOrdered(loadNameOrdered.getName());
-
-    }
-    
-    @FXML
-    void pid_1_4_Clicked(MouseEvent event) {
-        //----------Change page if orderedViewList not empty--------------//
-        SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
-        A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
-        A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
-        //--------------------Find menu name-----------------------------//
-        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(3,nameViewList_1);
-        checkOrdered(loadNameOrdered.getName());
-
-    }
-    
-    @FXML
-    void pid_1_5_Clicked(MouseEvent event) {
-        //----------Change page if orderedViewList not empty--------------//
-        SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
-        A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
-        A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
-        //--------------------Find menu name-----------------------------//
-        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(4,nameViewList_1);
-        checkOrdered(loadNameOrdered.getName());
-    }
-    
-    @FXML
-    void pid_1_6_Clicked(MouseEvent event) {
-        //----------Change page if orderedViewList not empty--------------//
-        SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
-        A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
-        A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
-        //--------------------Find menu name-----------------------------//
-        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(5,nameViewList_1);
-        checkOrdered(loadNameOrdered.getName());
-    }
-
-
-    @FXML
-    void pid_2_1_Clicked(MouseEvent event) {
- 
-    }
-
-    @FXML
-    void pid_2_2_Clicked(MouseEvent event) {
-          
-    }
-
-    @FXML
-    void pid_2_3_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_2_4_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_2_5_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_2_6_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_2_7_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_2_8_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_2_9_Clicked(MouseEvent event) {
-
-    }
-    
-    @FXML
-    void pid_2_10_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_3_1_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_3_2_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_3_3_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_3_4_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_3_5_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_3_6_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_3_7_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_3_8_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_3_9_Clicked(MouseEvent event) {
-
-    }
-    
-    @FXML
-    void pid_3_10_Clicked(MouseEvent event) {
-
-    }   
-
-    @FXML
-    void pid_4_1_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_4_2_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_4_3_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_4_4_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_4_5_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_4_6_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_4_7_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_4_8_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_4_9_Clicked(MouseEvent event) {
-
-    }
-    
-    @FXML
-    void pid_4_10_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_5_1_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_5_2_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_5_3_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_5_4_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_5_5_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_5_6_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_5_7_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_5_8_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_5_9_Clicked(MouseEvent event) {
-
-    }
-    
-    @FXML
-    void pid_5_10_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_6_1_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_6_2_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_6_3_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_6_4_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_6_5_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_6_6_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_6_7_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_6_8_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_6_9_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_6_10_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_7_1_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_7_2_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_7_3_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_7_4_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_7_5_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_7_6_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_7_7_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_7_8_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_7_9_Clicked(MouseEvent event) {
-
-    }
-    
-    @FXML
-    void pid_7_10_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_8_1_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_8_2_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_8_3_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_8_4_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_8_5_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_8_6_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_8_7_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_8_8_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_8_9_Clicked(MouseEvent event) {
-
-    }
-    
-    @FXML
-    void pid_8_10_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_9_1_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_9_2_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_9_3_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_9_4_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_9_5_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_9_6_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_9_7_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_9_8_Clicked(MouseEvent event) {
-
-    }
-
-    @FXML
-    void pid_9_9_Clicked(MouseEvent event) {
-
-    }
-    
-    @FXML
-    void pid_9_10_Clicked(MouseEvent event) {
-
     }
     
     @FXML

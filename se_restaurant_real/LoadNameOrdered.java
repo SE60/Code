@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 
 /**
  *
@@ -18,10 +19,14 @@ public class LoadNameOrdered {
     private List<Label> nameViewList;
     private int pid=0;
 
-    public LoadNameOrdered(int pid,List<Label> nameViewList){
-        this.nameViewList=nameViewList;
+    public LoadNameOrdered(int pid,List<Label> nameViewList) {
+        this.nameViewList = nameViewList;
         this.pid=pid;
     }
+
+    
+
+    
     public String getName(){
         return nameViewList.get(pid).getText();
     }

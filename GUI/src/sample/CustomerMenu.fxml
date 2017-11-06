@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Text?>
 <?import java.util.ArrayList?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.Main_Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.Main_Controller">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1282.0">
          <children>
@@ -54,7 +54,7 @@
                      <tabs>
                         <Tab text="เมนูแนะนำ">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="475.0" prefWidth="446.0" style="-fx-background-color: #4F4F4F;">
+                              <AnchorPane fx:id="CataloguePane_1" minHeight="0.0" minWidth="0.0" prefHeight="475.0" prefWidth="446.0" style="-fx-background-color: #4F4F4F;">
                                  <children>
                                     <ImageView fitHeight="695.0" fitWidth="984.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -63,7 +63,7 @@
                                     </ImageView>
                                     <AnchorPane fx:id="pagi_1_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_1_1" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_1_1_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_1_1" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_1_1" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="490.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -78,7 +78,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_1_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_1_2" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_1_2_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_1_2" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_1_2" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -93,7 +93,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_1_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_1_3" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_1_3_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_1_3" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_1_3" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -108,7 +108,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_1_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_1_4" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_1_4_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_1_4" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_1_4" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -123,7 +123,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_1_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_1_5" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_1_5_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_1_5" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_1_5" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -138,7 +138,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_1_6" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_1_6" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_1_6_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_1_6" fitHeight="422.0" fitWidth="707.0" layoutX="112.0" layoutY="46.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_1_6" alignment="CENTER" contentDisplay="CENTER" layoutX="301.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -193,7 +193,7 @@
                         </Tab>
                         <Tab text="ทอด">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="684.0" prefWidth="934.0" style="-fx-background-color: #4F4F4F;">
+                              <AnchorPane fx:id="CataloguePane_2" minHeight="0.0" minWidth="0.0" prefHeight="684.0" prefWidth="934.0" style="-fx-background-color: #4F4F4F;">
                                  <children>
                                     <ImageView fitHeight="695.0" fitWidth="984.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -202,7 +202,7 @@
                                     </ImageView>
                                     <AnchorPane fx:id="pagi_2_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_2_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_2_1_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_2_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_2_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -213,7 +213,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_2_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_2_2_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_2_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_2_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -228,7 +228,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_2_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_2_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_2_3_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_2_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_2_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -239,7 +239,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_2_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_2_4_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_2_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_2_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -254,7 +254,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_2_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_2_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_2_5_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_2_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_2_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -265,7 +265,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_2_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_2_6_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_2_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_2_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -280,7 +280,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_2_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_2_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_2_7_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_2_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_2_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -291,7 +291,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_2_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_2_8_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_2_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_2_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -306,7 +306,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_2_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_2_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_2_9_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_2_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_2_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -317,7 +317,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_2_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_2_10_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_2_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_2_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -383,7 +383,7 @@
                         </Tab>
                         <Tab text="แกง">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
+                              <AnchorPane fx:id="CataloguePane_3" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
                                  <children>
                                     <ImageView fitHeight="695.0" fitWidth="984.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -392,7 +392,7 @@
                                     </ImageView>
                                     <AnchorPane fx:id="pagi_3_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_3_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_3_1_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_3_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_3_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -403,7 +403,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_3_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_3_2_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_3_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_3_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -418,7 +418,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_3_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_3_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_3_3_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_3_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_3_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -429,7 +429,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_3_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_3_4_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_3_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_3_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -444,7 +444,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_3_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_3_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_3_5_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_3_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_3_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -455,7 +455,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_3_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_3_6_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_3_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_3_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -470,7 +470,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_3_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_3_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_3_7_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_3_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_3_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -481,7 +481,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_3_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_3_8_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_3_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_3_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -496,7 +496,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_3_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_3_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_3_9_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_3_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_3_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -507,7 +507,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_3_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_3_10_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_3_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_3_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -573,7 +573,7 @@
                         </Tab>
                         <Tab text="ต้มจืด">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
+                              <AnchorPane fx:id="CataloguePane_4" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
                                  <children>
                                     <ImageView fitHeight="695.0" fitWidth="984.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -582,7 +582,7 @@
                                     </ImageView>
                                     <AnchorPane fx:id="pagi_4_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_4_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_4_1_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_4_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_4_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -593,7 +593,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_4_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_4_2_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_4_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_4_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -608,7 +608,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_4_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_4_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_4_3_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_4_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_4_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -619,7 +619,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_4_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_4_4_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_4_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_4_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -634,7 +634,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_4_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_4_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_4_5_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_4_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_4_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -645,7 +645,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_4_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_4_6_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_4_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_4_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -660,7 +660,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_4_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_4_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_4_7_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_4_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_4_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -671,7 +671,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_4_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_4_8_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_4_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_4_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -686,7 +686,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_4_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_4_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_4_9_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_4_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_4_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -697,7 +697,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_4_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_4_10_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_4_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_4_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -763,7 +763,7 @@
                         </Tab>
                         <Tab text="ต้มยำ">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
+                              <AnchorPane fx:id="CataloguePane_5" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
                                  <children>
                                     <ImageView fitHeight="695.0" fitWidth="984.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -772,7 +772,7 @@
                                     </ImageView>
                                     <AnchorPane fx:id="pagi_5_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_5_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_5_1_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_5_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_5_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -783,7 +783,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_5_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_5_2_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_5_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_5_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -798,7 +798,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_5_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_5_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_5_3_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_5_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_5_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -809,7 +809,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_5_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_5_4_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_5_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_5_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -824,7 +824,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_5_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_5_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_5_5_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_5_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_5_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -835,7 +835,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_5_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_5_6_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_5_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_5_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -850,7 +850,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_5_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_5_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_5_7_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_5_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_5_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -861,7 +861,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_5_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_5_8_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_5_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_5_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -876,7 +876,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_5_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_5_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_5_9_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_5_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_5_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -887,7 +887,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_5_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_5_10_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_5_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_5_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -953,7 +953,7 @@
                         </Tab>
                         <Tab text="ส้มตำ">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
+                              <AnchorPane fx:id="CataloguePane_6" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
                                  <children>
                                     <ImageView fitHeight="695.0" fitWidth="984.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -962,7 +962,7 @@
                                     </ImageView>
                                     <AnchorPane fx:id="pagi_6_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_6_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_6_1_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_6_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_6_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -973,7 +973,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_6_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_6_2_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_6_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_6_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -988,7 +988,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_6_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_6_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_6_3_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_6_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_6_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -999,7 +999,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_6_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_6_4_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_6_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_6_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1014,7 +1014,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_6_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_6_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_6_5_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_6_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_6_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1025,7 +1025,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_6_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_6_6_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_6_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_6_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1040,7 +1040,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_6_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_6_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_6_7_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_6_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_6_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1051,7 +1051,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_6_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_6_8_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_6_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_6_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1066,7 +1066,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_6_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_6_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_6_9_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_6_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_6_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1077,7 +1077,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_6_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_6_10_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_6_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_6_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1143,7 +1143,7 @@
                         </Tab>
                         <Tab text="จานเดียว">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
+                              <AnchorPane fx:id="CataloguePane_7" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
                                  <children>
                                     <ImageView fitHeight="695.0" fitWidth="984.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -1152,7 +1152,7 @@
                                     </ImageView>
                                     <AnchorPane fx:id="pagi_7_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_7_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_7_1_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_7_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_7_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1163,7 +1163,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_7_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_7_2_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_7_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_7_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1178,7 +1178,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_7_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_7_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_7_3_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_7_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_7_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1189,7 +1189,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_7_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_7_4_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_7_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_7_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1204,7 +1204,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_7_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_7_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_7_5_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_7_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_7_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1215,7 +1215,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_7_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_7_6_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_7_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_7_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1230,7 +1230,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_7_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_7_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_7_7_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_7_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_7_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1241,7 +1241,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_7_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_7_8_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_7_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_7_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1256,7 +1256,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_7_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_7_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_7_9_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_7_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_7_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1267,7 +1267,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_7_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_7_10_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_7_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_7_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1333,7 +1333,7 @@
                         </Tab>
                         <Tab text="เครื่องดื่ม">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
+                              <AnchorPane fx:id="CataloguePane_8" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
                                  <children>
                                     <ImageView fitHeight="695.0" fitWidth="984.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -1342,7 +1342,7 @@
                                     </ImageView>
                                     <AnchorPane fx:id="pagi_8_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_8_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_8_1_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_8_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_8_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1353,7 +1353,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_8_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_8_2_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_8_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_8_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1368,7 +1368,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_8_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_8_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_8_3_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_8_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_8_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1379,7 +1379,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_8_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_8_4_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_8_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_8_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1394,7 +1394,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_8_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_8_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_8_5_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_8_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_8_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1405,7 +1405,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_8_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_8_6_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_8_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_8_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1420,7 +1420,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_8_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_8_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_8_7_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_8_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_8_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1431,7 +1431,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_8_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_8_8_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_8_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_8_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1446,7 +1446,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_8_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_8_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_8_9_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_8_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_8_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1457,7 +1457,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_8_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_8_10_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_8_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_8_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1523,7 +1523,7 @@
                         </Tab>
                         <Tab text="ของหวาน">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
+                              <AnchorPane fx:id="CataloguePane_9" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #4F4F4F;">
                                  <children>
                                     <ImageView fitHeight="695.0" fitWidth="984.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -1532,7 +1532,7 @@
                                     </ImageView>
                                     <AnchorPane fx:id="pagi_9_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_9_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_9_1_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_9_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_9_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1543,7 +1543,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_9_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_9_2_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_9_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_9_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1558,7 +1558,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_9_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_9_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_9_3_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_9_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_9_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1569,7 +1569,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_9_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_9_4_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_9_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_9_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1584,7 +1584,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_9_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_9_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_9_5_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_9_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_9_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1595,7 +1595,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_9_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_9_6_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_9_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_9_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1610,7 +1610,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_9_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_9_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_9_7_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_9_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_9_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1621,7 +1621,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_9_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_9_8_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_9_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_9_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1636,7 +1636,7 @@
                                     </AnchorPane>
                                     <AnchorPane fx:id="pagi_9_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
-                                          <ImageView fx:id="pid_9_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_9_9_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_9_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_9_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1647,7 +1647,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <ImageView fx:id="pid_9_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_9_10_Clicked" pickOnBounds="true" />
+                                          <ImageView fx:id="pid_9_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
                                           <Label fx:id="mid_9_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
@@ -1994,6 +1994,20 @@
                </children>
             </HBox>
          </children>
+               <fx:define>
+                                 <!--List for pid-->
+                                <ArrayList fx:id="catalogueViewList">
+                                    <fx:reference source="CataloguePane_1" />
+                                    <fx:reference source="CataloguePane_2" />
+                                    <fx:reference source="CataloguePane_3" />
+                                    <fx:reference source="CataloguePane_4" /> 
+                                    <fx:reference source="CataloguePane_5" /> 
+                                    <fx:reference source="CataloguePane_6" />    
+                                    <fx:reference source="CataloguePane_7" />
+                                    <fx:reference source="CataloguePane_8" />
+                                    <fx:reference source="CataloguePane_9" />        
+                                </ArrayList>
+            </fx:define>
       </AnchorPane>
    </children>
 </AnchorPane>
