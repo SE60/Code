@@ -404,7 +404,7 @@ public class Main_Controller {
 //-----------------Ordered Check Method-----------------------//
     public void checkOrdered(String name){
         DupicateOrdered dupicateOrdered=new DupicateOrdered(orderedViewList,name);
-        if(!dupicateOrdered.isDupicate())
+        if(!dupicateOrdered.isDupicate()&&!dupicateOrdered.isOver14())
             for(int i=0;i<orderedViewList.size();i++){
                 if(orderedViewList.get(i).getText()== ""){
                     orderedViewList.get(i).setText(name);
