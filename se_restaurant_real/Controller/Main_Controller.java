@@ -5,6 +5,9 @@
  */
 package se_restaurant_real.Controller;
 
+// -------------------------------- ploy edit -----------------------------------
+// ------------------------------------------------------------------------------
+
 import RestaurantDB.Ordered;
 import RestaurantDB.food_Catalogue;
 import RestaurantDB.food_menu;
@@ -21,6 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
@@ -365,6 +369,10 @@ public class Main_Controller {
         //Ordered ordered=new food_menu(ca,arr[0],price,arr[2]);
         System.out.println(aName);
         
+        // ----------------------------- ploy edit -----------------------------------------
+        Main.mainStage.getScene().setRoot(Main.cOrder);
+        // ---------------------------------------------------------------------------------
+        
     }
 
 //-----------------Ordered Check Method-----------------------//
@@ -380,6 +388,7 @@ public class Main_Controller {
                 }
             }
     }
+   
 //-----------------Picture Clicked Method--------------------//
             
     @FXML
