@@ -33,6 +33,7 @@ public class Main extends Application {
     
     // -------------------------------------- ploy edit ------------------------------------------------
     public static Stage mainStage;
+    public static Parent root1;
     public static Parent cOrder;
     // -------------------------------------------------------------------------------------------------
 
@@ -45,7 +46,7 @@ public class Main extends Application {
         loader.setLocation(getClass().getResource("/GUI/src/sample/CustomerTableOrder.fxml"));
         cOrder = loader.load();
         // ---------------------------------------------------------------------------------------
-        Parent root1 = (Parent) fxmlLoader.load();
+       root1 = (Parent) fxmlLoader.load();
 //        Stage stage = new Stage();
 //        stage.setScene(new Scene(root1));  
 //        stage.show();
