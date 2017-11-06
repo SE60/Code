@@ -1791,32 +1791,32 @@
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_2" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="84.0" onMouseClicked="#order_2_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_2" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="84.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_3" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="132.0" onMouseClicked="#order_3_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_3" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="132.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_4" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="177.0" onMouseClicked="#order_4_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_4" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="177.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_5" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="224.0" onMouseClicked="#order_5_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_5" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="224.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_6" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="272.0" onMouseClicked="#order_6_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_6" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="272.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_7" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="319.0" onMouseClicked="#order_7_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_7" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="319.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
@@ -1856,37 +1856,37 @@
                                                 <Spinner fx:id="inc_12" layoutX="235.0" layoutY="533.0" prefHeight="26.0" prefWidth="65.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
                                                 <Spinner fx:id="inc_13" layoutX="235.0" layoutY="579.0" prefHeight="26.0" prefWidth="65.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
                                                 <Spinner fx:id="inc_14" layoutX="235.0" layoutY="626.0" prefHeight="26.0" prefWidth="65.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
-                                                <ImageView fx:id="del_8" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="349.0" onMouseClicked="#order_8_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_8" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="349.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_9" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="396.0" onMouseClicked="#order_9_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_9" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="396.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_10" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="443.0" onMouseClicked="#order_10_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_10" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="443.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_11" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="489.0" onMouseClicked="#order_11_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_11" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="489.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_12" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="536.0" onMouseClicked="#order_12_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_12" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="536.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_13" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="583.0" onMouseClicked="#order_13_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_13" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="583.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_14" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="630.0" onMouseClicked="#order_14_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_14" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="630.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
