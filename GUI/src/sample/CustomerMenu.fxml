@@ -17,7 +17,6 @@
 <?import javafx.scene.text.Text?>
 <?import java.util.ArrayList?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.Main_Controller">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1282.0">
@@ -1749,16 +1748,37 @@
                                  <children>
                                     <ScrollPane hbarPolicy="NEVER" layoutY="1.0" prefHeight="377.0" prefWidth="366.0" stylesheets="@scrollbar.css">
                                        <content>
-                                          <AnchorPane prefHeight="917.0" prefWidth="354.0" style="-fx-background-color: #172a46;">
+                                          <AnchorPane prefHeight="706.0" prefWidth="354.0" style="-fx-background-color: #172a46;">
                                              <children>
                                                 <JFXTextArea prefHeight="307.0" prefWidth="344.0" style="-fx-background-color: #172a46;" unFocusColor="TRANSPARENT" />
-                                                <Label fx:id="ordered_1" layoutX="28.0" layoutY="24.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                                <Label fx:id="ordered_2" layoutX="28.0" layoutY="71.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                                <Label fx:id="ordered_3" layoutX="28.0" layoutY="117.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                                <Label fx:id="ordered_4" layoutX="28.0" layoutY="164.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                                <Label fx:id="ordered_5" layoutX="28.0" layoutY="211.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                                <Label fx:id="ordered_6" layoutX="28.0" layoutY="248.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                                <Label fx:id="ordered_7" layoutX="28.0" layoutY="290.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label fx:id="ordered_1" layoutX="28.0" layoutY="24.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
+                                                <Label fx:id="ordered_2" layoutX="28.0" layoutY="71.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
+                                                <Label fx:id="ordered_3" layoutX="28.0" layoutY="117.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
+                                                <Label fx:id="ordered_4" layoutX="28.0" layoutY="164.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
+                                                <Label fx:id="ordered_5" layoutX="28.0" layoutY="211.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
+                                                <Label fx:id="ordered_6" layoutX="28.0" layoutY="258.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
+                                                <Label fx:id="ordered_7" layoutX="28.0" layoutY="305.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
                                                 <Spinner fx:id="inc_1" layoutX="235.0" layoutY="34.0" prefHeight="26.0" prefWidth="65.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
                                                 <Spinner fx:id="inc_2" layoutX="235.0" layoutY="81.0" prefHeight="26.0" prefWidth="65.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
                                                 <Spinner fx:id="inc_3" layoutX="235.0" layoutY="128.0" prefHeight="26.0" prefWidth="65.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
@@ -1771,43 +1791,64 @@
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_2" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="84.0" onMouseClicked="#order_2_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_2" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="84.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_3" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="132.0" onMouseClicked="#order_3_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_3" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="132.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_4" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="177.0" onMouseClicked="#order_4_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_4" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="177.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_5" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="224.0" onMouseClicked="#order_5_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_5" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="224.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_6" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="272.0" onMouseClicked="#order_6_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_6" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="272.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_7" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="319.0" onMouseClicked="#order_7_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_7" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="319.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <Label fx:id="ordered_8" layoutX="28.0" layoutY="336.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                                <Label fx:id="ordered_9" layoutX="28.0" layoutY="383.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                                <Label fx:id="ordered_10" layoutX="28.0" layoutY="429.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                                <Label fx:id="ordered_11" layoutX="28.0" layoutY="476.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                                <Label fx:id="ordered_12" layoutX="28.0" layoutY="523.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                                <Label fx:id="ordered_13" layoutX="28.0" layoutY="569.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
-                                                <Label fx:id="ordered_14" layoutX="28.0" layoutY="601.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369" />
+                                                <Label fx:id="ordered_8" layoutX="28.0" layoutY="352.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
+                                                <Label fx:id="ordered_9" layoutX="28.0" layoutY="399.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
+                                                <Label fx:id="ordered_10" layoutX="28.0" layoutY="446.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
+                                                <Label fx:id="ordered_11" layoutX="28.0" layoutY="493.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
+                                                <Label fx:id="ordered_12" layoutX="28.0" layoutY="540.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
+                                                <Label fx:id="ordered_13" layoutX="28.0" layoutY="587.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
+                                                <Label fx:id="ordered_14" layoutX="28.0" layoutY="634.0" prefHeight="47.0" prefWidth="200.0" textFill="#ffc369">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font></Label>
                                                 <Spinner fx:id="inc_8" layoutX="235.0" layoutY="346.0" prefHeight="26.0" prefWidth="65.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
                                                 <Spinner fx:id="inc_9" layoutX="235.0" layoutY="393.0" prefHeight="26.0" prefWidth="65.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
                                                 <Spinner fx:id="inc_10" layoutX="235.0" layoutY="439.0" prefHeight="26.0" prefWidth="65.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
@@ -1815,37 +1856,37 @@
                                                 <Spinner fx:id="inc_12" layoutX="235.0" layoutY="533.0" prefHeight="26.0" prefWidth="65.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
                                                 <Spinner fx:id="inc_13" layoutX="235.0" layoutY="579.0" prefHeight="26.0" prefWidth="65.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
                                                 <Spinner fx:id="inc_14" layoutX="235.0" layoutY="626.0" prefHeight="26.0" prefWidth="65.0" styleClass="circle-pagination" stylesheets="@pagination.css" visible="false" />
-                                                <ImageView fx:id="del_8" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="349.0" onMouseClicked="#order_8_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_8" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="349.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_9" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="396.0" onMouseClicked="#order_9_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_9" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="396.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_10" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="443.0" onMouseClicked="#order_10_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_10" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="443.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_11" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="489.0" onMouseClicked="#order_11_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_11" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="489.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_12" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="536.0" onMouseClicked="#order_12_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_12" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="536.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_13" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="583.0" onMouseClicked="#order_13_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_13" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="583.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>
                                                 </ImageView>
-                                                <ImageView fx:id="del_14" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="630.0" onMouseClicked="#order_14_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
+                                                <ImageView fx:id="del_14" fitHeight="20.0" fitWidth="24.0" layoutX="312.0" layoutY="630.0" onMouseClicked="#order_1_deleted" pickOnBounds="true" preserveRatio="true" visible="false">
                                                    <image>
                                                       <Image url="@Cancel_50px.png" />
                                                    </image>

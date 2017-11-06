@@ -30,14 +30,31 @@ import javax.persistence.TypedQuery;
  * @author l3oat
  */
 public class Main extends Application {
+    
+    // -------------------------------------- ploy edit ------------------------------------------------
+    public static Stage mainStage;
+    public static Parent root1;
+    public static Parent cOrder;
+    // -------------------------------------------------------------------------------------------------
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/CustomerMenu.fxml"));
-        Parent root1 = (Parent) fxmlLoader.load();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root1));  
-        stage.show();
+        // ---------------------------------- ploy edit ------------------------------------------
+        FXMLLoader loader;
+        loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/GUI/src/sample/CustomerTableOrder.fxml"));
+        cOrder = loader.load();
+        // ---------------------------------------------------------------------------------------
+       root1 = (Parent) fxmlLoader.load();
+//        Stage stage = new Stage();
+//        stage.setScene(new Scene(root1));  
+//        stage.show();
+        // --------------------------------- ploy edit -------------------------------------------
+        mainStage = primaryStage;
+        mainStage.setScene(new Scene(root1));
+        mainStage.show();
+        // ---------------------------------------------------------------------------------------
         
 //        Main_Controller customer=new Main_Controller();
 //        customer.test();;

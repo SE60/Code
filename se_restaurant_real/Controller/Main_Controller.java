@@ -5,6 +5,9 @@
  */
 package se_restaurant_real.Controller;
 
+// -------------------------------- ploy edit -----------------------------------
+// ------------------------------------------------------------------------------
+
 import RestaurantDB.Ordered;
 import RestaurantDB.food_Catalogue;
 import RestaurantDB.food_menu;
@@ -21,9 +24,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Pagination;
 import javafx.scene.image.Image;
@@ -365,6 +370,10 @@ public class Main_Controller {
         //Ordered ordered=new food_menu(ca,arr[0],price,arr[2]);
         System.out.println(aName);
         
+        // ----------------------------- ploy edit -----------------------------------------
+        Main.mainStage.getScene().setRoot(Main.cOrder);
+        // ---------------------------------------------------------------------------------
+        
     }
 
 //-----------------Ordered Check Method-----------------------//
@@ -380,6 +389,7 @@ public class Main_Controller {
                 }
             }
     }
+   
 //-----------------Picture Clicked Method--------------------//
             
     @FXML
@@ -853,74 +863,40 @@ public class Main_Controller {
 
     }
     
-     @FXML
-    void order_10_deleted(MouseEvent event) {
-
-    }
-
-    @FXML
-    void order_11_deleted(MouseEvent event) {
-
-    }
-
-    @FXML
-    void order_12_deleted(MouseEvent event) {
-
-    }
-
-    @FXML
-    void order_13_deleted(MouseEvent event) {
-
-    }
-
-    @FXML
-    void order_14_deleted(MouseEvent event) {
-
-    }
-
     @FXML
     void order_1_deleted(MouseEvent event) {
-
-    }
-
-    @FXML
-    void order_2_deleted(MouseEvent event) {
-
-    }
-
-    @FXML
-    void order_3_deleted(MouseEvent event) {
-
-    }
-
-    @FXML
-    void order_4_deleted(MouseEvent event) {
-
-    }
-
-    @FXML
-    void order_5_deleted(MouseEvent event) {
-
-    }
-
-    @FXML
-    void order_6_deleted(MouseEvent event) {
-
-    }
-
-    @FXML
-    void order_7_deleted(MouseEvent event) {
-
-    }
-
-    @FXML
-    void order_8_deleted(MouseEvent event) {
-
-    }
-
-    @FXML
-    void order_9_deleted(MouseEvent event) {
-
+        
+        ImageView cbtn = (ImageView)event.getSource();
+        int i = deleteViewList.indexOf(cbtn);
+        deleteMeal(i);
     }
     
+    @FXML
+    void deleteMeal(int index) {
+
+        if(increaseViewList.get(index+1) == null || !increaseViewList.get(index+1).isVisible())
+        {
+            deleteGui(index);
+        }
+        else
+        {
+            copyValue(index+1,index);
+            deleteMeal(index+1);
+        }
+    }
+    
+    @FXML
+    void deleteGui(int index) {
+
+       orderedViewList.get(index).setText("");
+       increaseViewList.get(index).setVisible(false);
+       increaseViewList.get(index).getValueFactory().setValue(1);
+       deleteViewList.get(index).setVisible(false);
+    }
+    
+    @FXML
+    void copyValue(int source,int destination){
+        orderedViewList.get(destination).setText(orderedViewList.get(source).getText());
+        increaseViewList.get(destination).getValueFactory().setValue(increaseViewList.get(source).getValue());
+    }
 }
