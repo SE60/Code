@@ -38,6 +38,7 @@ import se_restaurant_real.LoadPicture;
 import se_restaurant_real.LoadQuality;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
+import javax.persistence.Query;
 import se_restaurant_real.DupicateOrdered;
 import se_restaurant_real.LoadOrdered;
 import static se_restaurant_real.Main.cOrder;
@@ -385,6 +386,11 @@ public class Main_Controller {
         costViewList.add(costViewList_7);
         costViewList.add(costViewList_8);
         costViewList.add(costViewList_9);
+//-----------------------------------------Clearing Ordered database -----------------------------------//
+        int del=em.createQuery("delete from Ordered").executeUpdate();
+        em.getTransaction().commit();
+        
+        
     }
     
     @FXML
