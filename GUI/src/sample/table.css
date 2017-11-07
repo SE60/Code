@@ -4,21 +4,21 @@
 
 .label {
     -fx-font-size: 18pt;
-    -fx-font-family: "THSarabunNew";
+    -fx-font-family: "TH Sarabun New";
     -fx-text-fill: white;
     -fx-opacity: 1.0;
 }
 
 .label-bright {
     -fx-font-size: 11pt;
-    -fx-font-family: "THSarabunNew";
+    -fx-font-family: "TH Sarabun New";
     -fx-text-fill: white;
     -fx-opacity: 1;
 }
 
 .label-header {
     -fx-font-size: 32pt;
-    -fx-font-family: "THSarabunNew";
+    -fx-font-family: "TH Sarabun New";
     -fx-text-fill: #e7cf86;
     -fx-opacity: 1;
 }
@@ -50,9 +50,9 @@
 
 .table-view .column-header .label {
     -fx-font-size: 22pt;
-    -fx-font-family: "THSarabunNew";
+    -fx-font-family: "Layiji Mahaniyom Bao";
     -fx-text-fill: #e7cf86;
-    -fx-alignment: center-left;
+    -fx-alignment: center;
     -fx-opacity: 1;
 }
 
@@ -79,7 +79,7 @@
 
 .menu-bar .label {
     -fx-font-size: 14pt;
-    -fx-font-family: "THSarabunNew";
+    -fx-font-family: "TH Sarabun New";
     -fx-text-fill: white;
     -fx-opacity: 0.9;
 }
@@ -90,7 +90,7 @@
 
 .text-field {
     -fx-font-size: 12pt;
-    -fx-font-family: "THSarabunNew";
+    -fx-font-family: "TH Sarabun New";
 }
 
 /* 
@@ -104,7 +104,7 @@
     -fx-border-width: 2;
     -fx-background-radius: 0;
     -fx-background-color: #1d1d1d;
-    -fx-font-family: "THSarabunNew";
+    -fx-font-family: "TH Sarabun New";
     -fx-font-size: 11pt;
     -fx-text-fill: #d8d8d8;
     -fx-background-insets: 0 0 0 0, 0, 1, 2;
