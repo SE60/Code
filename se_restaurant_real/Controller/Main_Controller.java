@@ -11,9 +11,13 @@ package se_restaurant_real.Controller;
 import RestaurantDB.Ordered;
 
 import RestaurantDB.food_menu;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
@@ -36,6 +40,7 @@ import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
 import se_restaurant_real.DupicateOrdered;
 import se_restaurant_real.LoadOrdered;
+import static se_restaurant_real.Main.cOrder;
 import se_restaurant_real.SetPageOrdered;
 
 /**
@@ -411,6 +416,7 @@ public class Main_Controller {
             em.persist(ordered);
             em.getTransaction().commit();
             em.close();
+            emf.close();
             System.out.println("Save order in database");
             //-----------------------------Clear order list------------------------------------//
             for(int i=0;i<orderedViewList.size();i++){
@@ -420,7 +426,16 @@ public class Main_Controller {
             }
             priceViewList.clear();
                
-            // ----------------------------- ploy edit -----------------------------------------
+            // ----------------------------- Ploy edit -----------------------------------------
+            try {
+            FXMLLoader loader;
+            loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/GUI/src/sample/CustomerTableOrder.fxml"));
+            cOrder = loader.load();
+            // ---------------------------------------------------------------------------------------
+            } catch (IOException ex) {
+                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            }
             Main.mainStage.getScene().setRoot(Main.cOrder);
             // ---------------------------------------------------------------------------------
         }

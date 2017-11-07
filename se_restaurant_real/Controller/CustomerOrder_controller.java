@@ -58,17 +58,17 @@ public class CustomerOrder_controller {
     }
 
     public ObservableList<BeforeShowTable> getJoinedPerson()
-    {       
-        int a=1;
+    {   
+        int table=1;
         BeforeShowTable beforeShowTable;
         ObservableList<BeforeShowTable> p = FXCollections.observableArrayList();
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
         EntityManager em=emf.createEntityManager();
-        TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca where ca.table="+Integer.toString(a),Ordered.class); 
+        TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca where ca.table="+Integer.toString(table),Ordered.class); 
         for(int i=0;i<q1.getResultList().size();i++){
            for(int j=0;j<q1.getResultList().get(i).getPrice().size();j++) 
            {
-               beforeShowTable=new BeforeShowTable(i,q1.getResultList().get(i).getName().get(j),q1.getResultList().get(i).getQuality().get(j),q1.getResultList().get(i).getPrice().get(j));
+               beforeShowTable=new BeforeShowTable(i+1,q1.getResultList().get(i).getName().get(j),q1.getResultList().get(i).getQuality().get(j),q1.getResultList().get(i).getPrice().get(j));
                p.add(beforeShowTable);
            }          
         }

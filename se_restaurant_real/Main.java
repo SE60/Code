@@ -6,7 +6,10 @@
 package se_restaurant_real;
 
 
+import java.io.IOException;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -28,12 +31,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/CustomerMenu.fxml"));
         // ---------------------------------- ploy edit ------------------------------------------
-        FXMLLoader loader;
-        loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/GUI/src/sample/CustomerTableOrder.fxml"));
-        cOrder = loader.load();
-        // ---------------------------------------------------------------------------------------
-       root1 = (Parent) fxmlLoader.load();
+        root1 = (Parent) fxmlLoader.load();
 //        Stage stage = new Stage();
 //        stage.setScene(new Scene(root1));  
 //        stage.show();
@@ -47,6 +45,18 @@ public class Main extends Application {
 //        customer.test();;
     }
 
+       public void setCustomerOrder() {
+        try {
+            FXMLLoader loader;
+            loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/GUI/src/sample/CustomerTableOrder.fxml"));
+            cOrder = loader.load();
+            // ---------------------------------------------------------------------------------------
+        } catch (IOException ex) {
+            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       
+       }
     public static void main(String[] args) throws SQLException {
 //----------------Save Data from File------------------//
 //        try {
