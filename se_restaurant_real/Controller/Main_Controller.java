@@ -9,41 +9,24 @@ package se_restaurant_real.Controller;
 // ------------------------------------------------------------------------------
 
 import RestaurantDB.Ordered;
-import RestaurantDB.food_Catalogue;
+
 import RestaurantDB.food_menu;
-import com.jfoenix.controls.JFXButton;
-import static com.objectdb.o.MSS.ca;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.geometry.Pos;
 import javafx.scene.Node;
-import javafx.scene.control.Button;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.Pagination;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import static javafx.scene.input.KeyCode.R;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.StackPane;
-import javafx.scene.text.Text;
 import javafx.util.Callback;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
-import se_restaurant_real.DBConnection;
 import se_restaurant_real.LoadCost;
 import se_restaurant_real.Main;
 import se_restaurant_real.LoadMenuName;
@@ -403,22 +386,38 @@ public class Main_Controller {
     void ordered_Clicked(MouseEvent event) {
         ArrayList<String> aName=new ArrayList<String>();
         ArrayList<Integer> quality=new ArrayList<Integer>();
-
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
-        EntityManager em=emf.createEntityManager();
-        em.getTransaction().begin();
+        int checkEmpty=0;
         for(int i=0;i<orderedViewList.size();i++){
-            aName.add(orderedViewList.get(i).getText());
-            quality.add(increaseViewList.get(i).getValue());                            
+            if(orderedViewList.get(i).getText()=="") checkEmpty++;
         }
-        Ordered ordered=new Ordered(1,aName,quality,priceViewList);
-        em.persist(ordered);
-        em.getTransaction().commit();
-        System.out.println(aName);
+        if(checkEmpty==orderedViewList.size()){
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Warning Dialog");
+            alert.setHeaderText("Your list is empty");
+            alert.setContentText("Please list your menu before order");
+            alert.showAndWait();
+        }
         
-        // ----------------------------- ploy edit -----------------------------------------
-        Main.mainStage.getScene().setRoot(Main.cOrder);
-        // ---------------------------------------------------------------------------------
+        else
+        {
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+            EntityManager em=emf.createEntityManager();
+            em.getTransaction().begin();
+            for(int i=0;i<orderedViewList.size();i++){
+                aName.add(orderedViewList.get(i).getText());
+                quality.add(increaseViewList.get(i).getValue());                            
+            }
+            Ordered ordered=new Ordered(1,aName,quality,priceViewList);
+            em.persist(ordered);
+            em.getTransaction().commit();
+            em.close();
+            System.out.println("Save order in database");
+
+            // ----------------------------- ploy edit -----------------------------------------
+            Main.mainStage.getScene().setRoot(Main.cOrder);
+            // ---------------------------------------------------------------------------------
+        }
+        
         
     }
 

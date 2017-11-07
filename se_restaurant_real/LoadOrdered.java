@@ -5,11 +5,8 @@
  */
 package se_restaurant_real;
 
-import java.util.ArrayList;
 import java.util.List;
-import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
 
 /**
  *

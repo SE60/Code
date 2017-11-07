@@ -7,7 +7,6 @@ package se_restaurant_real;
 
 import RestaurantDB.food_menu;
 import java.util.ArrayList;
-import javafx.scene.image.Image;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;

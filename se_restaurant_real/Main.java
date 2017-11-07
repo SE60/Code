@@ -5,26 +5,13 @@
  */
 package se_restaurant_real;
 
-import RestaurantDB.food_Catalogue;
-import RestaurantDB.food_menu;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.UnsupportedEncodingException;
+
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.scene.image.Image;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
-import javax.persistence.TypedQuery;
 /**
  *
  * @author l3oat

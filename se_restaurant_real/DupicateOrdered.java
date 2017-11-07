@@ -28,7 +28,6 @@ public class DupicateOrdered {
     public boolean isDupicate(){
         for(int i=0;i<orderedViewList.size();i++){
             if(orderedViewList.get(i).getText().equals(justOrder)){
-                System.out.println(orderedViewList);
                 Alert alert = new Alert(AlertType.INFORMATION);
                 alert.setTitle("Information Dialog");
                 alert.setHeaderText("You have already ordered");
