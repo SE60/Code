@@ -412,7 +412,14 @@ public class Main_Controller {
             em.getTransaction().commit();
             em.close();
             System.out.println("Save order in database");
-
+            //-----------------------------Clear order list------------------------------------//
+            for(int i=0;i<orderedViewList.size();i++){
+                increaseViewList.get(i).setVisible(false);
+                deleteViewList.get(i).setVisible(false);
+                orderedViewList.get(i).setText("");
+            }
+            priceViewList.clear();
+               
             // ----------------------------- ploy edit -----------------------------------------
             Main.mainStage.getScene().setRoot(Main.cOrder);
             // ---------------------------------------------------------------------------------
