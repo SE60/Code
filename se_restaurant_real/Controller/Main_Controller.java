@@ -52,7 +52,7 @@ import se_restaurant_real.LoadQuality;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
 import se_restaurant_real.DupicateOrdered;
-import se_restaurant_real.LoadNameOrdered;
+import se_restaurant_real.LoadOrdered;
 import se_restaurant_real.SetPageOrdered;
 
 /**
@@ -73,11 +73,15 @@ public class Main_Controller {
     @FXML private List<Pagination> slideViewList;
     @FXML private List<AnchorPane> catalogueViewList;
     
+   //----------------------------Define ArrayList--------------------------------------// 
     private ArrayList<List<ImageView>> imageViewList=new ArrayList<List<ImageView>>();
     private ArrayList<List<Label>> nameViewList=new ArrayList<List<Label>>();
+    private ArrayList<List<Label>> costViewList=new ArrayList<List<Label>>();
+    private ArrayList<Double> priceViewList=new ArrayList<Double>();
     //@FXML private Spinner<Integer> inc_1,inc_2,inc_3,inc_4,inc_5,inc_6,inc_7,inc_8,inc_9,inc_10,inc_11,inc_12,inc_13,inc_14;
     //@FXML private ImageView del_1,del_2,del_3,del_4,del_5,del_6,del_7,del_8,del_9,del_10,del_11,del_12,del_13,del_14;
     
+   //--------------------------------------------Set initial value-----------------------------------------//
     SpinnerValueFactory<Integer> spinValue1 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
     SpinnerValueFactory<Integer> spinValue2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
     SpinnerValueFactory<Integer> spinValue3 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
@@ -383,16 +387,33 @@ public class Main_Controller {
         nameViewList.add(nameViewList_7);
         nameViewList.add(nameViewList_8);
         nameViewList.add(nameViewList_9);
-        
+//------------------------------------------Add costViewList---------------------------------------------//
+        costViewList.add(costViewList_1);
+        costViewList.add(costViewList_2);
+        costViewList.add(costViewList_3);
+        costViewList.add(costViewList_4);
+        costViewList.add(costViewList_5);
+        costViewList.add(costViewList_6);
+        costViewList.add(costViewList_7);
+        costViewList.add(costViewList_8);
+        costViewList.add(costViewList_9);
     }
     
     @FXML
     void ordered_Clicked(MouseEvent event) {
         ArrayList<String> aName=new ArrayList<String>();
+        ArrayList<Integer> quality=new ArrayList<Integer>();
+
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
-        //Ordered ordered=new food_menu(ca,arr[0],price,arr[2]);
+        for(int i=0;i<orderedViewList.size();i++){
+            aName.add(orderedViewList.get(i).getText());
+            quality.add(increaseViewList.get(i).getValue());                            
+        }
+        Ordered ordered=new Ordered(1,aName,quality,priceViewList);
+        em.persist(ordered);
+        em.getTransaction().commit();
         System.out.println(aName);
         
         // ----------------------------- ploy edit -----------------------------------------
@@ -402,14 +423,16 @@ public class Main_Controller {
     }
 
 //-----------------Ordered Check Method-----------------------//
-    public void checkOrdered(String name){
+    public void checkOrdered(String name,double price){
         DupicateOrdered dupicateOrdered=new DupicateOrdered(orderedViewList,name);
         if(!dupicateOrdered.isDupicate()&&!dupicateOrdered.isOver14())
             for(int i=0;i<orderedViewList.size();i++){
                 if(orderedViewList.get(i).getText()== ""){
+                    priceViewList.add(price);
                     orderedViewList.get(i).setText(name);
                     increaseViewList.get(i).setVisible(true);
                     deleteViewList.get(i).setVisible(true);
+                    System.out.println(priceViewList);
                     break;
                 }
             }
@@ -426,16 +449,18 @@ public class Main_Controller {
         ImageView cbtn = (ImageView)event.getSource();
         int indexOfCatalogue=slideViewList.indexOf(((ImageView)event.getSource()).getParent().getParent().getParent());
         int indexOfPicture = imageViewList.get(indexOfCatalogue).indexOf(cbtn);
-        LoadNameOrdered loadNameOrdered=new LoadNameOrdered(indexOfPicture,nameViewList.get(indexOfCatalogue));
-        checkOrdered(loadNameOrdered.getName());
+        LoadOrdered loadOrdered=new LoadOrdered(indexOfPicture,nameViewList.get(indexOfCatalogue),costViewList.get(indexOfCatalogue));
+        checkOrdered(loadOrdered.getName(),loadOrdered.getCost());
     }
     
     @FXML
     void order_1_deleted(MouseEvent event) {
         
         ImageView cbtn = (ImageView)event.getSource();
-        int i = deleteViewList.indexOf(cbtn);
-        deleteMeal(i);
+        int index = deleteViewList.indexOf(cbtn);
+        priceViewList.remove(index);
+        System.out.println(priceViewList);
+        deleteMeal(index);
     }
     
     @FXML
@@ -454,7 +479,6 @@ public class Main_Controller {
     
     @FXML
     void deleteGui(int index) {
-
        orderedViewList.get(index).setText("");
        increaseViewList.get(index).setVisible(false);
        increaseViewList.get(index).getValueFactory().setValue(1);
@@ -465,5 +489,6 @@ public class Main_Controller {
     void copyValue(int source,int destination){
         orderedViewList.get(destination).setText(orderedViewList.get(source).getText());
         increaseViewList.get(destination).getValueFactory().setValue(increaseViewList.get(source).getValue());
+        System.out.println(priceViewList);
     }
 }

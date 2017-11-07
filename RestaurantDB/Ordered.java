@@ -5,6 +5,7 @@
  */
 package RestaurantDB;
 
+import java.util.ArrayList;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,37 +22,39 @@ public class Ordered  {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String[] name;
-    private int[] quality;   
-    private double[] price;
+    private int table;
+    private ArrayList<String> name=new ArrayList<String>();
+    private ArrayList<Integer> quality=new ArrayList<Integer>();   
+    private ArrayList<Double> price=new ArrayList<Double>();
     
-    public Ordered(String name[],int quality[],double price[]){
+    public Ordered(int table,ArrayList<String> name,ArrayList<Integer> quality,ArrayList<Double> price){
         this.name=name;
         this.quality=quality;
         this.price=price;
+        this.table=table;
     }
 
-    public String[] getName() {
+    public ArrayList<String> getName() {
         return name;
     }
 
-    public void setName(String[] name) {
+    public void setName(ArrayList<String> name) {
         this.name = name;
     }
 
-    public int[] getQuality() {
+    public ArrayList<Integer> getQuality() {
         return quality;
     }
 
-    public void setQuality(int[] quality) {
+    public void setQuality(ArrayList<Integer> quality) {
         this.quality = quality;
     }
 
-    public double[] getPrice() {
+    public ArrayList<Double> getPrice() {
         return price;
     }
 
-    public void setPrice(double[] price) {
+    public void setPrice(ArrayList<Double> price) {
         this.price = price;
     }
     
