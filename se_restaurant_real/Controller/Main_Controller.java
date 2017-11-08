@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -89,7 +90,7 @@ public class Main_Controller {
    
     @FXML
     protected void initialize()
-    {        
+    {  
        //-----------------------------Variable--------------------------------//
        LoadPicture picture=new LoadPicture();
        LoadMenuName name=new LoadMenuName();
@@ -517,5 +518,19 @@ public class Main_Controller {
         orderedViewList.get(destination).setText(orderedViewList.get(source).getText());
         increaseViewList.get(destination).getValueFactory().setValue(increaseViewList.get(source).getValue());
         System.out.println(priceViewList);
+    }
+    
+    @FXML
+    void changePaneToChef(ActionEvent event) {
+        try {
+            FXMLLoader loader;
+            loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/GUI/src/sample/ChefTableOrder.fxml"));
+            cOrder = loader.load();
+            // ---------------------------------------------------------------------------------------
+        } catch (IOException ex) {
+                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        Main.mainStage.getScene().setRoot(Main.cOrder);
     }
 }
