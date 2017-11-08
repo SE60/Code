@@ -34,6 +34,15 @@ public class Ordered  {
         this.table=table;
     }
 
+    public int getTable() {
+        return table;
+    }
+
+    
+    public void setTable(int table) {
+        this.table = table;
+    }
+
     public ArrayList<String> getName() {
         return name;
     }
