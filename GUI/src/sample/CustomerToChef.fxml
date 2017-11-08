@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #172a46;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="63.0" prefWidth="1280.0" />
+      <ImageView fitHeight="85.0" fitWidth="1283.0" layoutX="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@b-g-hotel-6.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="1283.0" layoutX="-2.0" layoutY="635.0" pickOnBounds="true">
+         <image>
+            <Image url="@b-g-hotel-6.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="448.0" fitWidth="557.0" layoutX="100.0" layoutY="130.0" pickOnBounds="true">
+         <image>
+            <Image url="@header-sm.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="696.0" layoutY="231.0" text="&quot;รายการอาหารของท่านทั้งหมด" textFill="#ff4766">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="764.0" layoutY="300.0" text="ได้ถูกส่งเข้าครัวแล้ว&quot;" textFill="#ff4766">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="750.0" layoutY="394.0" text="..กรุณารอสักครู่ค่ะ.." textFill="#7c7c7c">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="130.0" prefWidth="1279.0">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="1280.0" layoutX="-1.0" layoutY="-5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@b-g-hotel-6.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#433a7f" layoutX="1106.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะที่" wrappingWidth="62.26000213623047">
+               <font>
+                  <Font name="TH Sarabun New" size="43.0" />
+               </font>
+            </Text>
+            <Label layoutX="1178.0" layoutY="9.0" prefHeight="62.0" prefWidth="62.0" textFill="#433a7f">
+               <font>
+                  <Font name="TH Sarabun New" size="44.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="77.0" fitWidth="717.0" layoutX="274.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="1119.0" layoutY="651.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="116.0" style="-fx-background-color: #FF6666;" text="ดูรายการที่สั่ง" textFill="WHITE" />
+      <JFXButton alignment="CENTER" layoutX="29.0" layoutY="652.0" onMouseClicked="#BackToMenu" prefHeight="54.0" prefWidth="167.0" ripplerFill="BLACK" style="-fx-background-color: #FF6666;" text="สั่งเพิ่มเติม" textFill="WHITE">
+         <font>
+            <Font name="TH Sarabun New Bold" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8_Restaurant_52px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
