@@ -389,7 +389,7 @@ public class Main_Controller {
         costViewList.add(costViewList_9);
 //-----------------------------------------Clearing Ordered database -----------------------------------//
         int del=em.createQuery("delete from Ordered").executeUpdate();
-       em.getTransaction().commit();
+        em.getTransaction().commit();
         
         
     }
@@ -428,8 +428,9 @@ public class Main_Controller {
             //-----------------------------Clear order list------------------------------------//
             for(int i=0;i<orderedViewList.size();i++){
                 increaseViewList.get(i).setVisible(false);
+                increaseViewList.get(i).getValueFactory().setValue(1);
                 deleteViewList.get(i).setVisible(false);
-                orderedViewList.get(i).setText("");
+                orderedViewList.get(i).setText("");               
             }
             priceViewList.clear();
                
