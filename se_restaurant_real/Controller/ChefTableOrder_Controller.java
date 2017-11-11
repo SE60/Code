@@ -6,10 +6,15 @@
 package se_restaurant_real.Controller;
 
 import RestaurantDB.Ordered;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javax.persistence.EntityManager;
@@ -17,6 +22,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 import se_restaurant_real.BeforeShowTableChef;
+import se_restaurant_real.Main;
+import static se_restaurant_real.Main.cOrder;
 
 /**
  *
@@ -57,6 +64,25 @@ public class ChefTableOrder_Controller {
                beforeShowTableChef =new BeforeShowTableChef(i+1,q1.getResultList().get(i).getTable());
                p.add(beforeShowTableChef);        
         }
+        orderList.setRowFactory( tv -> {
+            TableRow<BeforeShowTableChef> row = new TableRow<>();
+            row.setOnMouseClicked(event -> {
+                int rowData = row.getItem().getOrder();
+                if (event.getClickCount() == 1 && rowData == 1 ) {
+                    try {
+                        FXMLLoader loader;
+                        loader = new FXMLLoader();
+                        loader.setLocation(getClass().getResource("/GUI/src/sample/ChefOrderEachTable.fxml"));
+                        cOrder = loader.load();
+                        // ---------------------------------------------------------------------------------------
+                    } catch (IOException ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    Main.mainStage.getScene().setRoot(Main.cOrder);
+                }
+            });
+        return row ;
+        });
         return p;
     }
 }
