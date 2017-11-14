@@ -1,0 +1,8 @@
+@font-face{
+    src:url("GUI/src/sample/font/Nithan.ttf");
+    src:url("GUI/src/sample/font/Th Sarabun New.ttf");
+}
+
+.root{
+   -fx-font-family : '' 
+}
