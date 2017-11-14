@@ -10,8 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #172a46;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #172a46;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.CustomerToChef_Controller">
    <children>
       <VBox prefHeight="63.0" prefWidth="1280.0" />
       <ImageView fitHeight="85.0" fitWidth="1283.0" layoutX="-3.0" pickOnBounds="true">
@@ -68,7 +67,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <Button layoutX="1119.0" layoutY="651.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="116.0" style="-fx-background-color: #FF6666;" text="ดูรายการที่สั่ง" textFill="WHITE" />
+      <Button layoutX="1119.0" layoutY="651.0" mnemonicParsing="false" onMouseClicked="#goToBill" prefHeight="51.0" prefWidth="116.0" style="-fx-background-color: #FF6666;" text="ดูรายการที่สั่ง/สรุปบิล" textFill="WHITE" />
       <JFXButton alignment="CENTER" layoutX="29.0" layoutY="652.0" onMouseClicked="#BackToMenu" prefHeight="54.0" prefWidth="167.0" ripplerFill="BLACK" style="-fx-background-color: #FF6666;" text="สั่งเพิ่มเติม" textFill="WHITE">
          <font>
             <Font name="TH Sarabun New Bold" size="24.0" />

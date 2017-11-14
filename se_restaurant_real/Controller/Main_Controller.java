@@ -432,13 +432,18 @@ public class Main_Controller {
                 deleteViewList.get(i).setVisible(false);
                 orderedViewList.get(i).setText("");               
             }
+            //----------------------Clear Price-------------------------------//
             priceViewList.clear();
-               
+            //----------Change page if orderedViewList not empty--------------//
+            SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
+            setPageOrdered.setPageInVisislbe();
+            A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
+            A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();   
             // ----------------------------- Ploy edit -----------------------------------------
             try {
             FXMLLoader loader;
             loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/GUI/src/sample/CustomerTableOrder.fxml"));
+            loader.setLocation(getClass().getResource("/GUI/src/sample/CustomerToChef.fxml"));
             cOrder = loader.load();
             // ---------------------------------------------------------------------------------------
             } catch (IOException ex) {
@@ -461,7 +466,6 @@ public class Main_Controller {
                     orderedViewList.get(i).setText(name);
                     increaseViewList.get(i).setVisible(true);
                     deleteViewList.get(i).setVisible(true);
-                    System.out.println(priceViewList);
                     break;
                 }
             }
@@ -472,6 +476,7 @@ public class Main_Controller {
     void pid_Clicked(MouseEvent event) {  
         //----------Change page if orderedViewList not empty--------------//
         SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
+        setPageOrdered.setPageVisible();
         A_1_BeforeOrdered=setPageOrdered.getA_1_BeforeOrdered();
         A_2_AfterOrdered=setPageOrdered.getA_2_AfterOrdered();
         //--------------------Find menu name-----------------------------//
@@ -488,7 +493,6 @@ public class Main_Controller {
         ImageView cbtn = (ImageView)event.getSource();
         int index = deleteViewList.indexOf(cbtn);
         priceViewList.remove(index);
-        System.out.println(priceViewList);
         deleteMeal(index);
     }
     
@@ -518,7 +522,6 @@ public class Main_Controller {
     void copyValue(int source,int destination){
         orderedViewList.get(destination).setText(orderedViewList.get(source).getText());
         increaseViewList.get(destination).getValueFactory().setValue(increaseViewList.get(source).getValue());
-        System.out.println(priceViewList);
     }
     
     @FXML

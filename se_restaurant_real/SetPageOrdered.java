@@ -18,7 +18,6 @@ public class SetPageOrdered {
     public SetPageOrdered(AnchorPane A_2_AfterOrdered, AnchorPane A_1_BeforeOrdered) {
         this.A_2_AfterOrdered = A_2_AfterOrdered;
         this.A_1_BeforeOrdered = A_1_BeforeOrdered;
-        setPageVisible();
     }
 
     public AnchorPane getA_2_AfterOrdered() {
@@ -44,7 +43,15 @@ public class SetPageOrdered {
             A_1_BeforeOrdered.setVisible(false);
             A_2_AfterOrdered.setVisible(true);
         }
-    }        
+    }   
+    
+    public void setPageInVisislbe(){
+        if(A_1_BeforeOrdered.visibleProperty().getValue()==false)
+        {
+            A_1_BeforeOrdered.setVisible(true);
+            A_2_AfterOrdered.setVisible(false);
+        }
+    }
     
 }
     
