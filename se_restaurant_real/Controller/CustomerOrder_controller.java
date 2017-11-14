@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -40,7 +41,13 @@ public class CustomerOrder_controller {
     private TableColumn<BeforeShowTable, Double> price;
     
     @FXML
+    private TableColumn<BeforeShowTable,Double> eachFoodPrice;
+    
+    @FXML
     private TableView<BeforeShowTable> orderList;
+    
+    @FXML
+    private Label totalPrice;
     
     @FXML
     protected void initialize(){
@@ -54,12 +61,14 @@ public class CustomerOrder_controller {
 
         quality.setCellValueFactory(new PropertyValueFactory<>("quality"));
         price.setCellValueFactory(new PropertyValueFactory<>("price"));
+        eachFoodPrice.setCellValueFactory(new PropertyValueFactory<>("eachFoodPrice"));
         orderList.setItems(getJoinedPerson());
     }
 
     public ObservableList<BeforeShowTable> getJoinedPerson()
     {   
         int table=1;
+        int totalPriceInt=0;
         BeforeShowTable beforeShowTable;
         ObservableList<BeforeShowTable> p = FXCollections.observableArrayList();
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
@@ -68,18 +77,21 @@ public class CustomerOrder_controller {
         for(int i=0;i<q1.getResultList().size();i++){
            for(int j=0;j<q1.getResultList().get(i).getPrice().size();j++) 
            {
-               beforeShowTable=new BeforeShowTable(i+1,q1.getResultList().get(i).getName().get(j),q1.getResultList().get(i).getQuality().get(j),q1.getResultList().get(i).getPrice().get(j));
+               double eachFoodPrice=q1.getResultList().get(i).getQuality().get(j)*q1.getResultList().get(i).getPrice().get(j);
+               totalPriceInt+=eachFoodPrice;
+               beforeShowTable=new BeforeShowTable(i+1,q1.getResultList().get(i).getName().get(j),q1.getResultList().get(i).getQuality().get(j),q1.getResultList().get(i).getPrice().get(j),eachFoodPrice);
                p.add(beforeShowTable);
            }          
         }
+        totalPrice.setText(Integer.toString(totalPriceInt));
         em.close();
         return p;
     }
+    
     
     @FXML
     void BackToMenu(MouseEvent event) {
         Main.mainStage.getScene().setRoot(Main.root1);
         
-
     }
 }

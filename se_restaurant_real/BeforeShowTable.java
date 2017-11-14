@@ -14,14 +14,25 @@ public class BeforeShowTable {
     private String name;
     private int quality;
     private double price;
+    private double eachFoodPrice;
 
-    public BeforeShowTable(int order, String name, int quality, double price) {
+    public BeforeShowTable(int order, String name, int quality, double price,double eachFoodPrice) {
         this.order = order;
         this.name = name;
         this.quality = quality;
         this.price = price;
+        this.eachFoodPrice=eachFoodPrice;
+        
     }
 
+    public double getEachFoodPrice(){
+        return eachFoodPrice;
+    }
+    
+    public void setEachFoodPrice(){
+        this.eachFoodPrice=eachFoodPrice;
+    }
+    
     public int getOrder() {
         return order;
     }
