@@ -453,7 +453,7 @@ public class Main_Controller {
 
 //-----------------Ordered Check Method-----------------------//
     public void checkOrdered(String name,double price){
-        DupicateOrdered dupicateOrdered=new DupicateOrdered(orderedViewList,name);
+        DupicateOrdered dupicateOrdered=new DupicateOrdered(orderedViewList,name,increaseViewList);
         if(!dupicateOrdered.isDupicate()&&!dupicateOrdered.isOver14())
             for(int i=0;i<orderedViewList.size();i++){
                 if(orderedViewList.get(i).getText()== ""){
