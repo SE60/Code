@@ -1,3 +1,7 @@
+/*@font-face {
+    src: url("resource/font/LayijiMahaniyom Bao.ttf");
+    src: url("resource/font/THSarabunNew_2.ttf");
+}*/
 .background {
     -fx-background-color: #1d1d1d;
 }
@@ -27,6 +31,7 @@
     -fx-base: #1d1d1d;
     -fx-control-inner-background: #172a46;
     -fx-background-color: #172a46;
+    -fx-alignment: center;
     -fx-table-cell-border-color: transparent;
     -fx-table-header-border-color: transparent;
     -fx-padding: 5;

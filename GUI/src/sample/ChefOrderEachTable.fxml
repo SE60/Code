@@ -3,7 +3,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -12,9 +11,8 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import java.util.ArrayList?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.ChefOrderEachTable_Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.ChefOrderEachTable_Controller">
     <children>
         <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
@@ -30,7 +28,7 @@
                         <Image url="@frame1.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="80.0" fitWidth="287.0" layoutX="497.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="80.0" fitWidth="287.0" layoutX="497.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@frame2.png" />
                      </image>
@@ -53,9 +51,9 @@
                   </Label>
                         <AnchorPane layoutX="64.0" layoutY="142.0" prefHeight="338.0" prefWidth="1133.0">
                             <children>
-                                <ScrollPane layoutX="-3.0" layoutY="-1.0" prefHeight="338.0" prefWidth="1147.0" stylesheets="@scrollbar.css">
+                                <ScrollPane layoutX="-3.0" layoutY="-1.0" prefHeight="360.0" prefWidth="1147.0" stylesheets="@scrollbar.css">
                            <content>
-                              <AnchorPane prefHeight="730.0" prefWidth="1128.0" style="-fx-background-color: #172a46;">
+                              <AnchorPane prefHeight="887.0" prefWidth="1128.0" style="-fx-background-color: #172a46;">
                                  <children>
                                     <CheckBox fx:id="check1" contentDisplay="GRAPHIC_ONLY" layoutX="919.8" layoutY="32.00000000000002" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false" AnchorPane.bottomAnchor="660.8" AnchorPane.rightAnchor="170.60000000000002">
                                        <font>
@@ -147,6 +145,46 @@
                                        <font>
                                           <Font name="TH Sarabun New" size="30.0" />
                                        </font></Label>
+                                    <CheckBox fx:id="check101" contentDisplay="GRAPHIC_ONLY" layoutX="920.0" layoutY="629.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="menu101" layoutX="125.0" layoutY="629.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check1011" contentDisplay="GRAPHIC_ONLY" layoutX="920.0" layoutY="689.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="menu1011" layoutX="125.0" layoutY="689.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check10111" contentDisplay="GRAPHIC_ONLY" layoutX="920.0" layoutY="749.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="menu10111" layoutX="125.0" layoutY="749.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check101111" contentDisplay="GRAPHIC_ONLY" layoutX="920.0" layoutY="809.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="menu101111" layoutX="125.0" layoutY="809.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
                                  </children></AnchorPane>
                            </content>
                                 </ScrollPane>
@@ -154,29 +192,9 @@
                         </AnchorPane>
                   <VBox layoutX="25.0" layoutY="529.0" prefHeight="142.0" prefWidth="1271.0">
                      <children>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                        <AnchorPane prefHeight="100.0" prefWidth="1271.0">
                            <children>
-                              <Text fill="#172a46" layoutX="99.0" layoutY="32.0" stroke="WHITE" strokeLineJoin="ROUND" strokeType="OUTSIDE" text="ผู้รับผิดชอบ">
-                                 <font>
-                                    <Font name="Layiji MaHaNiYom BAO" size="35.0" />
-                                 </font>
-                              </Text>
-                              <RadioButton layoutX="327.0" layoutY="4.0" mnemonicParsing="false" text="พ่อครัว1">
-                                 <font>
-                                    <Font name="Layiji MaHaNiYom BAO" size="32.0" />
-                                 </font>
-                              </RadioButton>
-                              <RadioButton layoutX="616.0" layoutY="4.0" mnemonicParsing="false" text="พ่อครัว2">
-                                 <font>
-                                    <Font name="Layiji MaHaNiYom BAO" size="32.0" />
-                                 </font>
-                              </RadioButton>
-                              <RadioButton layoutX="923.0" layoutY="5.0" mnemonicParsing="false" text="พ่อครัว3">
-                                 <font>
-                                    <Font name="Layiji MaHaNiYom BAO" size="32.0" />
-                                 </font>
-                              </RadioButton>
-                              <Button layoutX="445.0" layoutY="66.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #FF6666;" text="ยืนยัน" textFill="WHITE">
+                              <Button layoutX="445.0" layoutY="48.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #FF6666;" text="ยืนยัน" textFill="WHITE">
                                  <graphic>
                                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                            <image>
@@ -187,7 +205,7 @@
                                  <font>
                                     <Font name="Layiji MaHaNiYom BAO" size="30.0" />
                                  </font></Button>
-                              <Button layoutX="615.0" layoutY="66.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" style="-fx-background-color: #172a46;" text="ยกเลิก" textFill="RED">
+                              <Button layoutX="615.0" layoutY="48.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="141.0" style="-fx-background-color: #172a46;" text="ยกเลิก" textFill="RED">
                                  <graphic>
                                     <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
