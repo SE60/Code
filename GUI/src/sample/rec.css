@@ -1,0 +1,10 @@
+.calendar {
+    -fx-border-top-left-radius: 10px; 
+    -fx-border-top-right-radius: 10px; 
+}
+.vbox
+{
+    -fx-background-color: black;
+    -fx-background-radius: 10%;
+    -fx-alignment:center;
+}
