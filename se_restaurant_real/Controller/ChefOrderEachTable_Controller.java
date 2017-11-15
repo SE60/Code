@@ -12,6 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
@@ -20,6 +21,7 @@ import javafx.scene.input.MouseEvent;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import se_restaurant_real.Main;
 import static se_restaurant_real.Main.cOrder;
@@ -73,6 +75,43 @@ public class ChefOrderEachTable_Controller {
 
     @FXML
     void confirmButton_Clicked(MouseEvent event) {
-
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManager em=emf.createEntityManager();
+        TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca",Ordered.class);
+        int selectedCount =0;
+        int i =0;
+        for (i=0; i<checkViewList.size();i++){
+            if (checkViewList.get(i).isVisible()){
+                if (checkViewList.get(i).isSelected()){
+                    selectedCount++;
+                }
+            }
+            else{
+                break;
+            }
+        }
+        if (selectedCount == i){
+            em.getTransaction().begin();
+            int delete = em.createQuery(
+                "DELETE FROM Ordered c WHERE c.id ="+q1.getResultList().get(0).getId()).executeUpdate();
+            em.getTransaction().commit();
+            try {
+                        FXMLLoader loader;
+                        loader = new FXMLLoader();
+                        loader.setLocation(getClass().getResource("/GUI/src/sample/ChefTableOrder.fxml"));
+                        cOrder = loader.load();
+                        // ---------------------------------------------------------------------------------------
+                    } catch (IOException ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    Main.mainStage.getScene().setRoot(Main.cOrder);
+        }
+        else{
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error Dialog");
+            alert.setHeaderText("Cannot Confirm Yet!");
+            alert.setContentText("Please selected every menu");
+            alert.showAndWait();
+        }
     }
 }
