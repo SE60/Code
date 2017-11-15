@@ -31,10 +31,14 @@
     -fx-base: #1d1d1d;
     -fx-control-inner-background: #172a46;
     -fx-background-color: #172a46;
-    -fx-alignment: center;
+  /*  -fx-alignment: center;*/
     -fx-table-cell-border-color: transparent;
     -fx-table-header-border-color: transparent;
     -fx-padding: 5;
+}
+
+.table-view .text-field .label{
+    -fx-alignment: center;
 }
 
 .table-view .column-header-background {
