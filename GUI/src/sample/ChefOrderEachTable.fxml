@@ -11,6 +11,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import java.util.ArrayList?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.ChefOrderEachTable_Controller">
     <children>
@@ -200,16 +201,13 @@
                                           <Font size="20.0" />
                                        </font>
                                     </CheckBox>
-<<<<<<< HEAD
                                     <Label fx:id="quality11" layoutX="820.0" layoutY="629.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                        <font>
                                           <Font name="TH Sarabun New" size="30.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="menu101" layoutX="125.0" layoutY="629.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-=======
+                                    
                                     <Label fx:id="menu11" layoutX="125.0" layoutY="629.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
->>>>>>> a031c5f2b049a1547bd023677e5ad925a70ca577
                                        <font>
                                           <Font name="TH Sarabun New" size="30.0" />
                                        </font>
@@ -219,16 +217,12 @@
                                           <Font size="20.0" />
                                        </font>
                                     </CheckBox>
-<<<<<<< HEAD
                                     <Label fx:id="quality12" layoutX="820.0" layoutY="689.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                        <font>
                                           <Font name="TH Sarabun New" size="30.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="menu1011" layoutX="125.0" layoutY="689.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-=======
                                     <Label fx:id="menu12" layoutX="125.0" layoutY="689.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
->>>>>>> a031c5f2b049a1547bd023677e5ad925a70ca577
                                        <font>
                                           <Font name="TH Sarabun New" size="30.0" />
                                        </font>
@@ -238,16 +232,12 @@
                                           <Font size="20.0" />
                                        </font>
                                     </CheckBox>
-<<<<<<< HEAD
                                     <Label fx:id="quality13" layoutX="820.0" layoutY="749.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                        <font>
                                           <Font name="TH Sarabun New" size="30.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="menu10111" layoutX="125.0" layoutY="749.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-=======
                                     <Label fx:id="menu13" layoutX="125.0" layoutY="749.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
->>>>>>> a031c5f2b049a1547bd023677e5ad925a70ca577
                                        <font>
                                           <Font name="TH Sarabun New" size="30.0" />
                                        </font>
@@ -257,16 +247,12 @@
                                           <Font size="20.0" />
                                        </font>
                                     </CheckBox>
-<<<<<<< HEAD
                                     <Label fx:id="quality14" layoutX="820.0" layoutY="809.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                        <font>
                                           <Font name="TH Sarabun New" size="30.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="menu101111" layoutX="125.0" layoutY="809.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-=======
                                     <Label fx:id="menu14" layoutX="125.0" layoutY="809.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
->>>>>>> a031c5f2b049a1547bd023677e5ad925a70ca577
                                        <font>
                                           <Font name="TH Sarabun New" size="30.0" />
                                        </font>
