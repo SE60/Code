@@ -31,7 +31,7 @@
     -fx-base: #1d1d1d;
     -fx-control-inner-background: #172a46;
     -fx-background-color: #172a46;
-    -fx-alignment: center;
+    -fx-font-size: 15pt;
     -fx-table-cell-border-color: transparent;
     -fx-table-header-border-color: transparent;
     -fx-padding: 5;
@@ -61,9 +61,13 @@
     -fx-opacity: 1;
 }
 
+
+
 .table-view:focused .table-row-cell:filled:focused:selected {
     -fx-background-color: -fx-focus-color;
 }
+
+
 
 .split-pane:horizontal > .split-pane-divider {
     -fx-border-color: transparent #1d1d1d transparent #1d1d1d;
