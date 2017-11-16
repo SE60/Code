@@ -27,7 +27,7 @@ public class LoadPicture {
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=1",food_menu.class);
@@ -51,7 +51,7 @@ public class LoadPicture {
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
@@ -75,7 +75,7 @@ public class LoadPicture {
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=3",food_menu.class);
@@ -99,7 +99,7 @@ public class LoadPicture {
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=4",food_menu.class);
@@ -123,7 +123,7 @@ public class LoadPicture {
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=5",food_menu.class);
@@ -147,7 +147,7 @@ public class LoadPicture {
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=6",food_menu.class);
@@ -171,7 +171,7 @@ public class LoadPicture {
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=7",food_menu.class);
@@ -195,7 +195,7 @@ public class LoadPicture {
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=8",food_menu.class);
@@ -219,7 +219,7 @@ public class LoadPicture {
     {
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=9",food_menu.class);

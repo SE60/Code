@@ -221,7 +221,7 @@ public class Main_Controller {
            costViewList_9.get(i).setVisible(false);
        }
 //-------------------------------------Set pagination pane------------------------------------------------//     
-       EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+       EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
        EntityManager em=emf.createEntityManager();
        em.getTransaction().begin();
        
@@ -412,7 +412,7 @@ public class Main_Controller {
         
         else
         {
-            EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+            EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
             EntityManager em=emf.createEntityManager();
             em.getTransaction().begin();
             for(int i=0;i<orderedViewList.size();i++){

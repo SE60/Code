@@ -20,7 +20,7 @@ public class LoadCost {
     public ArrayList<Double> loadCost_1(){
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=1",food_menu.class);
         for(food_menu q:q1.getResultList()){
@@ -32,7 +32,7 @@ public class LoadCost {
     public ArrayList<Double> loadCost_2(){
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
@@ -44,7 +44,7 @@ public class LoadCost {
     public ArrayList<Double> loadCost_3(){
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
@@ -56,7 +56,7 @@ public class LoadCost {
     public ArrayList<Double> loadCost_4(){
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
@@ -68,7 +68,7 @@ public class LoadCost {
     public ArrayList<Double> loadCost_5(){
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
@@ -80,7 +80,7 @@ public class LoadCost {
     public ArrayList<Double> loadCost_6(){
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
@@ -92,7 +92,7 @@ public class LoadCost {
     public ArrayList<Double> loadCost_7(){
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
@@ -104,7 +104,7 @@ public class LoadCost {
     public ArrayList<Double> loadCost_8(){
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
@@ -116,7 +116,7 @@ public class LoadCost {
     public ArrayList<Double> loadCost_9(){
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){

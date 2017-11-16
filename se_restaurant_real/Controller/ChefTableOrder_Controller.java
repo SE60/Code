@@ -57,7 +57,7 @@ public class ChefTableOrder_Controller {
         int table=1;
         BeforeShowTableChef beforeShowTableChef;
         ObservableList<BeforeShowTableChef> p = FXCollections.observableArrayList();
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca where ca.table="+Integer.toString(table),Ordered.class); 
         for(int i=0;i<q1.getResultList().size();i++){

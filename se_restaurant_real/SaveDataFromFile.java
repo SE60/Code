@@ -28,7 +28,7 @@ import javax.persistence.TypedQuery;
  */
 public class SaveDataFromFile {
     public SaveDataFromFile() throws FileNotFoundException, FileNotFoundException, UnsupportedEncodingException{
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         EntityManager em2=emf.createEntityManager();
         em.getTransaction().begin();        

@@ -71,7 +71,7 @@ public class CustomerOrder_controller {
         int totalPriceInt=0;
         BeforeShowTable beforeShowTable;
         ObservableList<BeforeShowTable> p = FXCollections.observableArrayList();
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca where ca.table="+Integer.toString(table),Ordered.class); 
         for(int i=0;i<q1.getResultList().size();i++){

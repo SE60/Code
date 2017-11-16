@@ -15,6 +15,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 /**
  *
  * @author l3oat
@@ -68,9 +71,7 @@ public class Main extends Application {
 //        }
 
 //---------------------------------------------------//
-        
-        
-        
-        launch(args);
+       System.setProperty("objectdb.home", System.getProperty("user.dir") + "/src/RestaurantDB");              
+       launch(args);
     }
 }
