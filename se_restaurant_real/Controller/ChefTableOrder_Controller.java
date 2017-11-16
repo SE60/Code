@@ -22,8 +22,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 import se_restaurant_real.BeforeShowTableChef;
-import se_restaurant_real.Main;
-import static se_restaurant_real.Main.cOrder;
+import se_restaurant_real.Main_Customer;
+import static se_restaurant_real.Main_Customer.cOrder;
 
 /**
  *
@@ -54,17 +54,16 @@ public class ChefTableOrder_Controller {
     
      public ObservableList<BeforeShowTableChef> getJoinedPerson()
     {   
-        int table=1;
         BeforeShowTableChef beforeShowTableChef;
         ObservableList<BeforeShowTableChef> p = FXCollections.observableArrayList();
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
-        TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca where ca.table="+Integer.toString(table),Ordered.class); 
+        TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca where ca.table="+Integer.toString(SelectTable_Controller.tableInt),Ordered.class); 
         for(int i=0;i<q1.getResultList().size();i++){
                beforeShowTableChef =new BeforeShowTableChef(i+1,q1.getResultList().get(i).getTable());
                p.add(beforeShowTableChef);        
         }
-        orderList.setRowFactory( tv -> {
+        orderList.setRowFactory(tv -> {
             TableRow<BeforeShowTableChef> row = new TableRow<>();
             row.setOnMouseClicked(event -> {
                 int rowData = row.getItem().getOrder();
@@ -76,9 +75,9 @@ public class ChefTableOrder_Controller {
                         cOrder = loader.load();
                         // ---------------------------------------------------------------------------------------
                     } catch (IOException ex) {
-                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
                     }
-                    Main.mainStage.getScene().setRoot(Main.cOrder);
+                    Main_Customer.mainStage.getScene().setRoot(Main_Customer.cOrder);
                 }
             });
         return row ;

@@ -10,9 +10,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
-import se_restaurant_real.Main;
-import static se_restaurant_real.Main.cOrder;
+import se_restaurant_real.Main_Customer;
+import static se_restaurant_real.Main_Customer.cOrder;
 
 /**
  *
@@ -20,8 +21,16 @@ import static se_restaurant_real.Main.cOrder;
  */
 public class CustomerToChef_Controller {
     @FXML
+        private Label tableNumber;
+    
+    @FXML
+    protected void initialize(){
+        tableNumber.setText(Integer.toString(SelectTable_Controller.tableInt));
+    }
+    
+    @FXML
     void BackToMenu(MouseEvent event) {
-        Main.mainStage.getScene().setRoot(Main.root1);
+        Main_Customer.mainStage.getScene().setRoot(Main_Customer.root2);
     }
 
     @FXML
@@ -33,8 +42,8 @@ public class CustomerToChef_Controller {
             cOrder = loader.load();
             // ---------------------------------------------------------------------------------------
             } catch (IOException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }
-            Main.mainStage.getScene().setRoot(Main.cOrder);
+            Main_Customer.mainStage.getScene().setRoot(Main_Customer.cOrder);
     }
 }

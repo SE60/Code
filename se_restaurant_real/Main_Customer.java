@@ -18,23 +18,31 @@ import javafx.stage.Stage;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import se_restaurant_real.Controller.Main_Controller;
 /**
  *
  * @author l3oat
  */
-public class Main extends Application {
+public class Main_Customer extends Application {
     
     // -------------------------------------- ploy edit ------------------------------------------------
     public static Stage mainStage;
     public static Parent root1;
+    public static Parent root2;
+    public static Main_Controller main_Controller;
     public static Parent cOrder;
     // -------------------------------------------------------------------------------------------------
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/CustomerMenu.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/SelectTable.fxml"));
         // ---------------------------------- ploy edit ------------------------------------------
         root1 = (Parent) fxmlLoader.load();
+        fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/CustomerMenu.fxml"));
+        root2=(Parent) fxmlLoader.load();
+        main_Controller=fxmlLoader.getController();
+        
+        
 //        Stage stage = new Stage();
 //        stage.setScene(new Scene(root1));  
 //        stage.show();
@@ -56,7 +64,7 @@ public class Main extends Application {
             cOrder = loader.load();
             // ---------------------------------------------------------------------------------------
         } catch (IOException ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
         }
        
        }
@@ -65,9 +73,9 @@ public class Main extends Application {
 //        try {
 //            saveDataFromFile data=new saveDataFromFile();
 //        } catch (FileNotFoundException ex) {
-//            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+//            Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
 //        } catch (UnsupportedEncodingException ex) {
-//            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+//            Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 
 //---------------------------------------------------//

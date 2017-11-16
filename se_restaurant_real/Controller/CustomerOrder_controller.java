@@ -21,7 +21,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 import se_restaurant_real.BeforeShowTable;
-import se_restaurant_real.Main;
+import se_restaurant_real.Main_Customer;
 
 /**
  *
@@ -50,8 +50,12 @@ public class CustomerOrder_controller {
     private Label totalPrice;
     
     @FXML
+        private Label tableNumber;
+    
+    @FXML
     protected void initialize(){
-        loadOrderedList();
+        tableNumber.setText(Integer.toString(SelectTable_Controller.tableInt));
+        loadOrderedList();   
     }
     
     public void loadOrderedList()
@@ -67,13 +71,12 @@ public class CustomerOrder_controller {
 
     public ObservableList<BeforeShowTable> getJoinedPerson()
     {   
-        int table=1;
         int totalPriceInt=0;
         BeforeShowTable beforeShowTable;
         ObservableList<BeforeShowTable> p = FXCollections.observableArrayList();
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
-        TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca where ca.table="+Integer.toString(table),Ordered.class); 
+        TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca where ca.table="+Integer.toString(SelectTable_Controller.tableInt),Ordered.class); 
         for(int i=0;i<q1.getResultList().size();i++){
            for(int j=0;j<q1.getResultList().get(i).getPrice().size();j++) 
            {
@@ -91,7 +94,7 @@ public class CustomerOrder_controller {
     
     @FXML
     void BackToMenu(MouseEvent event) {
-        Main.mainStage.getScene().setRoot(Main.root1);
+        Main_Customer.mainStage.getScene().setRoot(Main_Customer.root2);
         
     }
 }

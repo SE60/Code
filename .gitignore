@@ -13,3 +13,6 @@ se_restaurant_real/Controller/Main_Controller.java
 GUI/src/sample/CustomerMenu.fxml
 GUI/src/sample/ChefTableOrder.fxml
 GUI/src/sample/ChefTableOrder.fxml
+RestaurantDB/log/odb25601116.log
+RestaurantDB/restaurant.odb
+RestaurantDB/restaurant.odb$

@@ -41,7 +41,7 @@ public class LoadPicture {
                obj.add(image);
                
             } catch (FileNotFoundException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }         
            
         }
@@ -65,7 +65,7 @@ public class LoadPicture {
                obj.add(image);
                
             } catch (FileNotFoundException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }         
            
         }
@@ -89,7 +89,7 @@ public class LoadPicture {
                obj.add(image);
                
             } catch (FileNotFoundException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }         
            
         }
@@ -113,7 +113,7 @@ public class LoadPicture {
                obj.add(image);
                
             } catch (FileNotFoundException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }         
            
         }
@@ -137,7 +137,7 @@ public class LoadPicture {
                obj.add(image);
                
             } catch (FileNotFoundException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }         
            
         }
@@ -161,7 +161,7 @@ public class LoadPicture {
                obj.add(image);
                
             } catch (FileNotFoundException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }         
            
         }
@@ -185,7 +185,7 @@ public class LoadPicture {
                obj.add(image);
                
             } catch (FileNotFoundException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }         
            
         }
@@ -209,7 +209,7 @@ public class LoadPicture {
                obj.add(image);
                
             } catch (FileNotFoundException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }         
            
         }
@@ -233,7 +233,7 @@ public class LoadPicture {
                obj.add(image);
                
             } catch (FileNotFoundException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }         
            
         }

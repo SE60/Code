@@ -36,7 +36,7 @@
                               <Font name="TH Sarabun New" size="43.0" />
                            </font>
                         </Text>
-                        <Label layoutX="1178.0" layoutY="3.0" prefHeight="62.0" prefWidth="62.0" textFill="#433a7f">
+                        <Label fx:id="tableNumber" layoutX="1179.0" layoutY="6.0" prefHeight="62.0" prefWidth="62.0" textFill="#433a7f">
                            <font>
                               <Font name="TH Sarabun New" size="44.0" />
                            </font>

@@ -23,8 +23,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
-import se_restaurant_real.Main;
-import static se_restaurant_real.Main.cOrder;
+import se_restaurant_real.Main_Customer;
+import static se_restaurant_real.Main_Customer.cOrder;
 /**
  *
  * @author TryAgain
@@ -68,14 +68,14 @@ public class ChefOrderEachTable_Controller {
              cOrder = loader.load();
             // ---------------------------------------------------------------------------------------
         } catch (IOException ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
         }
-        Main.mainStage.getScene().setRoot(Main.cOrder);
+        Main_Customer.mainStage.getScene().setRoot(Main_Customer.cOrder);
     }
 
     @FXML
     void confirmButton_Clicked(MouseEvent event) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca",Ordered.class);
         int selectedCount =0;
@@ -102,9 +102,9 @@ public class ChefOrderEachTable_Controller {
                         cOrder = loader.load();
                         // ---------------------------------------------------------------------------------------
                     } catch (IOException ex) {
-                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
                     }
-                    Main.mainStage.getScene().setRoot(Main.cOrder);
+                    Main_Customer.mainStage.getScene().setRoot(Main_Customer.cOrder);
         }
         else{
             Alert alert = new Alert(Alert.AlertType.ERROR);

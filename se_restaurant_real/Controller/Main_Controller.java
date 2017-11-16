@@ -33,7 +33,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 import se_restaurant_real.LoadCost;
-import se_restaurant_real.Main;
+import se_restaurant_real.Main_Customer;
 import se_restaurant_real.LoadMenuName;
 import se_restaurant_real.LoadPicture;
 import se_restaurant_real.LoadQuality;
@@ -42,7 +42,7 @@ import javafx.scene.control.SpinnerValueFactory;
 import javax.persistence.Query;
 import se_restaurant_real.DupicateOrdered;
 import se_restaurant_real.LoadOrdered;
-import static se_restaurant_real.Main.cOrder;
+import static se_restaurant_real.Main_Customer.cOrder;
 import se_restaurant_real.SetPageOrdered;
 
 /**
@@ -62,6 +62,8 @@ public class Main_Controller {
     @FXML private AnchorPane A_2_AfterOrdered,A_1_BeforeOrdered;
     @FXML private List<Pagination> slideViewList;
     @FXML private List<AnchorPane> catalogueViewList;
+    @FXML public  Label tableNumber;
+    public int tempTableNumber;
     
    //----------------------------Define ArrayList--------------------------------------// 
     private ArrayList<List<ImageView>> imageViewList=new ArrayList<List<ImageView>>();
@@ -87,10 +89,11 @@ public class Main_Controller {
     SpinnerValueFactory<Integer> spinValue13 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
     SpinnerValueFactory<Integer> spinValue14 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);
 
-   
     @FXML
     protected void initialize()
     {  
+       //--------------------------Set Table Number---------------------------//
+           tableNumber.setText(Integer.toString(SelectTable_Controller.tableInt));        
        //-----------------------------Variable--------------------------------//
        LoadPicture picture=new LoadPicture();
        LoadMenuName name=new LoadMenuName();
@@ -394,6 +397,7 @@ public class Main_Controller {
         
     }
     
+    
     @FXML
     void ordered_Clicked(MouseEvent event) {
         ArrayList<String> aName=new ArrayList<String>();
@@ -419,7 +423,7 @@ public class Main_Controller {
                 aName.add(orderedViewList.get(i).getText());
                 quality.add(increaseViewList.get(i).getValue());                            
             }
-            Ordered ordered=new Ordered(1,aName,quality,priceViewList);
+            Ordered ordered=new Ordered(SelectTable_Controller.tableInt,aName,quality,priceViewList);
             em.persist(ordered);
             em.getTransaction().commit();
             em.close();
@@ -447,9 +451,9 @@ public class Main_Controller {
             cOrder = loader.load();
             // ---------------------------------------------------------------------------------------
             } catch (IOException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }
-            Main.mainStage.getScene().setRoot(Main.cOrder);
+            Main_Customer.mainStage.getScene().setRoot(Main_Customer.cOrder);
             // ---------------------------------------------------------------------------------
         }
         
@@ -533,8 +537,8 @@ public class Main_Controller {
             cOrder = loader.load();
             // ---------------------------------------------------------------------------------------
         } catch (IOException ex) {
-                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
         }
-        Main.mainStage.getScene().setRoot(Main.cOrder);
+        Main_Customer.mainStage.getScene().setRoot(Main_Customer.cOrder);
     }
 }
