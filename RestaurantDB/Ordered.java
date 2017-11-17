@@ -26,14 +26,24 @@ public class Ordered  {
     private ArrayList<String> name=new ArrayList<String>();
     private ArrayList<Integer> quality=new ArrayList<Integer>();   
     private ArrayList<Double> price=new ArrayList<Double>();
+    private int status;
     
-    public Ordered(int table,ArrayList<String> name,ArrayList<Integer> quality,ArrayList<Double> price){
+    public Ordered(int table,ArrayList<String> name,ArrayList<Integer> quality,ArrayList<Double> price,int status){
         this.name=name;
         this.quality=quality;
         this.price=price;
         this.table=table;
+        this.status=status;
     }
 
+    public int getStatus(){
+        return status;
+    }
+    
+    public void setStatus(int status){
+        this.status=status;
+    }
+    
     public int getTable() {
         return table;
     }

@@ -425,7 +425,7 @@ public class CustomerMenu_Controller {
                 aName.add(orderedViewList.get(i).getText());
                 quality.add(increaseViewList.get(i).getValue());                            
             }
-            Ordered ordered=new Ordered(SelectTable_Controller.tableInt,aName,quality,priceViewList);
+            Ordered ordered=new Ordered(SelectTable_Controller.tableInt,aName,quality,priceViewList,0);
             em.persist(ordered);
             em.getTransaction().commit();
             System.out.println("Save order in database");
