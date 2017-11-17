@@ -58,11 +58,15 @@ public class ChefTableOrder_Controller {
         ObservableList<BeforeShowTableChef> p = FXCollections.observableArrayList();
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
+        em.getTransaction().begin();
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca where ca.table="+Integer.toString(SelectTable_Controller.tableInt),Ordered.class); 
         for(int i=0;i<q1.getResultList().size();i++){
                beforeShowTableChef =new BeforeShowTableChef(i+1,q1.getResultList().get(i).getTable());
                p.add(beforeShowTableChef);        
         }
+        em.close();
+        emf.close();
+        System.out.println(SelectTable_Controller.tableInt);
         orderList.setRowFactory(tv -> {
             TableRow<BeforeShowTableChef> row = new TableRow<>();
             row.setOnMouseClicked(event -> {
@@ -80,7 +84,7 @@ public class ChefTableOrder_Controller {
                     Main_Customer.mainStage.getScene().setRoot(Main_Customer.cOrder);
                 }
             });
-        return row ;
+            return row ;
         });
         return p;
     }

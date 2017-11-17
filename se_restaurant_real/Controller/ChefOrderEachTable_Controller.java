@@ -61,6 +61,8 @@ public class ChefOrderEachTable_Controller {
             menuViewList.get(i).setText(q1.getResultList().get(0).getName().get(i));
             qualityViewList.get(i).setText(Integer.toString(q1.getResultList().get(0).getQuality().get(i)));
         } 
+        em.close();
+        emf.close();
     }
     
     @FXML
@@ -117,5 +119,7 @@ public class ChefOrderEachTable_Controller {
             alert.setContentText("Please selected every menu");
             alert.showAndWait();
         }
+        em.close();
+        emf.close();
     }
 }

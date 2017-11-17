@@ -88,6 +88,7 @@ public class CustomerOrder_controller {
         }
         totalPrice.setText(Integer.toString(totalPriceInt));
         em.close();
+        emf.close();
         return p;
     }
     

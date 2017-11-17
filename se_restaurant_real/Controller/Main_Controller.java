@@ -394,7 +394,6 @@ public class Main_Controller {
         int del=em.createQuery("delete from Ordered").executeUpdate();
         em.getTransaction().commit();
         
-        
     }
     
     
@@ -426,8 +425,6 @@ public class Main_Controller {
             Ordered ordered=new Ordered(SelectTable_Controller.tableInt,aName,quality,priceViewList);
             em.persist(ordered);
             em.getTransaction().commit();
-            em.close();
-            emf.close();
             System.out.println("Save order in database");
             //-----------------------------Clear order list------------------------------------//
             for(int i=0;i<orderedViewList.size();i++){
