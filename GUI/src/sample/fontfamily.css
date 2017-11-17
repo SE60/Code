@@ -1,8 +1,27 @@
 @font-face{
     src:url("GUI/src/sample/font/Nithan.ttf");
-    src:url("GUI/src/sample/font/Th Sarabun New.ttf");
+    src:url("font/THSarabunNew_2.ttf");
 }
 
-.root{
-   -fx-font-family : '' 
+.font{
+   -fx-font-family : 'TH Sarabun New' ;
+   -fx-font-size : 25; 
+}
+.font36{
+   -fx-font-family : 'TH Sarabun New' ;
+   -fx-font-size : 36; 
+}
+.fontbold{
+    -fx-font-family : 'TH Sarabun New' ;
+    -fx-font-weight : bold; 
+    -fx-font-size : 24; 
+}
+.fontpagi{
+    -fx-font-family : 'TH Sarabun New' ;
+    -fx-font-size : 20; 
+}
+.fonttable{
+   -fx-font-family : 'TH Sarabun New' ;
+   -fx-font-size : 36; 
+   -fx-font-weight : bold; 
 }
