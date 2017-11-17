@@ -15,9 +15,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import java.util.ArrayList?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.CustomerMenu_Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.CustomerMenu_Controller">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1282.0">
          <children>
@@ -30,12 +29,12 @@
                               <Image url="@b-g-hotel-6.jpg" />
                            </image>
                         </ImageView>
-                        <Text fill="#433a7f" layoutX="1106.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะที่" wrappingWidth="62.26000213623047">
+                        <Text fill="#433a7f" layoutX="38.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะที่" wrappingWidth="62.26000213623047">
                            <font>
                               <Font name="TH Sarabun New" size="43.0" />
                            </font>
                         </Text>
-                        <Label fx:id="tableNumber" layoutX="1179.0" layoutY="6.0" prefHeight="62.0" prefWidth="62.0" textFill="#433a7f">
+                        <Label fx:id="tableNumber" layoutX="128.0" layoutY="7.0" prefHeight="62.0" prefWidth="125.0" textFill="#433a7f">
                            <font>
                               <Font name="TH Sarabun New" size="44.0" />
                            </font>
@@ -43,6 +42,16 @@
                         <ImageView fitHeight="77.0" fitWidth="717.0" layoutX="280.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@logo.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton alignment="CENTER" layoutX="1105.0" layoutY="6.0" prefHeight="50.0" prefWidth="138.0" ripplerFill="BLACK" style="-fx-background-color: #FF6666;" text="   เรียกพนักงาน" textFill="WHITE">
+                           <font>
+                              <Font name="TH Sarabun New Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                        <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="1105.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@User_50px.png" />
                            </image>
                         </ImageView>
                      </children></AnchorPane>
