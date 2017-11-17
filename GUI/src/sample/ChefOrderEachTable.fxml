@@ -15,6 +15,7 @@
 <?import javafx.scene.text.Text?>
 <?import java.util.ArrayList?>
 
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.ChefOrderEachTable_Controller">
     <children>
         <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -289,7 +290,7 @@
                      <children>
                         <AnchorPane prefHeight="100.0" prefWidth="1271.0">
                            <children>
-                              <Button fx:id="confirmButton" layoutX="445.0" layoutY="48.0" mnemonicParsing="false" onMouseClicked="#confirmButton_Clicked" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #FF6666;" text="ยืนยัน" textFill="WHITE">
+                              <Button fx:id="confirmButton" layoutX="445.0" layoutY="48.0" mnemonicParsing="false" onMouseClicked="#confirmButton_Clicked" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #FF6666;" stylesheets="@table.css" text="ยืนยัน" textFill="WHITE">
                                  <graphic>
                                        <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                            <image>

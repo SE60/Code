@@ -42,8 +42,8 @@
                         </ImageView>
                         <TableView fx:id="orderList" layoutX="148.0" layoutY="150.0" prefHeight="464.0" prefWidth="980.0" stylesheets="@table.css">
                           <columns>
-                            <TableColumn fx:id="order" prefWidth="466.93328857421875" resizable="false" text="ลำดับ" />
-                            <TableColumn fx:id="table" prefWidth="536.2666015625" resizable="false" text="โต๊ะ" />
+                            <TableColumn fx:id="order" prefWidth="466.93328857421875" text="ลำดับ" />
+                            <TableColumn fx:id="table" prefWidth="536.2666015625" text="โต๊ะ" />
                           </columns>
                         </TableView>
                         <AnchorPane layoutX="148.0" layoutY="150.0" minHeight="0.0" minWidth="0.0" prefHeight="464.0" prefWidth="1000.0" visible="false" />
