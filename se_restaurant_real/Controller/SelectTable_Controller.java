@@ -30,15 +30,27 @@ public class SelectTable_Controller {
     @FXML
     void confirmTable(ActionEvent event) {
         try{
+            
             tableInt= Integer.parseInt(table.getText());
+            if(tableInt<0){
+                //------------------if table number <0------------------------------//
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error Dialog");
+                alert.setHeaderText("Invalid number");
+                alert.setContentText("Please input number greater than zero");
+                alert.showAndWait();
+                throw new IllegalArgumentException("Table number must be greater than");
+                
+            }
             
             System.out.println("Table : "+tableInt);
-                   
+                           
+            
             Main_Customer.main_Controller.tableNumber.setText(Integer.toString(tableInt));
             Main_Customer.mainStage.getScene().setRoot(Main_Customer.root2);
             
         }catch(NumberFormatException e){
-            
+            //---------------------if table number not a number---------------------//
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error Dialog");
             alert.setHeaderText("Invalid number");
