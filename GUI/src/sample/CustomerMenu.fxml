@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Text?>
 <?import java.util.ArrayList?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.Main_Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.CustomerMenu_Controller">
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1282.0">
          <children>
@@ -25,17 +25,17 @@
                <children>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <ImageView fitHeight="72.0" fitWidth="1280.0" layoutX="-1.0" layoutY="-5.0" pickOnBounds="true">
+                        <ImageView fitHeight="84.0" fitWidth="1280.0" layoutX="-1.0" layoutY="-5.0" pickOnBounds="true">
                            <image>
                               <Image url="@b-g-hotel-6.jpg" />
                            </image>
                         </ImageView>
-                        <Text fill="#433a7f" layoutX="1106.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะที่" wrappingWidth="62.26000213623047">
+                        <Text fill="#433a7f" layoutX="38.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะที่" wrappingWidth="62.26000213623047">
                            <font>
                               <Font name="TH Sarabun New" size="43.0" />
                            </font>
                         </Text>
-                        <Label fx:id="tableNumber" layoutX="1179.0" layoutY="6.0" prefHeight="62.0" prefWidth="62.0" textFill="#433a7f">
+                        <Label fx:id="tableNumber" layoutX="128.0" layoutY="5.0" prefHeight="62.0" prefWidth="125.0" textFill="#433a7f">
                            <font>
                               <Font name="TH Sarabun New" size="44.0" />
                            </font>
@@ -45,12 +45,22 @@
                               <Image url="@logo.png" />
                            </image>
                         </ImageView>
+                        <JFXButton alignment="CENTER" layoutX="1105.0" layoutY="6.0" prefHeight="50.0" prefWidth="138.0" ripplerFill="BLACK" style="-fx-background-color: #FF6666;" text="   เรียกพนักงาน" textFill="WHITE">
+                           <font>
+                              <Font name="TH Sarabun New Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                        <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="1105.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@User_50px.png" />
+                           </image>
+                        </ImageView>
                      </children></AnchorPane>
                </children>
             </VBox>
-            <AnchorPane layoutX="-1.0" layoutY="62.0" prefHeight="667.0" prefWidth="920.0" styleClass="circle-pagination" stylesheets="@pagination.css">
+            <AnchorPane layoutX="-1.0" layoutY="62.0" prefHeight="677.0" prefWidth="920.0" styleClass="circle-pagination" stylesheets="@pagination.css">
                <children>
-                  <TabPane id="TabMenu" prefHeight="664.0" prefWidth="918.0" stylesheets="@csss.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <TabPane id="TabMenu" layoutY="1.0" prefHeight="685.0" prefWidth="925.0" stylesheets="@csss.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
                      <tabs>
                         <Tab text="เมนูแนะนำ">
                            <content>
@@ -1660,7 +1670,7 @@
                                           </Label>
                                        </children>
                                     </AnchorPane>
-                                    <Pagination fx:id="Slide_9" prefHeight="626.0" prefWidth="918.0" />
+                                    <Pagination fx:id="Slide_9" prefHeight="609.0" prefWidth="918.0" />
                                  </children>
                               </AnchorPane>
                            </content>
@@ -1728,13 +1738,13 @@
                   </TabPane>
                </children>
             </AnchorPane>
-            <HBox layoutX="914.0" layoutY="62.0" prefHeight="668.0" prefWidth="357.0" style="-fx-background-color: #ffffff; -fx-border-image-width: 2;">
+            <HBox layoutX="914.0" layoutY="63.0" prefHeight="685.0" prefWidth="366.0" style="-fx-background-color: #ffffff; -fx-border-image-width: 2;">
                <children>
                   <AnchorPane prefHeight="701.0" prefWidth="374.0">
                      <children>
                         <AnchorPane minWidth="346.0" prefHeight="667.0" prefWidth="366.0" style="-fx-background-color: #172a46;">
                            <children>
-                              <ImageView fitHeight="197.0" fitWidth="412.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="197.0" fitWidth="353.0" layoutX="14.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@61854-OAIIEC-918.png" />
                                  </image>

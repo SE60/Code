@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #172a46;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.CustomerToChef_Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #172a46;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.CustomerToChef_Controller">
    <children>
       <VBox prefHeight="63.0" prefWidth="1280.0" />
       <ImageView fitHeight="85.0" fitWidth="1283.0" layoutX="-3.0" pickOnBounds="true">
@@ -50,21 +50,21 @@
                   <Image url="@b-g-hotel-6.jpg" />
                </image>
             </ImageView>
-            <Text fill="#433a7f" layoutX="1106.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะที่" wrappingWidth="62.26000213623047">
-               <font>
-                  <Font name="TH Sarabun New" size="43.0" />
-               </font>
-            </Text>
-            <Label fx:id="tableNumber" layoutX="1178.0" layoutY="9.0" prefHeight="62.0" prefWidth="62.0" textFill="#433a7f">
-               <font>
-                  <Font name="TH Sarabun New" size="44.0" />
-               </font>
-            </Label>
             <ImageView fitHeight="77.0" fitWidth="717.0" layoutX="274.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@logo.png" />
                </image>
             </ImageView>
+            <Text fill="#433a7f" layoutX="38.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="โต๊ะที่" wrappingWidth="62.26000213623047">
+               <font>
+                  <Font name="TH Sarabun New" size="43.0" />
+               </font>
+            </Text>
+            <Label fx:id="tableNumber" layoutX="128.0" layoutY="10.0" prefHeight="62.0" prefWidth="125.0" textFill="#433a7f">
+               <font>
+                  <Font name="TH Sarabun New" size="44.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
       <Button layoutX="1119.0" layoutY="651.0" mnemonicParsing="false" onMouseClicked="#goToBill" prefHeight="51.0" prefWidth="116.0" style="-fx-background-color: #FF6666;" text="ดูรายการที่สั่ง/สรุปบิล" textFill="WHITE" />
