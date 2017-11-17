@@ -17,6 +17,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -39,6 +41,9 @@ public class ChefTableOrder_Controller {
     
     @FXML
     private TableView<BeforeShowTableChef> orderList;
+    
+    @FXML
+    private ImageView refreshButton;
     
     @FXML
     protected void initialize(){
@@ -87,6 +92,11 @@ public class ChefTableOrder_Controller {
             return row ;
         });
         return p;
+    }
+     
+    @FXML
+    void refreshButton_Clicked(MouseEvent event) {
+        loadOrderedList();
     }
 }
 

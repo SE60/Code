@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.ChefTableOrder_Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.ChefTableOrder_Controller">
 
         <children>
             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -74,9 +74,9 @@
                               <Image url="@logo.png" />
                            </image>
                         </ImageView>
-                        <Button fx:id="confirmButton" layoutX="1150.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#confirmButton_Clicked" prefHeight="44.0" prefWidth="115.0" style="-fx-background-color: #393232;" textFill="#393232">
+                        <Button layoutX="1150.0" layoutY="6.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="115.0" style="-fx-background-color: #393232;" textFill="#393232">
                            <graphic>
-                              <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="refreshButton" fitHeight="37.0" fitWidth="50.0" onMouseClicked="#refreshButton_Clicked" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@refresh_grey_192x192.png" />
                                  </image>
