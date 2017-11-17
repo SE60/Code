@@ -49,7 +49,7 @@ import se_restaurant_real.SetPageOrdered;
  *
  * @author l3oat
  */
-public class Main_Controller {
+public class CustomerMenu_Controller {
     
     @FXML private Label text_1;
     @FXML private List<AnchorPane> pagiViewList_1,pagiViewList_2,pagiViewList_3,pagiViewList_4,pagiViewList_5,pagiViewList_6,pagiViewList_7,pagiViewList_8,pagiViewList_9 ;

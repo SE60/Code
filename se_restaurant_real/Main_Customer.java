@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import se_restaurant_real.Controller.Main_Controller;
+import se_restaurant_real.Controller.CustomerMenu_Controller;
 /**
  *
  * @author l3oat
@@ -29,7 +29,7 @@ public class Main_Customer extends Application {
     public static Stage mainStage;
     public static Parent root1;
     public static Parent root2;
-    public static Main_Controller main_Controller;
+    public static CustomerMenu_Controller main_Controller;
     public static Parent cOrder;
     // -------------------------------------------------------------------------------------------------
 
@@ -52,7 +52,7 @@ public class Main_Customer extends Application {
         mainStage.show();
         // ---------------------------------------------------------------------------------------
         
-//        Main_Controller customer=new Main_Controller();
+//        CustomerMenu_Controller customer=new CustomerMenu_Controller();
 //        customer.test();;
     }
 
