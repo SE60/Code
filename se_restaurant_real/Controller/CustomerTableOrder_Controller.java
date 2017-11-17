@@ -27,7 +27,7 @@ import se_restaurant_real.Main_Customer;
  *
  * @author palaloyploy
  */
-public class CustomerOrder_controller {
+public class CustomerTableOrder_Controller {
     @FXML
     private TableColumn<BeforeShowTable, Integer> order;
 
