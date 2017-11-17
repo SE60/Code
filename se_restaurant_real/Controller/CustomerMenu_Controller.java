@@ -23,6 +23,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.Pagination;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -63,6 +64,7 @@ public class CustomerMenu_Controller {
     @FXML private List<Pagination> slideViewList;
     @FXML private List<AnchorPane> catalogueViewList;
     @FXML public  Label tableNumber;
+    @FXML private ScrollPane ordered_Scroll;
     public int tempTableNumber;
     
    //----------------------------Define ArrayList--------------------------------------// 
@@ -425,7 +427,7 @@ public class CustomerMenu_Controller {
                 aName.add(orderedViewList.get(i).getText());
                 quality.add(increaseViewList.get(i).getValue());                            
             }
-            Ordered ordered=new Ordered(SelectTable_Controller.tableInt,aName,quality,priceViewList,0);
+            Ordered ordered=new Ordered(SelectTable_Controller.tableInt,aName,quality,priceViewList,false);
             em.persist(ordered);
             em.getTransaction().commit();
             System.out.println("Save order in database");
@@ -437,9 +439,10 @@ public class CustomerMenu_Controller {
                 increaseViewList.get(i).getValueFactory().setValue(1);
                 deleteViewList.get(i).setVisible(false);
                 orderedViewList.get(i).setText("");               
-            }
+            } 
             //----------------------Clear Price-------------------------------//
             priceViewList.clear();
+            ordered_Scroll.setVvalue(0);
             //----------Change page if orderedViewList not empty--------------//
             SetPageOrdered setPageOrdered=new SetPageOrdered(A_2_AfterOrdered,A_1_BeforeOrdered);
             setPageOrdered.setPageInVisislbe();
@@ -468,6 +471,9 @@ public class CustomerMenu_Controller {
         if(!dupicateOrdered.isDupicate()&&!dupicateOrdered.isOver14())
             for(int i=0;i<orderedViewList.size();i++){
                 if(orderedViewList.get(i).getText()== ""){
+                    if(i>=7) 
+                        ordered_Scroll.setVvalue((double)i/orderedViewList.size());                   
+                    System.out.println(i/orderedViewList.size());
                     priceViewList.add(price);
                     orderedViewList.get(i).setText(name);
                     increaseViewList.get(i).setVisible(true);
@@ -542,5 +548,14 @@ public class CustomerMenu_Controller {
                 Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
         }
         Main_Customer.mainStage.getScene().setRoot(Main_Customer.cOrder);
+    }
+    
+    @FXML
+    void call_Service(MouseEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information Dialog");
+        alert.setHeaderText("Please wait");
+        alert.setContentText("Please wait waiter/waitress");
+        alert.showAndWait();
     }
 }

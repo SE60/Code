@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -95,7 +96,15 @@ public class CustomerTableOrder_Controller {
     
     @FXML
     void BackToMenu(MouseEvent event) {
-        Main_Customer.mainStage.getScene().setRoot(Main_Customer.root2);
-        
+        Main_Customer.mainStage.getScene().setRoot(Main_Customer.root2);      
+    }
+    
+    @FXML
+    void call_Service(MouseEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information Dialog");
+        alert.setHeaderText("Please wait");
+        alert.setContentText("Please wait waiter/waitress");
+        alert.showAndWait();
     }
 }
