@@ -347,6 +347,22 @@
                                     <fx:reference source="check13" />
                                     <fx:reference source="check14" />        
                                 </ArrayList>
+                <ArrayList fx:id="qualityViewList">
+                                    <fx:reference source="quality1" />
+                                    <fx:reference source="quality2" />
+                                    <fx:reference source="quality3" />
+                                    <fx:reference source="quality4" /> 
+                                    <fx:reference source="quality5" /> 
+                                    <fx:reference source="quality6" />    
+                                    <fx:reference source="quality7" />
+                                    <fx:reference source="quality8" />
+                                    <fx:reference source="quality9" />
+                                    <fx:reference source="quality10" />
+                                    <fx:reference source="quality11" />
+                                    <fx:reference source="quality12" />
+                                    <fx:reference source="quality13" />
+                                    <fx:reference source="quality14" />        
+                                </ArrayList>
             </fx:define>
         </AnchorPane>
     </children>

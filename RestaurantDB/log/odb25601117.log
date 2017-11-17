@@ -175,3 +175,43 @@ Type RestaurantDB.food_menu is not enhanced.
 [2560-11-17 02:22:29 #5 type] 
 Type RestaurantDB.Ordered is not enhanced.
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-17 02:58:16 #1 store] 
+Database 'C:\Users\Acer\Desktop\SE\SE_Restaurant_Real\src\RestaurantDB\restaurant.odb' has been recovered (tr. 806-811)
+
+[2560-11-17 02:58:17 #2 store] 
+Database 'C:\Users\Acer\Desktop\SE\SE_Restaurant_Real\src\RestaurantDB\restaurant.odb' is opened by 4980@Acer-NB
+
+[2560-11-17 02:58:17 #3 store] 
+Configuration path: ?
+
+[2560-11-17 02:58:17 #4 type] 
+Type RestaurantDB.food_Catalogue is not enhanced.
+
+[2560-11-17 02:58:17 #5 type] 
+Type RestaurantDB.food_menu is not enhanced.
+
+[2560-11-17 02:58:17 #6 type] 
+Type RestaurantDB.Ordered is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2560-11-17 13:54:27 #1 store] 
+Database 'C:\Users\Acer\Desktop\SE\SE_Restaurant_Real\src\RestaurantDB\restaurant.odb' has been recovered (tr. 812-818)
+
+[2560-11-17 13:54:27 #2 store] 
+Database 'C:\Users\Acer\Desktop\SE\SE_Restaurant_Real\src\RestaurantDB\restaurant.odb' is opened by 7148@Acer-NB
+
+[2560-11-17 13:54:27 #3 store] 
+Configuration path: ?
+
+[2560-11-17 13:54:27 #4 type] 
+Type RestaurantDB.food_Catalogue is not enhanced.
+
+[2560-11-17 13:54:27 #5 type] 
+Type RestaurantDB.food_menu is not enhanced.
+
+[2560-11-17 13:54:28 #6 type] 
+Type RestaurantDB.Ordered is not enhanced.
+
