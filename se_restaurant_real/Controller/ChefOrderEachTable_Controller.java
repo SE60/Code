@@ -38,6 +38,8 @@ public class ChefOrderEachTable_Controller {
     @FXML
     private List<CheckBox> checkViewList;
     @FXML
+    private List<Label> qualityViewList;
+    @FXML
     private Button confirmButton;
     @FXML
     private Button cancleButton;
@@ -55,7 +57,9 @@ public class ChefOrderEachTable_Controller {
         for (int i=0; i<q1.getResultList().get(0).getPrice().size(); i++){
             menuViewList.get(i).setVisible(true);
             checkViewList.get(i).setVisible(true);
+            qualityViewList.get(i).setVisible(true);
             menuViewList.get(i).setText(q1.getResultList().get(0).getName().get(i));
+            qualityViewList.get(i).setText(Integer.toString(q1.getResultList().get(0).getQuality().get(i)));
         } 
     }
     
