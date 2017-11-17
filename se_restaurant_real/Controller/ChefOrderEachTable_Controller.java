@@ -23,6 +23,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
+import se_restaurant_real.Main_Chef;
+import static se_restaurant_real.Main_Chef.chefTableOrder_Controller;
 import se_restaurant_real.Main_Customer;
 import static se_restaurant_real.Main_Customer.cOrder;
 /**
@@ -53,30 +55,25 @@ public class ChefOrderEachTable_Controller {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca",Ordered.class);
-        table.setText(Integer.toString(q1.getResultList().get(0).getTable()));
+        if(!q1.getResultList().isEmpty()){
+            table.setText(Integer.toString(q1.getResultList().get(0).getTable()));
         for (int i=0; i<q1.getResultList().get(0).getPrice().size(); i++){
-            menuViewList.get(i).setVisible(true);
-            checkViewList.get(i).setVisible(true);
-            qualityViewList.get(i).setVisible(true);
-            menuViewList.get(i).setText(q1.getResultList().get(0).getName().get(i));
-            qualityViewList.get(i).setText(Integer.toString(q1.getResultList().get(0).getQuality().get(i)));
-        } 
+                menuViewList.get(i).setVisible(true);
+                checkViewList.get(i).setVisible(true);
+                qualityViewList.get(i).setVisible(true);
+                menuViewList.get(i).setText(q1.getResultList().get(0).getName().get(i));
+                qualityViewList.get(i).setText(Integer.toString(q1.getResultList().get(0).getQuality().get(i)));
+            } 
+        }
         em.close();
         emf.close();
+        
     }
     
     @FXML
     void cancleButton_Clicked(MouseEvent event) {
-        try {
-             FXMLLoader loader;
-             loader = new FXMLLoader();
-             loader.setLocation(getClass().getResource("/GUI/src/sample/ChefTableOrder.fxml"));
-             cOrder = loader.load();
-            // ---------------------------------------------------------------------------------------
-        } catch (IOException ex) {
-            Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        Main_Customer.mainStage.getScene().setRoot(Main_Customer.cOrder);
+        chefTableOrder_Controller.initialize();
+        Main_Chef.mainStage.getScene().setRoot(Main_Chef.root1);
     }
 
     @FXML
@@ -101,16 +98,9 @@ public class ChefOrderEachTable_Controller {
             int delete = em.createQuery(
                 "DELETE FROM Ordered c WHERE c.id ="+q1.getResultList().get(0).getId()).executeUpdate();
             em.getTransaction().commit();
-            try {
-                        FXMLLoader loader;
-                        loader = new FXMLLoader();
-                        loader.setLocation(getClass().getResource("/GUI/src/sample/ChefTableOrder.fxml"));
-                        cOrder = loader.load();
-                        // ---------------------------------------------------------------------------------------
-                    } catch (IOException ex) {
-                    Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-                    Main_Customer.mainStage.getScene().setRoot(Main_Customer.cOrder);
+            chefTableOrder_Controller.initialize();
+            Main_Chef.mainStage.getScene().setRoot(Main_Chef.root1);
+            
         }
         else{
             Alert alert = new Alert(Alert.AlertType.ERROR);

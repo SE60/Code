@@ -43,8 +43,10 @@ public class LoadPicture {
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }         
-           
+
         }
+        em.close();
+        emf.close();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_2()
@@ -67,8 +69,10 @@ public class LoadPicture {
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
             }         
-           
+  
         }
+        em.close();
+        emf.close();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_3()
@@ -93,6 +97,8 @@ public class LoadPicture {
             }         
            
         }
+        em.close();
+        emf.close();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_4()
@@ -117,6 +123,8 @@ public class LoadPicture {
             }         
            
         }
+        em.close();
+        emf.close();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_5()
@@ -141,6 +149,8 @@ public class LoadPicture {
             }         
            
         }
+        em.close();
+        emf.close();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_6()
@@ -165,6 +175,8 @@ public class LoadPicture {
             }         
            
         }
+        em.close();
+        emf.close();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_7()
@@ -189,6 +201,8 @@ public class LoadPicture {
             }         
            
         }
+        em.close();
+        emf.close();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_8()
@@ -213,6 +227,8 @@ public class LoadPicture {
             }         
            
         }
+        em.close();
+        emf.close();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_9()
@@ -237,6 +253,8 @@ public class LoadPicture {
             }         
            
         }
+        em.close();
+        emf.close();
         return obj;
     }
 }

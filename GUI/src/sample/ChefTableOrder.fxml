@@ -74,9 +74,9 @@
                               <Image url="@logo.png" />
                            </image>
                         </ImageView>
-                        <Button layoutX="1150.0" layoutY="6.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="115.0" style="-fx-background-color: #393232;" textFill="#393232">
+                        <Button fx:id="refreshButton" layoutX="1150.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#refreshButton_Clicked" prefHeight="44.0" prefWidth="115.0" style="-fx-background-color: #393232;" textFill="#393232">
                            <graphic>
-                              <ImageView fx:id="refreshButton" fitHeight="37.0" fitWidth="50.0" onMouseClicked="#refreshButton_Clicked" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@refresh_grey_192x192.png" />
                                  </image>

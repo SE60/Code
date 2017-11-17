@@ -13,6 +13,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
@@ -24,6 +25,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 import se_restaurant_real.BeforeShowTableChef;
+import se_restaurant_real.Main_Chef;
+import static se_restaurant_real.Main_Chef.chefOrderEachTable_Controller;
+import static se_restaurant_real.Main_Chef.chefTableOrder_Controller;
 import se_restaurant_real.Main_Customer;
 import static se_restaurant_real.Main_Customer.cOrder;
 
@@ -43,7 +47,7 @@ public class ChefTableOrder_Controller {
     private TableView<BeforeShowTableChef> orderList;
     
     @FXML
-    private ImageView refreshButton;
+    private Button refreshButton;
     
     @FXML
     protected void initialize(){
@@ -64,29 +68,20 @@ public class ChefTableOrder_Controller {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
-        TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca where ca.table="+Integer.toString(SelectTable_Controller.tableInt),Ordered.class); 
+        TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca ",Ordered.class); 
         for(int i=0;i<q1.getResultList().size();i++){
                beforeShowTableChef =new BeforeShowTableChef(i+1,q1.getResultList().get(i).getTable());
                p.add(beforeShowTableChef);        
         }
         em.close();
         emf.close();
-        System.out.println(SelectTable_Controller.tableInt);
         orderList.setRowFactory(tv -> {
             TableRow<BeforeShowTableChef> row = new TableRow<>();
             row.setOnMouseClicked(event -> {
                 int rowData = row.getItem().getOrder();
                 if (event.getClickCount() == 1 && rowData == 1 ) {
-                    try {
-                        FXMLLoader loader;
-                        loader = new FXMLLoader();
-                        loader.setLocation(getClass().getResource("/GUI/src/sample/ChefOrderEachTable.fxml"));
-                        cOrder = loader.load();
-                        // ---------------------------------------------------------------------------------------
-                    } catch (IOException ex) {
-                    Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-                    Main_Customer.mainStage.getScene().setRoot(Main_Customer.cOrder);
+                   chefOrderEachTable_Controller.initialize();
+                    Main_Chef.mainStage.getScene().setRoot(Main_Chef.root2);
                 }
             });
             return row ;

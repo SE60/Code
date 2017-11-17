@@ -35,9 +35,9 @@ public class Main_Chef extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/ChefTableOrder.fxml"));
         root1 = (Parent) fxmlLoader.load();
         chefTableOrder_Controller=fxmlLoader.getController();
-//        fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/ChefOrderEachTable.fxml"));
-//        root2=(Parent) fxmlLoader.load();
-//        chefOrderEachTable_Controller=fxmlLoader.getController();
+        fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/ChefOrderEachTable.fxml"));
+        root2=(Parent) fxmlLoader.load();
+        chefOrderEachTable_Controller=fxmlLoader.getController();
         
         mainStage = primaryStage;
         mainStage.setScene(new Scene(root1));

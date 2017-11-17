@@ -27,6 +27,8 @@ public class LoadCost {
             Double cost=q.getPrice();
             obj.add(cost);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<Double> loadCost_2(){
@@ -39,6 +41,8 @@ public class LoadCost {
             Double cost=q.getPrice();
             obj.add(cost);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<Double> loadCost_3(){
@@ -51,6 +55,8 @@ public class LoadCost {
             Double cost=q.getPrice();
             obj.add(cost);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<Double> loadCost_4(){
@@ -63,6 +69,8 @@ public class LoadCost {
             Double cost=q.getPrice();
             obj.add(cost);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<Double> loadCost_5(){
@@ -75,6 +83,8 @@ public class LoadCost {
             Double cost=q.getPrice();
             obj.add(cost);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<Double> loadCost_6(){
@@ -87,6 +97,8 @@ public class LoadCost {
             Double cost=q.getPrice();
             obj.add(cost);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<Double> loadCost_7(){
@@ -99,6 +111,8 @@ public class LoadCost {
             Double cost=q.getPrice();
             obj.add(cost);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<Double> loadCost_8(){
@@ -111,6 +125,8 @@ public class LoadCost {
             Double cost=q.getPrice();
             obj.add(cost);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<Double> loadCost_9(){
@@ -123,6 +139,8 @@ public class LoadCost {
             Double cost=q.getPrice();
             obj.add(cost);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
 }

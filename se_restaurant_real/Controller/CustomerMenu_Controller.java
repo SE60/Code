@@ -394,6 +394,9 @@ public class CustomerMenu_Controller {
         int del=em.createQuery("delete from Ordered").executeUpdate();
         em.getTransaction().commit();
         
+        em.close();
+        emf.close();
+        
     }
     
     
@@ -426,6 +429,8 @@ public class CustomerMenu_Controller {
             em.persist(ordered);
             em.getTransaction().commit();
             System.out.println("Save order in database");
+            em.close();
+            emf.close();
             //-----------------------------Clear order list------------------------------------//
             for(int i=0;i<orderedViewList.size();i++){
                 increaseViewList.get(i).setVisible(false);

@@ -27,6 +27,8 @@ public class LoadMenuName {
             String mName=q.getmName();
             obj.add(mName);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<String> loadName_2(){
@@ -39,6 +41,8 @@ public class LoadMenuName {
             String mName=q.getmName();
             obj.add(mName);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<String> loadName_3(){
@@ -51,6 +55,8 @@ public class LoadMenuName {
             String mName=q.getmName();
             obj.add(mName);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<String> loadName_4(){
@@ -63,6 +69,8 @@ public class LoadMenuName {
             String mName=q.getmName();
             obj.add(mName);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<String> loadName_5(){
@@ -75,6 +83,8 @@ public class LoadMenuName {
             String mName=q.getmName();
             obj.add(mName);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<String> loadName_6(){
@@ -87,6 +97,8 @@ public class LoadMenuName {
             String mName=q.getmName();
             obj.add(mName);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<String> loadName_7(){
@@ -99,6 +111,8 @@ public class LoadMenuName {
             String mName=q.getmName();
             obj.add(mName);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<String> loadName_8(){
@@ -111,6 +125,8 @@ public class LoadMenuName {
             String mName=q.getmName();
             obj.add(mName);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
     public ArrayList<String> loadName_9(){
@@ -123,6 +139,8 @@ public class LoadMenuName {
             String mName=q.getmName();
             obj.add(mName);          
         }
+        em.close();
+        emf.close();
         return obj;      
     }
 
