@@ -52,6 +52,12 @@ public class ChefOrderEachTable_Controller {
     }
     
     public void setMenuText (){
+        for (int i=0; i<menuViewList.size(); i++){
+            menuViewList.get(i).setVisible(false);
+            checkViewList.get(i).setVisible(false);
+            qualityViewList.get(i).setVisible(false);
+            checkViewList.get(i).setSelected(false);
+        }
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca",Ordered.class);

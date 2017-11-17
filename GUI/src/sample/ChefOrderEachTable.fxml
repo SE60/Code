@@ -21,7 +21,7 @@
             <children>
                 <AnchorPane layoutX="-1.0" layoutY="55.0" prefHeight="662.0" prefWidth="1297.0">
                     <children>
-                        <ImageView fitHeight="715.0" fitWidth="1301.0" layoutX="-23.0" layoutY="-48.0" opacity="0.65" pickOnBounds="true">
+                        <ImageView fitHeight="715.0" fitWidth="1304.0" layoutX="-23.0" layoutY="-48.0" opacity="0.65" pickOnBounds="true">
                             <image>
                                 <Image url="@264.jpg" />
                             </image>
@@ -56,7 +56,7 @@
                             <children>
                                 <ScrollPane layoutX="-3.0" layoutY="-1.0" prefHeight="360.0" prefWidth="1147.0" stylesheets="@scrollbar.css">
                            <content>
-                              <AnchorPane prefHeight="800.0" prefWidth="1128.0" style="-fx-background-color: #172a46;">
+                              <AnchorPane prefHeight="800.0" prefWidth="1124.0" style="-fx-background-color: #172a46;">
                                  <children>
                                     <TableView prefHeight="800.0" prefWidth="1124.0" stylesheets="@table.css">
                                       <columns>
@@ -79,7 +79,7 @@
                                           </Label>
                                           <Label fx:id="menu1" layoutX="50.0" layoutY="20.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check2" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="70.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -94,7 +94,7 @@
                                           </Label>
                                           <Label fx:id="menu2" layoutX="50.0" layoutY="70.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check3" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="120.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -109,7 +109,7 @@
                                           </Label>
                                           <Label fx:id="menu3" layoutX="50.0" layoutY="120.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check4" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="170.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -124,7 +124,7 @@
                                           </Label>
                                           <Label fx:id="menu4" layoutX="50.0" layoutY="170.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check5" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="220.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -139,7 +139,7 @@
                                           </Label>
                                           <Label fx:id="menu5" layoutX="50.0" layoutY="220.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check6" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="270.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -154,7 +154,7 @@
                                           </Label>
                                           <Label fx:id="menu6" layoutX="50.0" layoutY="270.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check7" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="320.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -169,7 +169,7 @@
                                           </Label>
                                           <Label fx:id="menu7" layoutX="50.0" layoutY="320.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check8" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="370.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -184,7 +184,7 @@
                                           </Label>
                                           <Label fx:id="menu8" layoutX="50.0" layoutY="370.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check9" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="420.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -199,7 +199,7 @@
                                           </Label>
                                           <Label fx:id="menu9" layoutX="50.0" layoutY="420.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check10" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="470.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -214,7 +214,7 @@
                                           </Label>
                                           <Label fx:id="menu10" layoutX="50.0" layoutY="470.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check11" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="520.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -230,7 +230,7 @@
                                           
                                           <Label fx:id="menu11" layoutX="50.0" layoutY="520.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check12" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="570.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -245,7 +245,7 @@
                                           </Label>
                                           <Label fx:id="menu12" layoutX="50.0" layoutY="570.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check13" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="620.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -260,7 +260,7 @@
                                           </Label>
                                           <Label fx:id="menu13" layoutX="50.0" layoutY="620.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                           <CheckBox fx:id="check14" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="670.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
@@ -275,7 +275,7 @@
                                           </Label>
                                           <Label fx:id="menu14" layoutX="50.0" layoutY="670.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
                                              <font>
-                                                <Font name="TH Sarabun New" size="20.0" />
+                                                <Font name="TH Sarabun New" size="27.0" />
                                              </font>
                                           </Label>
                                        </children>
