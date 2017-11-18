@@ -15,6 +15,7 @@
 <?import javafx.scene.text.Text?>
 <?import java.util.ArrayList?>
 
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.ChefOrderEachTable_Controller">
     <children>
         <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -56,7 +57,7 @@
                             <children>
                                 <ScrollPane layoutX="-3.0" layoutY="-1.0" prefHeight="360.0" prefWidth="1147.0" stylesheets="@scrollbar.css">
                            <content>
-                              <AnchorPane prefHeight="800.0" prefWidth="1124.0" style="-fx-background-color: #172a46;">
+                              <AnchorPane prefHeight="800.0" prefWidth="1126.0" style="-fx-background-color: #172a46;">
                                  <children>
                                     <TableView prefHeight="800.0" prefWidth="1124.0" stylesheets="@table.css">
                                       <columns>
@@ -72,7 +73,7 @@
                                                    <Font size="20.0" />
                                                </font>
                                            </CheckBox>
-                                          <Label fx:id="quality1" layoutX="800.0" layoutY="20.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality1" layoutX="810.0" layoutY="20.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -87,7 +88,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality2" layoutX="800.0" layoutY="70.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality2" layoutX="810.0" layoutY="70.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -102,7 +103,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality3" layoutX="800.0" layoutY="120.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality3" layoutX="810.0" layoutY="120.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -117,7 +118,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality4" layoutX="800.0" layoutY="170.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality4" layoutX="810.0" layoutY="170.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -132,7 +133,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality5" layoutX="800.0" layoutY="220.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality5" layoutX="810.0" layoutY="220.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -147,7 +148,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality6" layoutX="800.0" layoutY="270.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality6" layoutX="810.0" layoutY="270.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -162,7 +163,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality7" layoutX="800.0" layoutY="320.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality7" layoutX="810.0" layoutY="320.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -177,7 +178,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality8" layoutX="800.0" layoutY="370.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality8" layoutX="810.0" layoutY="370.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -192,7 +193,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality9" layoutX="800.0" layoutY="420.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality9" layoutX="810.0" layoutY="420.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -207,7 +208,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality10" layoutX="800.0" layoutY="470.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality10" layoutX="810.0" layoutY="470.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -222,7 +223,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality11" layoutX="800.0" layoutY="520.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality11" layoutX="810.0" layoutY="520.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -238,7 +239,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality12" layoutX="800.0" layoutY="570.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality12" layoutX="810.0" layoutY="570.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -253,7 +254,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality13" layoutX="800.0" layoutY="620.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality13" layoutX="810.0" layoutY="620.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>
@@ -268,7 +269,7 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </CheckBox>
-                                          <Label fx:id="quality14" layoutX="800.0" layoutY="670.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                          <Label fx:id="quality14" layoutX="810.0" layoutY="670.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
                                              <font>
                                                 <Font name="TH Sarabun New" size="30.0" />
                                              </font>

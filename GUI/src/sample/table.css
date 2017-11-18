@@ -84,8 +84,7 @@
     -fx-shape: null;
 }
 
-
-
+/*------------------------------------------------------------*/
 
 .split-pane:horizontal > .split-pane-divider {
     -fx-border-color: transparent #1d1d1d transparent #1d1d1d;
