@@ -69,9 +69,13 @@ public class ChefTableOrder_Controller {
         EntityManager em=emf.createEntityManager();
         em.getTransaction().begin();
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca ",Ordered.class); 
+        int orderCount = 1;
         for(int i=0;i<q1.getResultList().size();i++){
-               beforeShowTableChef =new BeforeShowTableChef(i+1,q1.getResultList().get(i).getTable());
-               p.add(beforeShowTableChef);        
+            if (q1.getResultList().get(i).getStatus() == false){
+               beforeShowTableChef =new BeforeShowTableChef(orderCount,q1.getResultList().get(i).getTable());
+               p.add(beforeShowTableChef); 
+               orderCount++;
+            }             
         }
         em.close();
         emf.close();

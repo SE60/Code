@@ -63,13 +63,18 @@ public class ChefOrderEachTable_Controller {
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca",Ordered.class);
         if(!q1.getResultList().isEmpty()){
             table.setText(Integer.toString(q1.getResultList().get(0).getTable()));
-        for (int i=0; i<q1.getResultList().get(0).getPrice().size(); i++){
-                menuViewList.get(i).setVisible(true);
-                checkViewList.get(i).setVisible(true);
-                qualityViewList.get(i).setVisible(true);
-                menuViewList.get(i).setText(q1.getResultList().get(0).getName().get(i));
-                qualityViewList.get(i).setText(Integer.toString(q1.getResultList().get(0).getQuality().get(i)));
-            } 
+            for (int i=0; i<q1.getResultList().size();i++){
+                if (q1.getResultList().get(i).getStatus() == false){
+                    for (int j=0; j<q1.getResultList().get(i).getPrice().size(); j++){
+                            menuViewList.get(j).setVisible(true);
+                            checkViewList.get(j).setVisible(true);
+                            qualityViewList.get(j).setVisible(true);
+                            menuViewList.get(j).setText(q1.getResultList().get(i).getName().get(j));
+                            qualityViewList.get(j).setText(Integer.toString(q1.getResultList().get(i).getQuality().get(j)));
+                    }
+                    break;
+                }
+            }
         }
         em.close();
         emf.close();
@@ -100,9 +105,17 @@ public class ChefOrderEachTable_Controller {
             }
         }
         if (selectedCount == i){
+//            em.getTransaction().begin();
+//            int delete = em.createQuery(
+//                "DELETE FROM Ordered c WHERE c.id ="+q1.getResultList().get(0).getId()).executeUpdate();
+//            em.getTransaction().commit();
             em.getTransaction().begin();
-            int delete = em.createQuery(
-                "DELETE FROM Ordered c WHERE c.id ="+q1.getResultList().get(0).getId()).executeUpdate();
+            for (int j=0; j<q1.getResultList().size();j++){
+                if (q1.getResultList().get(j).getStatus() == false){
+                    q1.getResultList().get(j).setStatus(true);
+                    break;
+                }
+            }
             em.getTransaction().commit();
             chefTableOrder_Controller.initialize();
             Main_Chef.mainStage.getScene().setRoot(Main_Chef.root1);
