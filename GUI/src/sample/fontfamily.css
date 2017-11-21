@@ -25,3 +25,19 @@
    -fx-font-size : 36; 
    -fx-font-weight : bold; 
 }
+.font68{
+   -fx-font-family : 'TH Sarabun New' ;
+   -fx-font-size : 68; 
+}
+.font24{
+   -fx-font-family : 'TH Sarabun New' ;
+   -fx-font-size : 24; 
+}
+.font60{
+   -fx-font-family : 'TH Sarabun New' ;
+   -fx-font-size : 60; 
+}
+.font50{
+   -fx-font-family : 'TH Sarabun New' ;
+   -fx-font-size : 50; 
+}
