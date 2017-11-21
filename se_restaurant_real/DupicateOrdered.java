@@ -31,12 +31,17 @@ public class DupicateOrdered {
     public boolean isDupicate(){
         for(int i=0;i<orderedViewList.size();i++){
             if(orderedViewList.get(i).getText().equals(justOrder)){
-                increaseViewList.get(i).getValueFactory().increment(1);  
-//                Alert alert = new Alert(AlertType.INFORMATION);
-//                alert.setTitle("Information Dialog");
-//                alert.setHeaderText("You have already ordered");
-//                alert.setContentText("Please increase quality by spinner on right side");
-//                alert.showAndWait();
+                if(increaseViewList.get(i).getValue()< 10)   
+                {
+                    increaseViewList.get(i).getValueFactory().increment(1);    
+                }                 
+                else{
+                   Alert alert = new Alert(AlertType.INFORMATION);
+                   alert.setTitle("Information Dialog");
+                   alert.setHeaderText("Your order quality is over 10");
+                   alert.setContentText("Please order first then you can order this menu again");
+                   alert.showAndWait();  
+                }
                 return true;
             }
         }
