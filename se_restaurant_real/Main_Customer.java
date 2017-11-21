@@ -19,6 +19,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import se_restaurant_real.Controller.CustomerMenu_Controller;
+import static se_restaurant_real.Main_Chef.root2;
 /**
  *
  * @author l3oat
@@ -35,25 +36,20 @@ public class Main_Customer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/SelectTable.fxml"));
-        // ---------------------------------- ploy edit ------------------------------------------
+        //-------------------------Load fxml root 1-------------------------------------------//
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/SelectTable.fxml"));   
         root1 = (Parent) fxmlLoader.load();
         fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/CustomerMenu.fxml"));
+        //-------------------------Load fxml root 2-------------------------------------------//
         root2=(Parent) fxmlLoader.load();
         main_Controller=fxmlLoader.getController();
-        
-        
-//        Stage stage = new Stage();
-//        stage.setScene(new Scene(root1));  
-//        stage.show();
         // --------------------------------- ploy edit -------------------------------------------
+        primaryStage.setResizable(false);
+        primaryStage.setTitle("SE_RESTAURANT_CUSTOMER");
         mainStage = primaryStage;
-        mainStage.setScene(new Scene(root1));
+        mainStage.setScene(new Scene(root1,1270,710));
         mainStage.show();
         // ---------------------------------------------------------------------------------------
-        
-//        CustomerMenu_Controller customer=new CustomerMenu_Controller();
-//        customer.test();;
     }
 
        public void setCustomerOrder() {
@@ -61,6 +57,7 @@ public class Main_Customer extends Application {
             FXMLLoader loader;
             loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/GUI/src/sample/CustomerTableOrder.fxml"));
+           
             cOrder = loader.load();
             // ---------------------------------------------------------------------------------------
         } catch (IOException ex) {

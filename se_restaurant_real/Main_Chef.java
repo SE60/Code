@@ -15,6 +15,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import se_restaurant_real.Controller.ChefOrderEachTable_Controller;
 import se_restaurant_real.Controller.ChefTableOrder_Controller;
+import static se_restaurant_real.Main_Customer.mainStage;
+import static se_restaurant_real.Main_Customer.root1;
 
 
 
@@ -32,15 +34,19 @@ public class Main_Chef extends Application {
     public static Parent cOrder;
     
     public void start(Stage primaryStage) throws Exception{
+        //-------------------------Load fxml root 1-------------------------------------------//
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/ChefTableOrder.fxml"));
-        root1 = (Parent) fxmlLoader.load();
+        root1 = (Parent) fxmlLoader.load();   
         chefTableOrder_Controller=fxmlLoader.getController();
+        //-------------------------Load fxml root 2-------------------------------------------//
         fxmlLoader = new FXMLLoader(getClass().getResource("/GUI/src/sample/ChefOrderEachTable.fxml"));
-        root2=(Parent) fxmlLoader.load();
+        root2=(Parent) fxmlLoader.load(); 
         chefOrderEachTable_Controller=fxmlLoader.getController();
         
+        primaryStage.setResizable(false);
+        primaryStage.setTitle("SE_RESTAURANT_CHEF");
         mainStage = primaryStage;
-        mainStage.setScene(new Scene(root1));
+        mainStage.setScene(new Scene(root1,1270,710));
         mainStage.show();
     }
     
