@@ -23,6 +23,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
+import se_restaurant_real.DB_Connection;
 import se_restaurant_real.Main_Chef;
 import static se_restaurant_real.Main_Chef.chefTableOrder_Controller;
 import se_restaurant_real.Main_Customer;
@@ -58,7 +59,7 @@ public class ChefOrderEachTable_Controller {
             qualityViewList.get(i).setVisible(false);
             checkViewList.get(i).setSelected(false);
         }
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("objectdb://161.246.6.22:6136/restaurant.odb");
         EntityManager em=emf.createEntityManager();
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca",Ordered.class);
         if(!q1.getResultList().isEmpty()){
@@ -89,8 +90,8 @@ public class ChefOrderEachTable_Controller {
 
     @FXML
     void confirmButton_Clicked(MouseEvent event) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca",Ordered.class);
         int selectedCount =0;
         int i =0;
@@ -128,7 +129,6 @@ public class ChefOrderEachTable_Controller {
             alert.setContentText("Please selected every menu");
             alert.showAndWait();
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
     }
 }

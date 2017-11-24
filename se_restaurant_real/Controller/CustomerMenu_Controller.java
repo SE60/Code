@@ -41,6 +41,7 @@ import se_restaurant_real.LoadQuality;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
 import javax.persistence.Query;
+import se_restaurant_real.DB_Connection;
 import se_restaurant_real.DupicateOrdered;
 import se_restaurant_real.LoadOrdered;
 import static se_restaurant_real.Main_Customer.cOrder;
@@ -93,9 +94,7 @@ public class CustomerMenu_Controller {
 
     @FXML
     protected void initialize()
-    {  
-       //--------------------------Set Table Number---------------------------//
-           tableNumber.setText(Integer.toString(SelectTable_Controller.tableInt));        
+    {     
        //-----------------------------Variable--------------------------------//
        LoadPicture picture=new LoadPicture();
        LoadMenuName name=new LoadMenuName();
@@ -226,8 +225,10 @@ public class CustomerMenu_Controller {
            costViewList_9.get(i).setVisible(false);
        }
 //-------------------------------------Set pagination pane------------------------------------------------//     
-       EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-       EntityManager em=emf.createEntityManager();
+       //-------------------get database connection------------------------------//
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
+        //------------------------------------------------------------------------//
        em.getTransaction().begin();
        
        TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=1",food_menu.class);
@@ -392,12 +393,9 @@ public class CustomerMenu_Controller {
         costViewList.add(costViewList_7);
         costViewList.add(costViewList_8);
         costViewList.add(costViewList_9);
-//-----------------------------------------Clearing Ordered database -----------------------------------//
-        int del=em.createQuery("delete from Ordered").executeUpdate();
-        em.getTransaction().commit();
         
-        em.close();
-        emf.close();
+        //--------------------------close connection---------------------------------------------------//
+        conn.closeConnection();
         
     }
     
@@ -420,8 +418,10 @@ public class CustomerMenu_Controller {
         
         else
         {
-            EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-            EntityManager em=emf.createEntityManager();
+            //-------------------get database connection------------------------------//
+            DB_Connection conn=new DB_Connection();
+            EntityManager em=conn.getConnection();
+            //------------------------------------------------------------------------//
             em.getTransaction().begin();
             for(int i=0;i<orderedViewList.size();i++){
                 aName.add(orderedViewList.get(i).getText());
@@ -431,8 +431,8 @@ public class CustomerMenu_Controller {
             em.persist(ordered);
             em.getTransaction().commit();
             System.out.println("Save order in database");
-            em.close();
-            emf.close();
+            //------------------close connection-------------------------------------//
+            conn.closeConnection();
             //-----------------------------Clear order list------------------------------------//
             for(int i=0;i<orderedViewList.size();i++){
                 increaseViewList.get(i).setVisible(false);
@@ -472,8 +472,7 @@ public class CustomerMenu_Controller {
             for(int i=0;i<orderedViewList.size();i++){
                 if(orderedViewList.get(i).getText()== ""){
                     if(i>=7) 
-                        ordered_Scroll.setVvalue((double)i/orderedViewList.size());                   
-                    System.out.println(i/orderedViewList.size());
+                    ordered_Scroll.setVvalue((double)i/orderedViewList.size());                   
                     priceViewList.add(price);
                     orderedViewList.get(i).setText(name);
                     increaseViewList.get(i).setVisible(true);

@@ -25,10 +25,12 @@ import javax.persistence.TypedQuery;
 public class LoadPicture {
     public ArrayList<Image> loadPicture_Catalogue_1()
     {
+        System.out.println("<LoadPicture> Loading picture form Catalogue_1...");
+        
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=1",food_menu.class);
         for(food_menu q:q1.getResultList())
@@ -45,16 +47,16 @@ public class LoadPicture {
             }         
 
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_2()
     {
+        System.out.println("<LoadPicture> Loading picture form Catalogue_2...");
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList())
@@ -71,16 +73,16 @@ public class LoadPicture {
             }         
   
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_3()
     {
+        System.out.println("<LoadPicture> Loading picture form Catalogue_3...");
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=3",food_menu.class);
         for(food_menu q:q1.getResultList())
@@ -97,16 +99,16 @@ public class LoadPicture {
             }         
            
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_4()
     {
+        System.out.println("<LoadPicture> Loading picture form Catalogue_4...");
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=4",food_menu.class);
         for(food_menu q:q1.getResultList())
@@ -123,16 +125,16 @@ public class LoadPicture {
             }         
            
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_5()
     {
+        System.out.println("<LoadPicture> Loading picture form Catalogue_5...");
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=5",food_menu.class);
         for(food_menu q:q1.getResultList())
@@ -149,16 +151,16 @@ public class LoadPicture {
             }         
            
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_6()
     {
+        System.out.println("<LoadPicture> Loading picture form Catalogue_6...");
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=6",food_menu.class);
         for(food_menu q:q1.getResultList())
@@ -175,16 +177,16 @@ public class LoadPicture {
             }         
            
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_7()
     {
+        System.out.println("<LoadPicture> Loading picture form Catalogue_7...");
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=7",food_menu.class);
         for(food_menu q:q1.getResultList())
@@ -201,16 +203,16 @@ public class LoadPicture {
             }         
            
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_8()
     {
+        System.out.println("<LoadPicture> Loading picture form Catalogue_8...");
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=8",food_menu.class);
         for(food_menu q:q1.getResultList())
@@ -227,16 +229,16 @@ public class LoadPicture {
             }         
            
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;
     }
     public ArrayList<Image> loadPicture_Catalogue_9()
     {
+        System.out.println("<LoadPicture> Loading picture form Catalogue_9...");
         ArrayList<Image> obj = new ArrayList<Image>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=9",food_menu.class);
         for(food_menu q:q1.getResultList())
@@ -253,8 +255,7 @@ public class LoadPicture {
             }         
            
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;
     }
 }

@@ -17,93 +17,93 @@ import javax.persistence.TypedQuery;
  */
 public class LoadQuality {
     public int loadQuality_1(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        System.out.println("<LoadQuality> Loading quality form Catalogue_1...");
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=1",food_menu.class);
         int temp=q1.getResultList().size();
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return temp;
     }
     public int loadQuality_2(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        System.out.println("<LoadQuality> Loading quality form Catalogue_2...");
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         int temp=q1.getResultList().size();
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return temp;
     }
     public int loadQuality_3(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        System.out.println("<LoadQuality> Loading quality form Catalogue_3...");
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=3",food_menu.class);
         int temp=q1.getResultList().size();
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return temp;
     }
     public int loadQuality_4(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        System.out.println("<LoadQuality> Loading quality form Catalogue_4...");
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=4",food_menu.class);
         int temp=q1.getResultList().size();
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return temp;
     }
     public int loadQuality_5(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        System.out.println("<LoadQuality> Loading quality form Catalogue_5...");
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=5",food_menu.class);
         int temp=q1.getResultList().size();
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return temp;
     }
     public int loadQuality_6(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        System.out.println("<LoadQuality> Loading quality form Catalogue_6...");
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=6",food_menu.class);
         int temp=q1.getResultList().size();
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return temp;
     }
     public int loadQuality_7(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        System.out.println("<LoadQuality> Loading quality form Catalogue_7...");
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=7",food_menu.class);
         int temp=q1.getResultList().size();
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return temp;
     }
     public int loadQuality_8(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        System.out.println("<LoadQuality> Loading quality form Catalogue_8...");
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=8",food_menu.class);
         int temp=q1.getResultList().size();
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return temp;
     }
     public int loadQuality_9(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        System.out.println("<LoadQuality> Loading quality form Catalogue_9...");
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         em.getTransaction().begin();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=9",food_menu.class);
         int temp=q1.getResultList().size();
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return temp;
     }
     

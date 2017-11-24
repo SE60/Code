@@ -18,129 +18,129 @@ import javax.persistence.TypedQuery;
  */
 public class LoadCost {
     public ArrayList<Double> loadCost_1(){
+        System.out.println("<LoadCost> Loading cost form Catalogue_1...");
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=1",food_menu.class);
         for(food_menu q:q1.getResultList()){
             Double cost=q.getPrice();
             obj.add(cost);          
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;      
     }
     public ArrayList<Double> loadCost_2(){
+        System.out.println("<LoadCost> Loading cost form Catalogue_2...");
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
             Double cost=q.getPrice();
             obj.add(cost);          
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;      
     }
     public ArrayList<Double> loadCost_3(){
+        System.out.println("<LoadCost> Loading cost form Catalogue_3...");
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
             Double cost=q.getPrice();
             obj.add(cost);          
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;      
     }
     public ArrayList<Double> loadCost_4(){
+        System.out.println("<LoadCost> Loading cost form Catalogue_4...");
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
             Double cost=q.getPrice();
             obj.add(cost);          
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;      
     }
     public ArrayList<Double> loadCost_5(){
+        System.out.println("<LoadCost> Loading cost form Catalogue_5...");
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
             Double cost=q.getPrice();
             obj.add(cost);          
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;      
     }
     public ArrayList<Double> loadCost_6(){
+        System.out.println("<LoadCost> Loading cost form Catalogue_6...");
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
             Double cost=q.getPrice();
             obj.add(cost);          
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;      
     }
     public ArrayList<Double> loadCost_7(){
+        System.out.println("<LoadCost> Loading cost form Catalogue_7...");
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
             Double cost=q.getPrice();
             obj.add(cost);          
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;      
     }
     public ArrayList<Double> loadCost_8(){
+        System.out.println("<LoadCost> Loading cost form Catalogue_8...");
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
             Double cost=q.getPrice();
             obj.add(cost);          
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;      
     }
     public ArrayList<Double> loadCost_9(){
+        System.out.println("<LoadCost> Loading cost form Catalogue_9...");
         ArrayList<Double> obj = new ArrayList<Double>();
         
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
         for(food_menu q:q1.getResultList()){
             Double cost=q.getPrice();
             obj.add(cost);          
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         return obj;      
     }
 }

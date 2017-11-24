@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #172a46;" styleClass="font" stylesheets="@fontfamily.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.CustomerToChef_Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #172a46;" styleClass="font" stylesheets="@fontfamily.css" xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.CustomerToChef_Controller">
    <children>
       <VBox prefHeight="63.0" prefWidth="1280.0" />
       <ImageView fitHeight="85.0" fitWidth="1283.0" layoutX="-3.0" pickOnBounds="true">

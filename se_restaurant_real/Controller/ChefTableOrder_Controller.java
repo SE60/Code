@@ -25,6 +25,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 import se_restaurant_real.BeforeShowTableChef;
+import se_restaurant_real.DB_Connection;
 import se_restaurant_real.Main_Chef;
 import static se_restaurant_real.Main_Chef.chefOrderEachTable_Controller;
 import static se_restaurant_real.Main_Chef.chefTableOrder_Controller;
@@ -65,8 +66,10 @@ public class ChefTableOrder_Controller {
     {   
         BeforeShowTableChef beforeShowTableChef;
         ObservableList<BeforeShowTableChef> p = FXCollections.observableArrayList();
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        //-------------------get database connection------------------------------//
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
+        //------------------------------------------------------------------------//
         em.getTransaction().begin();
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca ",Ordered.class); 
         int orderCount = 1;
@@ -77,8 +80,9 @@ public class ChefTableOrder_Controller {
                orderCount++;
             }             
         }
-        em.close();
-        emf.close();
+        //------------------close connection-------------------------------------//
+        conn.closeConnection();
+        //----------------------------------------------------------------------//
         orderList.setRowFactory(tv -> {
             TableRow<BeforeShowTableChef> row = new TableRow<>();
             row.setOnMouseClicked(event -> {

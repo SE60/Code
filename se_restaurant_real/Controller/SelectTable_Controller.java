@@ -13,6 +13,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import se_restaurant_real.DB_Connection;
 import se_restaurant_real.Main_Customer;
 import static se_restaurant_real.Main_Customer.cOrder;
 
@@ -47,7 +51,20 @@ public class SelectTable_Controller {
                            
             
             Main_Customer.main_Controller.tableNumber.setText(Integer.toString(tableInt));
+            //-----------------------------------------Clearing Ordered database -----------------------------------//
+            //-------------------get database connection------------------------------//
+            DB_Connection conn=new DB_Connection();
+            EntityManager em=conn.getConnection();
+            //------------------------------------------------------------------------//
+            em.getTransaction().begin();
+            int del=em.createQuery("delete from Ordered where table="+Integer.toString(SelectTable_Controller.tableInt)).executeUpdate();
+            em.getTransaction().commit();
+            //-------------------close database connection------------------------------//
+            conn.closeConnection();
+            //------------------------------------------------------------------------//
+            
             Main_Customer.mainStage.getScene().setRoot(Main_Customer.root2);
+            
             
         }catch(NumberFormatException e){
             //---------------------if table number not a number---------------------//

@@ -22,6 +22,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 import se_restaurant_real.BeforeShowTable;
+import se_restaurant_real.DB_Connection;
 import se_restaurant_real.Main_Customer;
 
 /**
@@ -75,8 +76,10 @@ public class CustomerTableOrder_Controller {
         int totalPriceInt=0;
         BeforeShowTable beforeShowTable;
         ObservableList<BeforeShowTable> p = FXCollections.observableArrayList();
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("$objectdb/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        //-------------------get database connection------------------------------//
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
+        //------------------------------------------------------------------------//
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca where ca.table="+Integer.toString(SelectTable_Controller.tableInt),Ordered.class); 
         for(int i=0;i<q1.getResultList().size();i++){
            for(int j=0;j<q1.getResultList().get(i).getPrice().size();j++) 
@@ -88,8 +91,9 @@ public class CustomerTableOrder_Controller {
            }          
         }
         totalPrice.setText(Integer.toString(totalPriceInt));
-        em.close();
-        emf.close();
+        //-------------------close database connection------------------------------//
+        conn.closeConnection();
+        //------------------------------------------------------------------------//
         return p;
     }
     
