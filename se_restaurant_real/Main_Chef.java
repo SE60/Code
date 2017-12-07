@@ -51,8 +51,6 @@ public class Main_Chef extends Application {
     }
     
     public static void main(String[] args) throws SQLException {     
-        
-        //System.out.println(System.getProperty("objectdb.home"));
         launch(args);
     }
 }

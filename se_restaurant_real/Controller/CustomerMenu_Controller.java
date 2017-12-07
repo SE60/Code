@@ -5,9 +5,6 @@
  */
 package se_restaurant_real.Controller;
 
-// -------------------------------- ploy edit -----------------------------------
-// ------------------------------------------------------------------------------
-
 import RestaurantDB.Ordered;
 
 import RestaurantDB.food_menu;
@@ -73,8 +70,6 @@ public class CustomerMenu_Controller {
     private ArrayList<List<Label>> nameViewList=new ArrayList<List<Label>>();
     private ArrayList<List<Label>> costViewList=new ArrayList<List<Label>>();
     private ArrayList<Double> priceViewList=new ArrayList<Double>();
-    //@FXML private Spinner<Integer> inc_1,inc_2,inc_3,inc_4,inc_5,inc_6,inc_7,inc_8,inc_9,inc_10,inc_11,inc_12,inc_13,inc_14;
-    //@FXML private ImageView del_1,del_2,del_3,del_4,del_5,del_6,del_7,del_8,del_9,del_10,del_11,del_12,del_13,del_14;
     
    //--------------------------------------------Set initial value-----------------------------------------//
     SpinnerValueFactory<Integer> spinValue1 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1);

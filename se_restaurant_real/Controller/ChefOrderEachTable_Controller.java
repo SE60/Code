@@ -106,10 +106,6 @@ public class ChefOrderEachTable_Controller {
             }
         }
         if (selectedCount == i){
-//            em.getTransaction().begin();
-//            int delete = em.createQuery(
-//                "DELETE FROM Ordered c WHERE c.id ="+q1.getResultList().get(0).getId()).executeUpdate();
-//            em.getTransaction().commit();
             em.getTransaction().begin();
             for (int j=0; j<q1.getResultList().size();j++){
                 if (q1.getResultList().get(j).getStatus() == false){

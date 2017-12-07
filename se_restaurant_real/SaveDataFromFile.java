@@ -27,7 +27,7 @@ import javax.persistence.TypedQuery;
  * @author l3oat
  */
 public class SaveDataFromFile {
-    public SaveDataFromFile() throws FileNotFoundException, FileNotFoundException, UnsupportedEncodingException{
+    public SaveDataFromFile() throws FileNotFoundException, FileNotFoundException, UnsupportedEncodingException{     
         //-------------------get database connection------------------------------//
         DB_Connection conn=new DB_Connection();
         DB_Connection conn2=new DB_Connection();

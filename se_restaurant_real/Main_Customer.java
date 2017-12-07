@@ -66,16 +66,6 @@ public class Main_Customer extends Application {
        
        }
     public static void main(String[] args) throws SQLException {
-//----------------Save Data from File------------------//
-//        try {
-//            saveDataFromFile data=new saveDataFromFile();
-//        } catch (FileNotFoundException ex) {
-//            Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
-//        } catch (UnsupportedEncodingException ex) {
-//            Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-
-//---------------------------------------------------//          
        launch(args);
     }
 }
