@@ -44,3 +44,8 @@
    -fx-font-family : 'TH Sarabun New' ;
    -fx-font-size : 45; 
 }
+.font50b{
+   -fx-font-family : 'TH Sarabun New' ;
+   -fx-font-size : 50; 
+   -fx-font-weight : bold;
+}
