@@ -228,7 +228,15 @@
                                     <fx:reference source="cid_1_4" /> 
                                     <fx:reference source="cid_1_5" /> 
                                     <fx:reference source="cid_1_6" />            
-                                </ArrayList>                              
+                                </ArrayList>     
+                                <ArrayList fx:id="currencyViewList_1">
+                                    <fx:reference source="cur_1_1" />
+                                    <fx:reference source="cur_1_2" />
+                                    <fx:reference source="cur_1_3" />
+                                    <fx:reference source="cur_1_4" /> 
+                                    <fx:reference source="cur_1_5" /> 
+                                    <fx:reference source="cur_1_6" />            
+                                </ArrayList>                         
                             </fx:define>
                         </Tab>
                         <Tab text="ทอด">
@@ -468,7 +476,19 @@
                                     <fx:reference source="cid_2_8" />
                                     <fx:reference source="cid_2_9" />
                                     <fx:reference source="cid_2_10" />           
-                                </ArrayList>                              
+                                </ArrayList> 
+                                <ArrayList fx:id="currencyViewList_2">
+                                    <fx:reference source="cur_2_1" />
+                                    <fx:reference source="cur_2_2" />
+                                    <fx:reference source="cur_2_3" />
+                                    <fx:reference source="cur_2_4" /> 
+                                    <fx:reference source="cur_2_5" /> 
+                                    <fx:reference source="cur_2_6" />     
+                                    <fx:reference source="cur_2_7" />  
+                                    <fx:reference source="cur_2_8" />  
+                                    <fx:reference source="cur_2_9" />  
+                                    <fx:reference source="cur_2_10" />         
+                                </ArrayList>                                       
                             </fx:define>
                         </Tab>
                         <Tab text="แกง">
@@ -708,7 +728,19 @@
                                     <fx:reference source="cid_3_8" />
                                     <fx:reference source="cid_3_9" />
                                     <fx:reference source="cid_3_10" />           
-                                </ArrayList>                              
+                                </ArrayList>                   
+                                <ArrayList fx:id="currencyViewList_3">
+                                    <fx:reference source="cur_3_1" />
+                                    <fx:reference source="cur_3_2" />
+                                    <fx:reference source="cur_3_3" />
+                                    <fx:reference source="cur_3_4" /> 
+                                    <fx:reference source="cur_3_5" /> 
+                                    <fx:reference source="cur_3_6" />     
+                                    <fx:reference source="cur_3_7" />  
+                                    <fx:reference source="cur_3_8" />  
+                                    <fx:reference source="cur_3_9" />  
+                                    <fx:reference source="cur_3_10" />         
+                                </ArrayList>            
                             </fx:define>
                         </Tab>
                         <Tab text="ต้มจืด">
@@ -948,7 +980,19 @@
                                     <fx:reference source="cid_4_8" />
                                     <fx:reference source="cid_4_9" />
                                     <fx:reference source="cid_4_10" />           
-                                </ArrayList>                              
+                                </ArrayList>     
+                                <ArrayList fx:id="currencyViewList_4">
+                                    <fx:reference source="cur_4_1" />
+                                    <fx:reference source="cur_4_2" />
+                                    <fx:reference source="cur_4_3" />
+                                    <fx:reference source="cur_4_4" /> 
+                                    <fx:reference source="cur_4_5" /> 
+                                    <fx:reference source="cur_4_6" />     
+                                    <fx:reference source="cur_4_7" />  
+                                    <fx:reference source="cur_4_8" />  
+                                    <fx:reference source="cur_4_9" />  
+                                    <fx:reference source="cur_4_10" />         
+                                </ArrayList>                          
                             </fx:define>
                         </Tab>
                         <Tab text="ต้มยำ">
@@ -1188,7 +1232,19 @@
                                     <fx:reference source="cid_5_8" />
                                     <fx:reference source="cid_5_9" />
                                     <fx:reference source="cid_5_10" />           
-                                </ArrayList>                              
+                                </ArrayList>       
+                                <ArrayList fx:id="currencyViewList_5">
+                                    <fx:reference source="cur_5_1" />
+                                    <fx:reference source="cur_5_2" />
+                                    <fx:reference source="cur_5_3" />
+                                    <fx:reference source="cur_5_4" /> 
+                                    <fx:reference source="cur_5_5" /> 
+                                    <fx:reference source="cur_5_6" />     
+                                    <fx:reference source="cur_5_7" />  
+                                    <fx:reference source="cur_5_8" />  
+                                    <fx:reference source="cur_5_9" />  
+                                    <fx:reference source="cur_5_10" />         
+                                </ArrayList>                        
                             </fx:define>
                         </Tab>
                         <Tab text="ส้มตำ">
@@ -1428,7 +1484,19 @@
                                     <fx:reference source="cid_6_8" />
                                     <fx:reference source="cid_6_9" />
                                     <fx:reference source="cid_6_10" />           
-                                </ArrayList>                              
+                                </ArrayList>           
+                                <ArrayList fx:id="currencyViewList_6">
+                                    <fx:reference source="cur_6_1" />
+                                    <fx:reference source="cur_6_2" />
+                                    <fx:reference source="cur_6_3" />
+                                    <fx:reference source="cur_6_4" /> 
+                                    <fx:reference source="cur_6_5" /> 
+                                    <fx:reference source="cur_6_6" />     
+                                    <fx:reference source="cur_6_7" />  
+                                    <fx:reference source="cur_6_8" />  
+                                    <fx:reference source="cur_6_9" />  
+                                    <fx:reference source="cur_6_10" />         
+                                </ArrayList>                    
                             </fx:define>
                         </Tab>
                         <Tab text="จานเดียว">
@@ -1668,7 +1736,19 @@
                                     <fx:reference source="cid_7_8" />
                                     <fx:reference source="cid_7_9" />
                                     <fx:reference source="cid_7_10" />           
-                                </ArrayList>                              
+                                </ArrayList>      
+                                <ArrayList fx:id="currencyViewList_7">
+                                    <fx:reference source="cur_7_1" />
+                                    <fx:reference source="cur_7_2" />
+                                    <fx:reference source="cur_7_3" />
+                                    <fx:reference source="cur_7_4" /> 
+                                    <fx:reference source="cur_7_5" /> 
+                                    <fx:reference source="cur_7_6" />     
+                                    <fx:reference source="cur_7_7" />  
+                                    <fx:reference source="cur_7_8" />  
+                                    <fx:reference source="cur_7_9" />  
+                                    <fx:reference source="cur_7_10" />         
+                                </ArrayList>                         
                             </fx:define>
                         </Tab>
                         <Tab text="เครื่องดื่ม">
@@ -1908,7 +1988,19 @@
                                     <fx:reference source="cid_8_8" />
                                     <fx:reference source="cid_8_9" />
                                     <fx:reference source="cid_8_10" />           
-                                </ArrayList>                              
+                                </ArrayList>        
+                                <ArrayList fx:id="currencyViewList_8">
+                                    <fx:reference source="cur_8_1" />
+                                    <fx:reference source="cur_8_2" />
+                                    <fx:reference source="cur_8_3" />
+                                    <fx:reference source="cur_8_4" /> 
+                                    <fx:reference source="cur_8_5" /> 
+                                    <fx:reference source="cur_8_6" />     
+                                    <fx:reference source="cur_8_7" />  
+                                    <fx:reference source="cur_8_8" />  
+                                    <fx:reference source="cur_8_9" />  
+                                    <fx:reference source="cur_8_10" />         
+                                </ArrayList>                       
                             </fx:define>
                         </Tab>
                         <Tab text="ของหวาน">
@@ -2148,7 +2240,19 @@
                                     <fx:reference source="cid_9_8" />
                                     <fx:reference source="cid_9_9" />
                                     <fx:reference source="cid_9_10" />           
-                                </ArrayList>                              
+                                </ArrayList>    
+                                <ArrayList fx:id="currencyViewList_9">
+                                    <fx:reference source="cur_9_1" />
+                                    <fx:reference source="cur_9_2" />
+                                    <fx:reference source="cur_9_3" />
+                                    <fx:reference source="cur_9_4" /> 
+                                    <fx:reference source="cur_9_5" /> 
+                                    <fx:reference source="cur_9_6" />     
+                                    <fx:reference source="cur_9_7" />  
+                                    <fx:reference source="cur_9_8" />  
+                                    <fx:reference source="cur_9_9" />  
+                                    <fx:reference source="cur_9_10" />         
+                                </ArrayList>                           
                             </fx:define>
                         </Tab>
                      </tabs>

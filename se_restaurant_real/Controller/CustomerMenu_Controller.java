@@ -55,9 +55,10 @@ public class CustomerMenu_Controller {
     @FXML private List<ImageView> imageViewList_1,imageViewList_2,imageViewList_3,imageViewList_4,imageViewList_5,imageViewList_6,imageViewList_7,imageViewList_8,imageViewList_9 ;    
     @FXML private List<Label> nameViewList_1,nameViewList_2,nameViewList_3,nameViewList_4,nameViewList_5,nameViewList_6,nameViewList_7,nameViewList_8,nameViewList_9 ;
     @FXML private List<Label> costViewList_1,costViewList_2,costViewList_3,costViewList_4,costViewList_5,costViewList_6,costViewList_7,costViewList_8,costViewList_9 ;
+    @FXML private List<Label> currencyViewList_1,currencyViewList_2,currencyViewList_3,currencyViewList_4,currencyViewList_5,currencyViewList_6,currencyViewList_7,currencyViewList_8,currencyViewList_9 ;
     @FXML private List<Label> orderedViewList;
     @FXML private List<Spinner<Integer>> increaseViewList;
-    @FXML private List<ImageView> deleteViewList;
+    @FXML private List<ImageView> deleteViewList; 
     @FXML private AnchorPane A_2_AfterOrdered,A_1_BeforeOrdered;
     @FXML private List<Pagination> slideViewList;
     @FXML private List<AnchorPane> catalogueViewList;
@@ -69,6 +70,7 @@ public class CustomerMenu_Controller {
     private ArrayList<List<ImageView>> imageViewList=new ArrayList<List<ImageView>>();
     private ArrayList<List<Label>> nameViewList=new ArrayList<List<Label>>();
     private ArrayList<List<Label>> costViewList=new ArrayList<List<Label>>();
+    private ArrayList<List<Label>> currencyViewList=new ArrayList<List<Label>>();
     private ArrayList<Double> priceViewList=new ArrayList<Double>();
     
    //--------------------------------------------Set initial value-----------------------------------------//
@@ -122,6 +124,7 @@ public class CustomerMenu_Controller {
            nameViewList_1.get(i).setVisible(false);            
            costViewList_1.get(i).setText(ccost.toString());
            costViewList_1.get(i).setVisible(false);
+           currencyViewList_1.get(i).setVisible(false);
        }
        for(int i=0;i<imageViewList_2.size();i++)
        {
@@ -134,6 +137,7 @@ public class CustomerMenu_Controller {
            nameViewList_2.get(i).setVisible(false);            
            costViewList_2.get(i).setText(ccost.toString());
            costViewList_2.get(i).setVisible(false);
+           currencyViewList_2.get(i).setVisible(false);
        }
        for(int i=0;i<imageViewList_3.size();i++)
        {
@@ -146,6 +150,7 @@ public class CustomerMenu_Controller {
            nameViewList_3.get(i).setVisible(false);            
            costViewList_3.get(i).setText(ccost.toString());
            costViewList_3.get(i).setVisible(false);
+           currencyViewList_3.get(i).setVisible(false);
        }
        for(int i=0;i<imageViewList_4.size();i++)
        {
@@ -158,6 +163,7 @@ public class CustomerMenu_Controller {
            nameViewList_4.get(i).setVisible(false);            
            costViewList_4.get(i).setText(ccost.toString());
            costViewList_4.get(i).setVisible(false);
+           currencyViewList_4.get(i).setVisible(false);
        }
        for(int i=0;i<imageViewList_5.size();i++)
        {
@@ -170,6 +176,7 @@ public class CustomerMenu_Controller {
            nameViewList_5.get(i).setVisible(false);            
            costViewList_5.get(i).setText(ccost.toString());
            costViewList_5.get(i).setVisible(false);
+           currencyViewList_5.get(i).setVisible(false);
        }
        for(int i=0;i<imageViewList_6.size();i++)
        {
@@ -182,6 +189,7 @@ public class CustomerMenu_Controller {
            nameViewList_6.get(i).setVisible(false);            
            costViewList_6.get(i).setText(ccost.toString());
            costViewList_6.get(i).setVisible(false);
+           currencyViewList_6.get(i).setVisible(false);
        }
        for(int i=0;i<imageViewList_7.size();i++)
        {
@@ -194,6 +202,7 @@ public class CustomerMenu_Controller {
            nameViewList_7.get(i).setVisible(false);            
            costViewList_7.get(i).setText(ccost.toString());
            costViewList_7.get(i).setVisible(false);
+           currencyViewList_7.get(i).setVisible(false);
        }
        for(int i=0;i<imageViewList_8.size();i++)
        {
@@ -206,6 +215,7 @@ public class CustomerMenu_Controller {
            nameViewList_8.get(i).setVisible(false);            
            costViewList_8.get(i).setText(ccost.toString());
            costViewList_8.get(i).setVisible(false);
+           currencyViewList_8.get(i).setVisible(false);
        }
        for(int i=0;i<imageViewList_9.size();i++)
        {
@@ -218,6 +228,7 @@ public class CustomerMenu_Controller {
            nameViewList_9.get(i).setVisible(false);            
            costViewList_9.get(i).setText(ccost.toString());
            costViewList_9.get(i).setVisible(false);
+           currencyViewList_9.get(i).setVisible(false);
        }
 //-------------------------------------Set pagination pane------------------------------------------------//     
        //-------------------get database connection------------------------------//
@@ -234,6 +245,7 @@ public class CustomerMenu_Controller {
             imageViewList_1.get(param).setVisible(true);
             nameViewList_1.get(param).setVisible(true);
             costViewList_1.get(param).setVisible(true);
+            currencyViewList_1.get(param).setVisible(true);
             return pagiViewList_1.get(param);
            }
        });
@@ -249,6 +261,8 @@ public class CustomerMenu_Controller {
              nameViewList_2.get(param*2+1).setVisible(true);
              costViewList_2.get(param*2).setVisible(true);
              costViewList_2.get(param*2+1).setVisible(true);
+             currencyViewList_2.get(param*2).setVisible(true);
+             currencyViewList_2.get(param*2+1).setVisible(true);
             return pagiViewList_2.get(param);
            }
        });
@@ -264,6 +278,8 @@ public class CustomerMenu_Controller {
              nameViewList_3.get(param*2+1).setVisible(true);
              costViewList_3.get(param*2).setVisible(true);
              costViewList_3.get(param*2+1).setVisible(true);
+             currencyViewList_3.get(param*2).setVisible(true);
+             currencyViewList_3.get(param*2+1).setVisible(true);
             return pagiViewList_3.get(param);
            }
        });
@@ -279,6 +295,8 @@ public class CustomerMenu_Controller {
              nameViewList_4.get(param*2+1).setVisible(true);
              costViewList_4.get(param*2).setVisible(true);
              costViewList_4.get(param*2+1).setVisible(true);
+             currencyViewList_4.get(param*2).setVisible(true);
+             currencyViewList_4.get(param*2+1).setVisible(true);
             return pagiViewList_4.get(param);
            }
        });
@@ -294,6 +312,8 @@ public class CustomerMenu_Controller {
              nameViewList_5.get(param*2+1).setVisible(true);
              costViewList_5.get(param*2).setVisible(true);
              costViewList_5.get(param*2+1).setVisible(true);
+             currencyViewList_5.get(param*2).setVisible(true);
+             currencyViewList_5.get(param*2+1).setVisible(true);
             return pagiViewList_5.get(param);
            }
        });
@@ -309,6 +329,8 @@ public class CustomerMenu_Controller {
              nameViewList_6.get(param*2+1).setVisible(true);
              costViewList_6.get(param*2).setVisible(true);
              costViewList_6.get(param*2+1).setVisible(true);
+             currencyViewList_6.get(param*2).setVisible(true);
+             currencyViewList_6.get(param*2+1).setVisible(true);
             return pagiViewList_6.get(param);
            }
        });
@@ -324,6 +346,8 @@ public class CustomerMenu_Controller {
              nameViewList_7.get(param*2+1).setVisible(true);
              costViewList_7.get(param*2).setVisible(true);
              costViewList_7.get(param*2+1).setVisible(true);
+             currencyViewList_7.get(param*2).setVisible(true);
+             currencyViewList_7.get(param*2+1).setVisible(true);
             return pagiViewList_7.get(param);
            }
        });
@@ -339,6 +363,8 @@ public class CustomerMenu_Controller {
              nameViewList_8.get(param*2+1).setVisible(true);
              costViewList_8.get(param*2).setVisible(true);
              costViewList_8.get(param*2+1).setVisible(true);
+             currencyViewList_8.get(param*2).setVisible(true);
+             currencyViewList_8.get(param*2+1).setVisible(true);
             return pagiViewList_8.get(param);
            }
        });
@@ -354,6 +380,8 @@ public class CustomerMenu_Controller {
              nameViewList_9.get(param*2+1).setVisible(true);
              costViewList_9.get(param*2).setVisible(true);
              costViewList_9.get(param*2+1).setVisible(true);
+             currencyViewList_9.get(param*2).setVisible(true);
+             currencyViewList_9.get(param*2+1).setVisible(true);
             return pagiViewList_9.get(param);
            }
        });
