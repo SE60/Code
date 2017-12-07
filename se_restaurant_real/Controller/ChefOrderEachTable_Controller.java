@@ -16,6 +16,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javax.persistence.EntityManager;
@@ -46,9 +47,12 @@ public class ChefOrderEachTable_Controller {
     private Button confirmButton;
     @FXML
     private Button cancleButton;
+    @FXML
+    private ScrollPane chefOrderEachTable_ScrollPane;
     
     @FXML
     protected void initialize(){
+        chefOrderEachTable_ScrollPane.setVvalue(0);
         setMenuText();
     }
     

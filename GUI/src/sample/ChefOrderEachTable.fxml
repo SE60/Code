@@ -52,7 +52,7 @@
                   </Label>
                         <AnchorPane layoutX="64.0" layoutY="142.0" prefHeight="338.0" prefWidth="1133.0">
                             <children>
-                                <ScrollPane layoutX="-3.0" layoutY="-1.0" prefHeight="360.0" prefWidth="1147.0" stylesheets="@scrollbar.css">
+                                <ScrollPane fx:id="chefOrderEachTable_ScrollPane" layoutX="-3.0" layoutY="-1.0" prefHeight="360.0" prefWidth="1147.0" stylesheets="@scrollbar.css">
                            <content>
                               <AnchorPane prefHeight="800.0" prefWidth="1126.0" style="-fx-background-color: #172a46;">
                                  <children>

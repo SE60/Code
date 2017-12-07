@@ -14,6 +14,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
@@ -51,7 +52,11 @@ public class ChefTableOrder_Controller {
     private Button refreshButton;
     
     @FXML
+    private ScrollPane chefTableOrder_ScrollPane;
+    
+    @FXML
     protected void initialize(){
+        chefTableOrder_ScrollPane.setVvalue(0);
         loadOrderedList();
     }
     
