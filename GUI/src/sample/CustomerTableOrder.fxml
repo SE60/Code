@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@fontfamily.css" xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.CustomerTableOrder_Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@fontfamily.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.CustomerTableOrder_Controller">
    <children>
       <AnchorPane layoutX="1.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1282.0">
          <children>
@@ -66,8 +66,8 @@
                 <TableColumn fx:id="order" prefWidth="163.99996662139893" sortable="false" text="ลำดับที่" />
                 <TableColumn fx:id="menu" prefWidth="414.40000915527344" sortable="false" text="รายการอาหาร" />
                   <TableColumn fx:id="quality" minWidth="0.0" prefWidth="227.20001220703125" sortable="false" text="จำนวน" />
-                  <TableColumn fx:id="price" prefWidth="232.7999267578125" sortable="false" text="ราคา" />
-                  <TableColumn fx:id="eachFoodPrice" prefWidth="207.2000732421875" text="ราคารวม" />
+                  <TableColumn fx:id="price" prefWidth="232.7999267578125" sortable="false" text="ราคา (บาท)" />
+                  <TableColumn fx:id="eachFoodPrice" prefWidth="207.2000732421875" text="ราคารวม (บาท)" />
               </columns>
             </TableView>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#172a46" height="47.0" layoutX="-4.0" layoutY="596.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1283.0" />
