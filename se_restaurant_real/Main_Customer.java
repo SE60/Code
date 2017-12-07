@@ -75,8 +75,7 @@ public class Main_Customer extends Application {
 //            Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 
-//---------------------------------------------------//
-      // System.setProperty("objectdb.home", System.getProperty("user.dir") + "/src/RestaurantDB");              
+//---------------------------------------------------//          
        launch(args);
     }
 }
