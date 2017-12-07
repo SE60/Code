@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import java.util.ArrayList?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@fontfamily.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.ChefOrderEachTable_Controller">
     <children>
@@ -47,7 +46,7 @@
                   </Label>
                         <AnchorPane layoutX="64.0" layoutY="142.0" prefHeight="338.0" prefWidth="1133.0">
                             <children>
-                                <ScrollPane layoutX="-3.0" layoutY="-1.0" prefHeight="360.0" prefWidth="1147.0" stylesheets="@scrollbar.css">
+                                <ScrollPane hbarPolicy="NEVER" layoutX="-3.0" layoutY="-1.0" prefHeight="360.0" prefWidth="1147.0" stylesheets="@scrollbar.css">
                            <content>
                               <AnchorPane prefHeight="800.0" prefWidth="1126.0" style="-fx-background-color: #172a46;">
                                  <children>
