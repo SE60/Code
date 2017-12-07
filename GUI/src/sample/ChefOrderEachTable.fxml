@@ -35,14 +35,9 @@
                         <Image url="@frame2.png" />
                      </image>
                   </ImageView>
-                  <Text fill="#172a46" layoutX="543.0" layoutY="120.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="2.0" styleClass="font60" text="รายการอาหาร" wrappingWidth="402.73583984375">
-                     <font>
-                        <Font name="Layiji MaHaNiYom BAO" size="42.0" />
-                     </font>
-                  </Text>
                   <Text fill="#172a46" layoutX="93.0" layoutY="108.0" stroke="WHITE" strokeType="OUTSIDE" styleClass="font45" text="โต๊ะที่">
                      <font>
-                        <Font name="TH Sarabun New" size="36.0" />
+                        <Font name="TH Sarabun New" size="40.0" />
                      </font>
                   </Text>
                   <Label fx:id="table" alignment="CENTER" layoutX="178.0" layoutY="61.0" prefHeight="32.0" prefWidth="85.0" styleClass="font50" textFill="#f5210a">
@@ -63,7 +58,7 @@
                                           <TableColumn prefWidth="191.7332763671875" text="สถานะ" />
                                       </columns>
                                     </TableView>
-                                    <AnchorPane layoutY="60.0" prefHeight="750.0" prefWidth="1124.0" style="-fx-background-color: #172a46;;">
+                                    <AnchorPane layoutY="60.0" prefHeight="750.0" prefWidth="1124.0" style="-fx-background-color: #172a46;">
                                        <children>
                                            <CheckBox fx:id="check1" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="20.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
                                                <font>
@@ -315,6 +310,11 @@
                         </AnchorPane>
                      </children>
                   </VBox>
+                  <Label layoutX="565.0" layoutY="67.0" text="รายการอาหาร" textFill="#001764">
+                     <font>
+                        <Font name="TH Sarabun New" size="50.0" />
+                     </font>
+                  </Label>
                     </children>
                 </AnchorPane>
                 <VBox prefHeight="63.0" prefWidth="1280.0">
