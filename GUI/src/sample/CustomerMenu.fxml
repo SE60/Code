@@ -15,6 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import java.util.ArrayList?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="726.0" prefWidth="1280.0" stylesheets="@fontfamily.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.CustomerMenu_Controller">
    <children>
@@ -83,7 +84,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="580.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_1_1" contentDisplay="CENTER" layoutX="580.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -103,7 +104,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="580.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_1_2" contentDisplay="CENTER" layoutX="580.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -123,7 +124,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="580.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_1_3" contentDisplay="CENTER" layoutX="580.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -143,7 +144,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="580.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_1_4" contentDisplay="CENTER" layoutX="580.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -163,7 +164,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="580.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_1_5" contentDisplay="CENTER" layoutX="580.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -183,7 +184,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="580.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_1_6" contentDisplay="CENTER" layoutX="580.0" layoutY="490.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -252,7 +253,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_2_1" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -268,7 +269,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_2_2" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -288,7 +289,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_2_3" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -304,7 +305,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_2_4" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -324,7 +325,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_2_5" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -340,7 +341,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_2_6" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -360,7 +361,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_2_7" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -376,7 +377,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_2_8" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -396,7 +397,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_2_9" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -412,7 +413,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_2_10" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -492,7 +493,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_3_1" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -508,7 +509,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_3_2" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -528,7 +529,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_3_3" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -544,7 +545,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_3_4" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -564,7 +565,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_3_5" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -580,7 +581,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_3_6" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -600,7 +601,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_3_7" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -616,7 +617,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_3_8" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -636,7 +637,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_3_9" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -652,7 +653,7 @@
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
+                                          <Label fx:id="cur_3_10" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -722,23 +723,33 @@
                                     <AnchorPane fx:id="pagi_4_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_4_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_4_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_4_1" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_4_1" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_4_1" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_4_1" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_4_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_4_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_4_2" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_4_2" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_4_2" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_4_2" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -748,23 +759,33 @@
                                     <AnchorPane fx:id="pagi_4_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_4_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_4_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_4_3" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_4_3" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_4_3" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_4_3" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_4_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_4_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_4_4" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_4_4" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_4_4" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_4_4" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -774,23 +795,33 @@
                                     <AnchorPane fx:id="pagi_4_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_4_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_4_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_4_5" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_4_5" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_4_5" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_4_5" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_4_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_4_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_4_6" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_4_6" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_4_6" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_4_6" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -800,23 +831,33 @@
                                     <AnchorPane fx:id="pagi_4_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_4_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_4_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_4_7" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_4_7" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_4_7" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_4_7" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_4_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_4_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_4_8" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_4_8" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_4_8" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_4_8" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -826,23 +867,33 @@
                                     <AnchorPane fx:id="pagi_4_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_4_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_4_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_4_9" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_4_9" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_4_9" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_4_9" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_4_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_4_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_4_10" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_4_10" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_4_10" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_4_10" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -912,23 +963,33 @@
                                     <AnchorPane fx:id="pagi_5_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_5_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_5_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_5_1" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_5_1" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_5_1" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_5_1" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_5_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_5_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_5_2" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_5_2" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_5_2" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_5_2" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -938,23 +999,33 @@
                                     <AnchorPane fx:id="pagi_5_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_5_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_5_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_5_3" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_5_3" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_5_3" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_5_3" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_5_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_5_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_5_4" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_5_4" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_5_4" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_5_4" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -964,23 +1035,33 @@
                                     <AnchorPane fx:id="pagi_5_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_5_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_5_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_5_5" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_5_5" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_5_5" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_5_5" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_5_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_5_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_5_6" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_5_6" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_5_6" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_5_6" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -990,23 +1071,33 @@
                                     <AnchorPane fx:id="pagi_5_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_5_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_5_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_5_7" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_5_7" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_5_7" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_5_7" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_5_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_5_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_5_8" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_5_8" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_5_8" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_5_8" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1016,23 +1107,33 @@
                                     <AnchorPane fx:id="pagi_5_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_5_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_5_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_5_9" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_5_9" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_5_9" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_5_9" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_5_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_5_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_5_10" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_5_10" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_5_10" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_5_10" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1102,23 +1203,33 @@
                                     <AnchorPane fx:id="pagi_6_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_6_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_6_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_6_1" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_6_1" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_6_1" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_6_1" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_6_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_6_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_6_2" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_6_2" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_6_2" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_6_2" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1128,23 +1239,33 @@
                                     <AnchorPane fx:id="pagi_6_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_6_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_6_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_6_3" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_6_3" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_6_3" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_6_3" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_6_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_6_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_6_4" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_6_4" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_6_4" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_6_4" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1154,23 +1275,33 @@
                                     <AnchorPane fx:id="pagi_6_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_6_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_6_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_6_5" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_6_5" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_6_5" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_6_5" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_6_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_6_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_6_6" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_6_6" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_6_6" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_6_6" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1180,23 +1311,33 @@
                                     <AnchorPane fx:id="pagi_6_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_6_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_6_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_6_7" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_6_7" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_6_7" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_6_7" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_6_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_6_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_6_8" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_6_8" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_6_8" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_6_8" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1206,23 +1347,33 @@
                                     <AnchorPane fx:id="pagi_6_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_6_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_6_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_6_9" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_6_9" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_6_9" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_6_9" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_6_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_6_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_6_10" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_6_10" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_6_10" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_6_10" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1292,23 +1443,33 @@
                                     <AnchorPane fx:id="pagi_7_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_7_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_7_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_7_1" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_7_1" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_7_1" contentDisplay="CENTER" layoutX="274.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_7_1" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_7_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_7_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_7_2" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_7_2" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_7_2" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_7_2" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1318,23 +1479,33 @@
                                     <AnchorPane fx:id="pagi_7_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_7_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_7_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_7_3" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_7_3" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_7_3" contentDisplay="CENTER" layoutX="274.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_7_3" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_7_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_7_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_7_4" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_7_4" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_7_4" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_7_4" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1344,23 +1515,33 @@
                                     <AnchorPane fx:id="pagi_7_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_7_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_7_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_7_5" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_7_5" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_7_5" contentDisplay="CENTER" layoutX="274.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_7_5" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_7_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_7_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_7_6" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_7_6" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_7_6" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_7_6" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1370,23 +1551,33 @@
                                     <AnchorPane fx:id="pagi_7_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_7_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_7_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_7_7" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_7_7" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_7_7" contentDisplay="CENTER" layoutX="274.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_7_7" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_7_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_7_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_7_8" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_7_8" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_7_8" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_7_8" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1396,23 +1587,33 @@
                                     <AnchorPane fx:id="pagi_7_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_7_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_7_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_7_9" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_7_9" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_7_9" contentDisplay="CENTER" layoutX="274.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_7_9" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_7_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_7_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_7_10" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_7_10" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_7_10" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_7_10" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1482,23 +1683,33 @@
                                     <AnchorPane fx:id="pagi_8_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_8_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_8_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_8_1" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_8_1" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_8_1" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_8_1" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_8_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_8_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_8_2" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_8_2" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_8_2" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_8_2" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1508,23 +1719,33 @@
                                     <AnchorPane fx:id="pagi_8_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_8_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_8_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_8_3" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_8_3" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_8_3" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_8_3" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_8_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_8_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_8_4" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_8_4" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_8_4" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_8_4" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1534,23 +1755,33 @@
                                     <AnchorPane fx:id="pagi_8_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_8_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_8_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_8_5" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_8_5" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_8_5" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_8_5" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_8_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_8_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_8_6" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_8_6" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_8_6" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_8_6" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1560,23 +1791,33 @@
                                     <AnchorPane fx:id="pagi_8_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_8_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_8_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_8_7" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_8_7" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_8_7" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_8_7" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_8_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_8_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_8_8" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_8_8" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_8_8" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_8_8" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1586,23 +1827,33 @@
                                     <AnchorPane fx:id="pagi_8_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_8_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_8_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_8_9" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_8_9" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_8_9" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_8_9" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_8_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_8_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_8_10" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_8_10" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_8_10" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_8_10" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1672,23 +1923,33 @@
                                     <AnchorPane fx:id="pagi_9_1" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_9_1" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_9_1" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_9_1" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_9_1" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_9_1" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_9_1" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_9_2" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_9_2" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_9_2" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_9_2" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_9_2" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_9_2" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1698,23 +1959,33 @@
                                     <AnchorPane fx:id="pagi_9_2" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_9_3" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_9_3" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_9_3" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_9_3" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_9_3" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_9_3" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_9_4" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_9_4" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_9_4" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_9_4" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_9_4" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_9_4" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1724,23 +1995,33 @@
                                     <AnchorPane fx:id="pagi_9_3" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_9_5" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_9_5" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_9_5" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_9_5" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_9_5" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_9_5" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_9_6" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_9_6" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_9_6" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_9_6" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_9_6" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_9_6" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1750,23 +2031,33 @@
                                     <AnchorPane fx:id="pagi_9_4" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_9_7" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_9_7" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_9_7" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_9_7" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_9_7" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_9_7" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_9_8" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_9_8" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_9_8" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_9_8" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_9_8" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_9_8" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
@@ -1776,23 +2067,33 @@
                                     <AnchorPane fx:id="pagi_9_5" prefHeight="559.0" prefWidth="930.0">
                                        <children>
                                           <ImageView fx:id="pid_9_9" fitHeight="307.0" fitWidth="422.0" layoutX="28.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_9_9" alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_9_9" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_9_9" contentDisplay="CENTER" layoutX="312.0" layoutY="418.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_9_9" contentDisplay="CENTER" layoutX="274.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_9_9" contentDisplay="CENTER" layoutX="353.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
                                           <ImageView fx:id="pid_9_10" fitHeight="307.0" fitWidth="422.0" layoutX="468.0" layoutY="76.0" onMouseClicked="#pid_Clicked" pickOnBounds="true" />
-                                          <Label fx:id="mid_9_10" alignment="CENTER" contentDisplay="CENTER" layoutX="532.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
+                                          <Label fx:id="mid_9_10" alignment="CENTER" contentDisplay="CENTER" layoutX="484.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="230.0" style="-fx-background-color: #828282;" textAlignment="CENTER">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
                                           </Label>
-                                          <Label fx:id="cid_9_10" contentDisplay="CENTER" layoutX="762.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                          <Label fx:id="cid_9_10" contentDisplay="CENTER" layoutX="714.0" layoutY="417.0" opacity="0.86" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;">
+                                             <font>
+                                                <Font name="TH Sarabun New Bold" size="30.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="cur_9_10" contentDisplay="CENTER" layoutX="793.0" layoutY="417.0" opacity="0.7" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #828282;" text="บาท">
                                              <font>
                                                 <Font name="TH Sarabun New Bold" size="30.0" />
                                              </font>
