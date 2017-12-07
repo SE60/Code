@@ -76,6 +76,7 @@ public class ChefTableOrder_Controller {
         for(int i=0;i<q1.getResultList().size();i++){
             if (q1.getResultList().get(i).getStatus() == false){
                beforeShowTableChef =new BeforeShowTableChef(orderCount,q1.getResultList().get(i).getTable());
+                System.out.println(i);
                p.add(beforeShowTableChef); 
                orderCount++;
             }             

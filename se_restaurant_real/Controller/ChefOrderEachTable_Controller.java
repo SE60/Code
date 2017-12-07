@@ -63,9 +63,10 @@ public class ChefOrderEachTable_Controller {
         EntityManager em=conn.getConnection();
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca",Ordered.class);
         if(!q1.getResultList().isEmpty()){
-            table.setText(Integer.toString(q1.getResultList().get(0).getTable()));
+            
             for (int i=0; i<q1.getResultList().size();i++){
                 if (q1.getResultList().get(i).getStatus() == false){
+                   table.setText(Integer.toString(q1.getResultList().get(i).getTable()));
                     for (int j=0; j<q1.getResultList().get(i).getPrice().size(); j++){
                             menuViewList.get(j).setVisible(true);
                             checkViewList.get(j).setVisible(true);
