@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Text?>
 <?import java.util.ArrayList?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@fontfamily.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.ChefOrderEachTable_Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@fontfamily.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_restaurant_real.Controller.ChefOrderEachTable_Controller">
     <children>
         <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
@@ -45,240 +45,237 @@
                         <Font name="TH Sarabun New" size="50.0" />
                      </font>
                   </Label>
-                        <AnchorPane layoutX="64.0" layoutY="142.0" prefHeight="338.0" prefWidth="1133.0">
-                            <children>
 
-                                <ScrollPane fx:id="chefOrderEachTable_ScrollPane" layoutX="-3.0" layoutY="-1.0" prefHeight="360.0" prefWidth="1147.0" stylesheets="@scrollbar.css">
-                           <content>
-                              <AnchorPane prefHeight="800.0" prefWidth="1126.0" style="-fx-background-color: #172a46;">
+                          <ScrollPane fx:id="chefOrderEachTable_ScrollPane" hbarPolicy="NEVER" hmax="0.0" layoutX="61.0" layoutY="141.0" prefHeight="360.0" prefWidth="1120.0" stylesheets="@scrollbar.css">
+                     <content>
+                        <AnchorPane prefHeight="810.0" prefWidth="990.0" style="-fx-background-color: #172a46;">
+                           <children>
+                              <TableView layoutX="8.0" prefHeight="800.0" prefWidth="1094.0" stylesheets="@table.css">
+                                <columns>
+                                  <TableColumn prefWidth="719.4666557312012" text="รายการอาหาร" />
+                                  <TableColumn prefWidth="209.86669921875" text="จำนวน" />
+                                    <TableColumn prefWidth="191.7332763671875" text="สถานะ" />
+                                </columns>
+                              </TableView>
+                              <AnchorPane layoutX="20.0" layoutY="60.0" prefHeight="750.0" prefWidth="1070.0" style="-fx-background-color: #172a46;">
                                  <children>
-                                    <TableView prefHeight="800.0" prefWidth="1124.0" stylesheets="@table.css">
-                                      <columns>
-                                        <TableColumn prefWidth="719.4666557312012" text="รายการอาหาร" />
-                                        <TableColumn prefWidth="209.86669921875" text="จำนวน" />
-                                          <TableColumn prefWidth="191.7332763671875" text="สถานะ" />
-                                      </columns>
-                                    </TableView>
-                                    <AnchorPane layoutY="60.0" prefHeight="750.0" prefWidth="1124.0" style="-fx-background-color: #172a46;">
-                                       <children>
-                                           <CheckBox fx:id="check1" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="20.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                               <font>
-                                                   <Font size="20.0" />
-                                               </font>
-                                           </CheckBox>
-                                          <Label fx:id="quality1" layoutX="810.0" layoutY="20.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu1" layoutX="50.0" layoutY="20.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check2" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="70.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality2" layoutX="810.0" layoutY="70.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu2" layoutX="50.0" layoutY="70.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check3" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="120.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality3" layoutX="810.0" layoutY="120.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu3" layoutX="50.0" layoutY="120.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check4" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="170.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality4" layoutX="810.0" layoutY="170.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu4" layoutX="50.0" layoutY="170.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check5" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="220.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality5" layoutX="810.0" layoutY="220.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu5" layoutX="50.0" layoutY="220.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check6" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="270.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality6" layoutX="810.0" layoutY="270.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu6" layoutX="50.0" layoutY="270.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check7" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="320.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality7" layoutX="810.0" layoutY="320.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu7" layoutX="50.0" layoutY="320.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check8" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="370.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality8" layoutX="810.0" layoutY="370.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu8" layoutX="50.0" layoutY="370.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check9" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="420.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality9" layoutX="810.0" layoutY="420.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu9" layoutX="50.0" layoutY="420.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check10" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="470.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality10" layoutX="810.0" layoutY="470.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu10" layoutX="50.0" layoutY="470.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check11" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="520.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality11" layoutX="810.0" layoutY="520.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          
+                                     <CheckBox fx:id="check1" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="20.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                         <font>
+                                             <Font size="20.0" />
+                                         </font>
+                                     </CheckBox>
+                                    <Label fx:id="quality1" layoutX="810.0" layoutY="20.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu1" layoutX="50.0" layoutY="20.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check2" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="70.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality2" layoutX="810.0" layoutY="70.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu2" layoutX="50.0" layoutY="70.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check3" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="120.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality3" layoutX="810.0" layoutY="120.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu3" layoutX="50.0" layoutY="120.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check4" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="170.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality4" layoutX="810.0" layoutY="170.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu4" layoutX="50.0" layoutY="170.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check5" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="220.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality5" layoutX="810.0" layoutY="220.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu5" layoutX="50.0" layoutY="220.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check6" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="270.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality6" layoutX="810.0" layoutY="270.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu6" layoutX="50.0" layoutY="270.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check7" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="320.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality7" layoutX="810.0" layoutY="320.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu7" layoutX="50.0" layoutY="320.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check8" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="370.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality8" layoutX="810.0" layoutY="370.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu8" layoutX="50.0" layoutY="370.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check9" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="420.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality9" layoutX="810.0" layoutY="420.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu9" layoutX="50.0" layoutY="420.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check10" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="470.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality10" layoutX="810.0" layoutY="470.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu10" layoutX="50.0" layoutY="470.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check11" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="520.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality11" layoutX="810.0" layoutY="520.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    
                                           <Label fx:id="menu11" layoutX="50.0" layoutY="520.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check12" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="570.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality12" layoutX="810.0" layoutY="570.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu12" layoutX="50.0" layoutY="570.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check13" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="620.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality13" layoutX="810.0" layoutY="620.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu13" layoutX="50.0" layoutY="620.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                          <CheckBox fx:id="check14" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="670.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
-                                             <font>
-                                                <Font size="20.0" />
-                                             </font>
-                                          </CheckBox>
-                                          <Label fx:id="quality14" layoutX="810.0" layoutY="670.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="30.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="menu14" layoutX="50.0" layoutY="670.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
-                                             <font>
-                                                <Font name="TH Sarabun New" size="27.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                    </AnchorPane>
-                                 </children></AnchorPane>
-                           </content>
-                                </ScrollPane>
-                            </children>
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check12" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="570.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality12" layoutX="810.0" layoutY="570.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu12" layoutX="50.0" layoutY="570.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check13" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="620.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality13" layoutX="810.0" layoutY="620.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu13" layoutX="50.0" layoutY="620.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="check14" contentDisplay="GRAPHIC_ONLY" layoutX="1010.0" layoutY="670.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="37.0" textFill="#e2d3d3" visible="false">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Label fx:id="quality14" layoutX="810.0" layoutY="670.0" prefHeight="39.0" prefWidth="50.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="menu14" layoutX="50.0" layoutY="670.0" prefHeight="39.0" prefWidth="648.0" textFill="#e7cf86" visible="false">
+                                       <font>
+                                          <Font name="TH Sarabun New" size="27.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
                         </AnchorPane>
+                     </content>
+                          </ScrollPane>
                   <VBox layoutX="25.0" layoutY="529.0" prefHeight="142.0" prefWidth="1271.0">
                      <children>
                         <AnchorPane prefHeight="100.0" prefWidth="1271.0">
@@ -311,7 +308,7 @@
                         </AnchorPane>
                      </children>
                   </VBox>
-                  <Label layoutX="565.0" layoutY="67.0" text="รายการอาหาร" textFill="#001764">
+                  <Label layoutX="565.0" layoutY="68.0" text="รายการอาหาร" textFill="#001764">
                      <font>
                         <Font name="TH Sarabun New" size="50.0" />
                      </font>
