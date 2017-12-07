@@ -76,7 +76,7 @@ public class Main_Customer extends Application {
 //        }
 
 //---------------------------------------------------//
-       System.setProperty("objectdb.home", System.getProperty("user.dir") + "/src/RestaurantDB");              
+      // System.setProperty("objectdb.home", System.getProperty("user.dir") + "/src/RestaurantDB");              
        launch(args);
     }
 }

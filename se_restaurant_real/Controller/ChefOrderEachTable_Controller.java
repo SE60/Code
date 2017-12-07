@@ -59,8 +59,8 @@ public class ChefOrderEachTable_Controller {
             qualityViewList.get(i).setVisible(false);
             checkViewList.get(i).setSelected(false);
         }
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("objectdb://161.246.6.22:6136/restaurant.odb");
-        EntityManager em=emf.createEntityManager();
+        DB_Connection conn=new DB_Connection();
+        EntityManager em=conn.getConnection();
         TypedQuery<Ordered> q1=em.createQuery("select ca from Ordered ca",Ordered.class);
         if(!q1.getResultList().isEmpty()){
             table.setText(Integer.toString(q1.getResultList().get(0).getTable()));
@@ -77,8 +77,7 @@ public class ChefOrderEachTable_Controller {
                 }
             }
         }
-        em.close();
-        emf.close();
+        conn.closeConnection();
         
     }
     
