@@ -509,16 +509,19 @@ public class CustomerMenu_Controller {
     
     @FXML
     void deleteMeal(int index) {
-
-        if(increaseViewList.get(index+1) == null || !increaseViewList.get(index+1).isVisible())
-        {
+        if(index<13)
+            if(increaseViewList.get(index+1) == null || !increaseViewList.get(index+1).isVisible())
+                {
+                    deleteGui(index);
+                }
+            else
+                {
+                    copyValue(index+1,index);
+                    deleteMeal(index+1);
+                }
+        else{
             deleteGui(index);
-        }
-        else
-        {
-            copyValue(index+1,index);
-            deleteMeal(index+1);
-        }
+        }     
     }
     
     @FXML

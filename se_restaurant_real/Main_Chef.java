@@ -50,8 +50,9 @@ public class Main_Chef extends Application {
         mainStage.show();
     }
     
-    public static void main(String[] args) throws SQLException {
-        //System.setProperty("objectdb.home", System.getProperty("user.dir") + "/src/RestaurantDB");              
+    public static void main(String[] args) throws SQLException {     
+        
+        //System.out.println(System.getProperty("objectdb.home"));
         launch(args);
     }
 }
