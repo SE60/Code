@@ -50,7 +50,7 @@
                               <Font name="TH Sarabun New Bold" size="24.0" />
                            </font>
                         </JFXButton>
-                        <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="1105.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="1105.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@User_50px.png" />
                            </image>
