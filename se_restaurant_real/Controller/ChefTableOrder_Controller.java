@@ -13,6 +13,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TableColumn;
@@ -64,10 +65,10 @@ public class ChefTableOrder_Controller {
     {
         order.setCellValueFactory(new PropertyValueFactory<>("order"));
         table.setCellValueFactory(new PropertyValueFactory<>("table"));
-        orderList.setItems(getJoinedPerson());
+        orderList.setItems(putToTable());
     }
     
-     public ObservableList<BeforeShowTableChef> getJoinedPerson()
+     public ObservableList<BeforeShowTableChef> putToTable()
     {   
         BeforeShowTableChef beforeShowTableChef;
         ObservableList<BeforeShowTableChef> p = FXCollections.observableArrayList();
@@ -105,6 +106,15 @@ public class ChefTableOrder_Controller {
     @FXML
     void refreshButton_Clicked(MouseEvent event) {
         loadOrderedList();
+    }
+    
+     @FXML
+    void call_Service(MouseEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information Dialog");
+        alert.setHeaderText("Please wait");
+        alert.setContentText("Please wait waiter/waitress");
+        alert.showAndWait();
     }
 }
 

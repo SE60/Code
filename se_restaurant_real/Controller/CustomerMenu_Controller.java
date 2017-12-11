@@ -237,7 +237,7 @@ public class CustomerMenu_Controller {
         //------------------------------------------------------------------------//
        em.getTransaction().begin();
        
-       TypedQuery<food_menu> q1=em.createQuery("select from food_menu where cName.id=1",food_menu.class);
+
        slideViewList.get(0).setPageCount(quality.loadQuality_1());
        slideViewList.get(0).setPageFactory(new Callback<Integer,Node>() {
            @Override
@@ -250,7 +250,6 @@ public class CustomerMenu_Controller {
            }
        });
 //----------------------------------------end page 1-----------------------------------------------------//
-        TypedQuery<food_menu> q2=em.createQuery("select from food_menu where cName.id=2",food_menu.class);
        slideViewList.get(1).setPageCount(quality.loadQuality_2()/2);
        slideViewList.get(1).setPageFactory(new Callback<Integer,Node>() {
            @Override
@@ -267,7 +266,6 @@ public class CustomerMenu_Controller {
            }
        });
 //----------------------------------------end page 2-----------------------------------------------------//       
-       TypedQuery<food_menu> q3=em.createQuery("select from food_menu where cName.id=3",food_menu.class);
        slideViewList.get(2).setPageCount(quality.loadQuality_3()/2);
        slideViewList.get(2).setPageFactory(new Callback<Integer,Node>() {
            @Override
@@ -284,7 +282,6 @@ public class CustomerMenu_Controller {
            }
        });
 //----------------------------------------end page 3-----------------------------------------------------//
-       TypedQuery<food_menu> q4=em.createQuery("select from food_menu where cName.id=3",food_menu.class);
        slideViewList.get(3).setPageCount(quality.loadQuality_4()/2);
        slideViewList.get(3).setPageFactory(new Callback<Integer,Node>() {
            @Override
@@ -301,7 +298,6 @@ public class CustomerMenu_Controller {
            }
        });
 //----------------------------------------end page 4-----------------------------------------------------//
-        TypedQuery<food_menu> q5=em.createQuery("select from food_menu where cName.id=4",food_menu.class);
        slideViewList.get(4).setPageCount(quality.loadQuality_5()/2);
        slideViewList.get(4).setPageFactory(new Callback<Integer,Node>() {
            @Override
@@ -318,7 +314,6 @@ public class CustomerMenu_Controller {
            }
        });
 //----------------------------------------end page 5-----------------------------------------------------//
-        TypedQuery<food_menu> q6=em.createQuery("select from food_menu where cName.id=5",food_menu.class);
        slideViewList.get(5).setPageCount(quality.loadQuality_6()/2);
        slideViewList.get(5).setPageFactory(new Callback<Integer,Node>() {
            @Override
@@ -335,7 +330,6 @@ public class CustomerMenu_Controller {
            }
        });
 ////----------------------------------------end page 6-----------------------------------------------------//
-        TypedQuery<food_menu> q7=em.createQuery("select from food_menu where cName.id=6",food_menu.class);
        slideViewList.get(6).setPageCount(quality.loadQuality_7()/2);
        slideViewList.get(6).setPageFactory(new Callback<Integer,Node>() {
            @Override
@@ -352,7 +346,6 @@ public class CustomerMenu_Controller {
            }
        });
 ////----------------------------------------end page 7-----------------------------------------------------//
-        TypedQuery<food_menu> q8=em.createQuery("select from food_menu where cName.id=7",food_menu.class);
        slideViewList.get(7).setPageCount(quality.loadQuality_7()/2);
        slideViewList.get(7).setPageFactory(new Callback<Integer,Node>() {
            @Override
@@ -369,7 +362,6 @@ public class CustomerMenu_Controller {
            }
        });
 ////----------------------------------------end page 8-----------------------------------------------------//
-        TypedQuery<food_menu> q9=em.createQuery("select from food_menu where cName.id=9",food_menu.class);
        slideViewList.get(8).setPageCount(quality.loadQuality_9()/2);
        slideViewList.get(8).setPageFactory(new Callback<Integer,Node>() {
            @Override
@@ -559,20 +551,6 @@ public class CustomerMenu_Controller {
     void copyValue(int source,int destination){
         orderedViewList.get(destination).setText(orderedViewList.get(source).getText());
         increaseViewList.get(destination).getValueFactory().setValue(increaseViewList.get(source).getValue());
-    }
-    
-    @FXML
-    void changePaneToChef(ActionEvent event) {
-        try {
-            FXMLLoader loader;
-            loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/GUI/src/sample/ChefTableOrder.fxml"));
-            cOrder = loader.load();
-            // ---------------------------------------------------------------------------------------
-        } catch (IOException ex) {
-                Logger.getLogger(Main_Customer.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        Main_Customer.mainStage.getScene().setRoot(Main_Customer.cOrder);
     }
     
     @FXML

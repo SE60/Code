@@ -131,4 +131,13 @@ public class ChefOrderEachTable_Controller {
         }
         conn.closeConnection();
     }
+    
+    @FXML
+    void call_Service(MouseEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information Dialog");
+        alert.setHeaderText("Please wait");
+        alert.setContentText("Please wait waiter/waitress");
+        alert.showAndWait();
+    }
 }
