@@ -97,6 +97,13 @@ public class ChefTableOrder_Controller {
                    chefOrderEachTable_Controller.initialize();
                     Main_Chef.mainStage.getScene().setRoot(Main_Chef.root2);
                 }
+                else{
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("Error Dialog");
+                    alert.setHeaderText("Cannot cook that table yet!!");
+                    alert.setContentText("Please select first order");
+                    alert.showAndWait();
+                }
             });
             return row ;
         });
